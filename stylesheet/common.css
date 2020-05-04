@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #393939;
+  position: relative;
+}
+
+h1 {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 131%;
+}
+
+h2 {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 45px;
+}
+
+h3 {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.btn-primary {
+  background: #61B46C;
+  border: 1px solid #61B46C;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:focus {
+  background-color: #61B46C;
+  border-color: #61B46C;
+}
+
+img {
+  width: 100%;
+}
+
+.iBring-strong {
+  font-family: OpenSans-Bold;
+}
+
+/* HEADER */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.07);
+}
+
+.nav-link {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: .035em;
+}
+
+.ibring-navbar-divider {
+  border-right: 1px solid #C4C4C4;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: #393939;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 60px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    height: 20px;
+    align-items: center;
+  }
+
+  .ibring-navbar-btn-login {
+    margin-right: 60px;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 18px;
+  }
+
+}

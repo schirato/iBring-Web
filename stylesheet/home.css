@@ -1,0 +1,395 @@
+.iBring-home-mainWrapper {
+  position: relative;
+  height: auto;
+}
+
+.iBring-home-mainWrapper .iBring-panel {
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.iBring-home-mainWrapper .ibring-background-image {
+  display: none;
+}
+
+.iBring-home-mainWrapper .iBring-comoFunciona-content {
+  padding: 24px;
+}
+
+.iBring-home-mainWrapper .iBring-comoFunciona-content .iBring-logo {
+  margin-bottom: 28px;
+}
+
+.iBring-home-mainWrapper .iBring-comoFunciona-content-app {
+  padding: 0 17%;
+}
+
+.iBring-home-mainWrapper .iBring-comoFunciona-content-app .iBring-lead {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 31px;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.iBring-home-mainWrapper .iBring-cards-group .card {
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 55px;
+}
+
+.iBring-home-mainWrapper .iBring-cards-group .card-title {
+  font-family: OpenSans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4em;
+  line-height: 27px;
+}
+
+
+.iBring-servicos {
+  padding: 84px 17%;
+  margin-top: 20px;
+}
+
+.iBring-servicos h3 {
+  font-family: OpenSans-Bold;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.iBring-sejaUmEntregador-block {
+  background: linear-gradient(289.48deg, #63D673 -9.54%, #005ABC 102.28%);
+  padding: 70px 17%;
+  overflow: hidden;
+  position: relative;
+}
+
+.iBring-sejaUmEntregador h2 {
+  color: #ffffff;
+  width: 80%;
+  margin-bottom: 45px;
+}
+
+.iBring-sejaUmEntregador-porque {
+  padding: 69px 17%;
+  text-align: center;
+}
+
+.iBring-sejaUmEntregador-porque .iBring-sejaUmEntregador-subtitle {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #737373;
+}
+
+.iBring-footer {
+  padding: 60px 17%;
+}
+
+.iBring-footer-title {
+  font-family: OpenSans-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
+}
+
+.iBring-footer-text {
+  font-family: OpenSans-Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+@media (min-width: 992px) {
+
+  .iBring-home-mainWrapper .ibring-background-image {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona {
+    padding-bottom: 84px;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content {
+    padding: 84px 7% 0 17%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content .iBring-logo {
+    width: 147px;
+    height: 73px;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content h1 {
+    width: 360px;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content .iBring-right img {
+    width: auto;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content-app .iBring-app-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content-app .iBring-app-iOS {
+    margin-right: 29px;
+  }
+
+  .iBring-home-mainWrapper .iBring-comoFunciona-content-app .iBring-app-iOS,
+  .iBring-home-mainWrapper .iBring-comoFunciona-content-app .iBring-app-android {
+    width: 216px;
+    height: 65px;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group {
+    padding: 0 17%;
+    margin-right: 0;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group-first {
+    padding-top: 118px;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group .card {
+    height: 183px;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group .card-image {
+    text-align: left;
+  }
+
+  .iBring-home-mainWrapper .iBring-cards-group .card-content {
+    margin-left: 22px;
+    margin-top: 0;
+    width: 200px;
+  }
+
+  .iBring-comoFunciona-dica {
+    position: relative;
+    padding: 0 17%;
+    margin-top: 110px;
+    margin-bottom: 130px;
+  }
+
+  .iBring-comoFunciona-dica .iBring-left {
+    background-color: #f2f2f2;
+    border-radius: 18px;
+    padding: 43px 38px;
+  }
+
+  .iBring-comoFunciona-dica .iBring-right {
+    position: absolute;
+    top: -200px;
+    right: 20px;
+  }
+
+  .iBring-comoFunciona-dica .iBring-left h2 {
+    color: #005ABC;
+  }
+
+  .iBring-step {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  .iBring-step .iBring-step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 29px;
+  }
+
+  .iBring-step .iBring-step-bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #005ABC;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+
+  .iBring-step .iBring-step-text {
+    margin-top: 31px;
+    width: 120px;
+    text-align: center;
+  }
+
+  .iBring-step-second .iBring-step-text {
+    width: 130px;
+  }
+
+  .iBring-step-third .iBring-step-text {
+    width: 160px;
+  }
+
+  .iBring-entregamosParaVoce {
+    padding: 0 17%;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+
+  .iBring-servicos .card-text {
+    font-family: OpenSans-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .iBring-servicos .iBring-card-last {
+    margin-top: 50px;
+  }
+
+  .iBring-sejaUmEntregador .iBring-bg-entregador {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+  }
+
+  .iBring-sejaUmEntregador .iBring-bullets,
+  .iBring-sejaUmEntregador .iBring-callToAction {
+    width: 75%;
+  }
+
+  .iBring-sejaUmEntregador .iBring-bullets-text {
+    font-family: OpenSans-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+  }
+
+  .iBring-sejaUmEntregador .iBring-button {
+    font-family: OpenSans-Bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    background: #63D673;
+    border-radius: 12px;
+    padding: 17px 33px;
+    margin: 45px auto;
+  }
+
+  .iBring-sejaUmEntregador-card {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-top: 29px;
+    padding: 34px 0;
+  }
+
+  .iBring-sejaUmEntregador-card img {
+    width: auto;
+  }
+
+  .iBring-sejaUmEntregador-card .iBring-sejaUmEntregador-item-text {
+    margin-top: 10px;
+    font-family: OpenSans-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .iBring-sejaUmEntregdor-item {
+    border-right: 2px solid #DCDBDE;
+    width: 150px;
+    margin-right: 12px;
+    padding-right: 12px;
+  }
+
+  .iBring-sejaUmEntregdor-item:last-child {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .iBring-contato {
+    background-color: #ffffff;
+    padding: 80px 17%;
+  }
+
+  .iBring-contato .card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 41px 20px;
+  }
+
+  .iBring-contato .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .iBring-contato .card-title {
+    font-family: OpenSans-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .iBring-contato .btn {
+    margin-top: 35px;
+    width: 40%;
+  }
+
+  .iBring-contato-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  .iBring-contato-logo img {
+    width: auto;
+  }
+}
