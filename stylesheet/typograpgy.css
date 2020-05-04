@@ -1,0 +1,22 @@
+/* GOOGLE FONT: https://fonts.google.com/specimen/Open+Sans */
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
