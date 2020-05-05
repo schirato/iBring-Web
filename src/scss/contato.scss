@@ -1,0 +1,181 @@
+@import './base';
+
+body {
+  background-color: theme-color("gray-light");
+}
+
+.ibring-background-image {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: theme-color("green-medium-button");
+}
+
+.ibring-contact-form-content {
+  @include mainContentRulers(15%, 0);
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  overflow: hidden;
+}
+
+.ibring-contact-form-content .display-4 {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: 0.185em;
+  color: theme-color("gray-darked");
+  text-transform: uppercase;
+}
+
+.ibring-contact-form-content-form {
+  margin-top: 10%;
+}
+
+.ibring-contact-form-content-form form {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
+.form__group {
+  @include mainContentRulers(3%, 0);
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.form__field {
+  @include mainContentRulers(7px, 0, 7px, 3%);
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  color: theme-color("dark");
+  background: theme-color("white");
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: text;
+  top: 20px;
+  padding-left: 3%;
+}
+
+label,
+.form__field:focus~.form__label {
+  position: absolute;
+  top: -10px;
+  display: block;
+  transition: 0.2s;
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: theme-color("gray-dark");
+}
+
+.form__field:focus~.form__label {
+  color: theme-color("green-medium-button");
+}
+
+.ibring-contact-form-footer {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: theme-color("gray-dark");
+}
+
+.ibring-contact-form-footer a {
+  font-weight: 700;
+  color: theme-color("gray-dark");
+}
+
+.ibring-contact-form-content .btn {
+  background: theme-color("green-medium-button");
+  color: theme-color("white");
+  border-radius: 12px;
+  width: 180px;
+  height: 46px;
+  margin-top: 5%;
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+  .form__field:placeholder-shown~.form__label {
+    top: 29px;
+  }
+
+  label,
+  .form__field:focus~.form__label {
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__field:placeholder-shown~.form__label {
+    top: 30px;
+  }
+
+  label,
+  .form__field:focus~.form__label {
+    top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ibring-contact-form {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .ibring-contact-form .row {
+    margin-right: 0;
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  .ibring-background-image {
+    @include flexbox;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .form__field:placeholder-shown~.form__label {
+    top: 26px;
+  }
+
+  label,
+  .form__field:focus~.form__label {
+    top: 0;
+  }
+}

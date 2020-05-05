@@ -2,7 +2,6 @@
 @import "./typography";
 @import './common';
 @import './navbar';
-@import './home';
 
 *,
 :before,
@@ -12,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -30,6 +30,7 @@ body {
   line-height: 19px;
   color: #393939;
   position: relative;
+  height: 100%;
 }
 
 h1 {
