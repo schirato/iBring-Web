@@ -1,0 +1,299 @@
+// MainContent
+@mixin mainContentRulers($top: 32px, $right: 24px, $bottom: $top, $left: $right, $height: 100%) {
+  padding: $top $right $bottom $left;
+  height: $height;
+}
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+// BUTTON PRIMARY
+
+%standardButton {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  width: 100%;
+  border-radius: 10px !important;
+  font-family: $font-opensans-semibold;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+@mixin button-primary($bgCor: "primary") {
+  @extend %standardButton;
+  background-color: theme-color($bgCor);
+  border-color: theme-color($bgCor);
+  padding: 12px 24px;
+  color: theme-color("white");
+  font-size: 14px;
+  line-height: 19px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: theme-color("green-medium-button") !important;
+    border-color: theme-color("green-medium-button") !important;
+    color: theme-color("white") !important;
+  }
+}
+
+@mixin button-primary-disabled {
+  @extend %standardButton;
+  background-color: theme-color("gray-medium");
+  border-color: theme-color("gray-medium");
+  padding: 12px 24px;
+  color: theme-color("gray-dark");
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: theme-color("gray-medium") !important;
+    border-color: theme-color("gray-medium") !important;
+    color: theme-color("gray-dark") !important;
+  }
+}
+
+// BUTTON OUTLINE
+
+%standardButtonOutline {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px !important;
+  font-family: $font-opensans-semibold;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin button-outline($bgCor: "green-medium") {
+  @extend %standardButtonOutline;
+  border: 1px solid theme-color($bgCor);
+  padding: 12px 12px;
+  color: theme-color($bgCor);
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: initial;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent !important;
+    border-color: theme-color("green-medium") !important;
+    color: theme-color("green-medium") !important;
+  }
+}
+
+@mixin button-secondary-outline {
+  @extend %standardButtonOutline;
+  border: 1px solid theme-color("secondary");
+  padding: 12px 24px;
+  color: theme-color("secondary");
+  font-size: 14px;
+  line-height: 19px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent !important;
+    border-color: theme-color("secondary") !important;
+    color: theme-color("secondary") !important;
+  }
+}
+
+@mixin button-secondary-outline-disabled {
+  @extend %standardButtonOutline;
+  border: 1px solid theme-color("gray-dark");
+  padding: 12px 24px;
+  color: theme-color("gray-dark");
+  font-size: 14px;
+  line-height: 19px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent !important;
+    border-color: theme-color("gray-dark") !important;
+    color: theme-color("gray-dark") !important;
+  }
+}
+
+// HEADLINE
+
+@mixin h1 {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 131%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin h2 {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 45px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin h3 {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin h4 {
+  font-family: $font-opensans-semibold;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 21px !important;
+  line-height: 29px !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin h5 {
+  font-family: $font-opensans-semibold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin menu-texto {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: theme-color("white");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin menu-texto-bold {
+  font-family: $font-opensans-semibold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: theme-color("white");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+// INPUT
+
+@mixin input-label {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: theme-color("gray-darked");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  padding-left: 5px;
+}
+
+@mixin input-field {
+  height: 46px !important;
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  color: theme-color("gray-darked") !important;
+  background-color: theme-color("gray-light") !important;
+  border-radius: 10px !important;
+  border: 1px solid theme-color("gray-light") !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}

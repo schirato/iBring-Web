@@ -1,4 +1,4 @@
-/* GOOGLE FONT: https://fonts.google.com/specimen/Open+Sans */
+// GOOGLE FONT: https://fonts.google.com/specimen/Open+Sans
 
 @font-face {
   font-family: 'OpenSans-Light';
@@ -10,6 +10,13 @@
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
   font-style: normal;
   font-weight: normal;
 }

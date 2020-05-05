@@ -26,12 +26,8 @@
   <link rel="manifest" href="/manifest.json">
 
   <!-- StyleSheet -->
-  <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./stylesheet/common.css">
-  <link rel="stylesheet" href="./stylesheet/typography.css">
-  <link rel="stylesheet" href="./stylesheet/home.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -72,83 +68,91 @@
   </nav>
   <!-- Conteúdo -->
   <section id="iBring-home-mainWrapper" class="iBring-home-mainWrapper">
-    <article class="iBring-panel iBring-comoFunciona">
-      <div class="ibring-background-image">
+    <article class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-comoFunciona">
+      <div class="iBring-home-mainWrapper__ibring-background-image">
         <img src="./img/bg-fundo.svg" alt="background">
       </div>
-      <div id="iBring-comoFunciona-content" class="iBring-comoFunciona-content">
-        <div class="iBring-left">
-          <img id="iBring-logo" src="./img/logo-ibring-rgb.svg" alt="Logo iBring" class="iBring-logo">
+      <div id="iBring-comoFunciona-content" class="iBring-home-mainWrapper__iBring-comoFunciona-content">
+        <div class="iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-left">
+          <img id="iBring-logo" src="./img/logo-ibring-rgb.svg" alt="Logo iBring"
+            class="iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-logo">
           <h1>O primeiro aplicativo de entregas <span class="iBring-strong">que valoriza seu entregador</span></h1>
         </div>
-        <div class="iBring-right">
+        <div class="iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-right">
           <img id="iBring-Img-Destaque" src="./img/img-destaque.svg" alt="Imagem Destaque">
         </div>
       </div>
-      <div class="iBring-comoFunciona-content-app">
-        <p id="iBring-lead" class="iBring-lead">Em Breve</p>
-        <div id="iBring-app-button" class="iBring-app-button">
-          <img id="iBring-app-iOS" src="./img/img-app-ios.svg" alt="App iOS" class="iBring-app-iOS">
-          <img id="iBring-app-android" src="./img/img-app-android.svg" alt="App Android" class="iBring-app-android">
+      <div class="iBring-home-mainWrapper__iBring-comoFunciona-content-app">
+        <p id="iBring-lead" class="iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-lead">Em Breve</p>
+        <div id="iBring-app-button" class="iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-button">
+          <img id="iBring-app-iOS" src="./img/img-app-ios.svg" alt="App iOS"
+            class="iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS">
+          <img id="iBring-app-android" src="./img/img-app-android.svg" alt="App Android"
+            class="iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-android">
         </div>
       </div>
-      <div class="row iBring-cards-group iBring-cards-group-first">
+      <div class="row iBring-home-mainWrapper__iBring-cards-group iBring-home-mainWrapper__iBring-cards-group-first">
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-image"><img src="./img/img-client.svg" alt="Imagem Cliente" /></div>
-              <div class="card-content">
-                <h5 class="card-title">Comércio justo:
+          <div class="iBring-home-mainWrapper__iBring-cards-group__card">
+            <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-client.svg"
+                  alt="Imagem Cliente" /></div>
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
+                <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Comércio justo:
                   <span class="iBring-strong">Valorizamos os entregadores</span></h5>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-image"><img src="./img/img-vespa.svg" alt="Imagem Cliente" class="ibring-img-vespa" />
+          <div class="iBring-home-mainWrapper__iBring-cards-group__card">
+            <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-vespa.svg"
+                  alt="Imagem Cliente" class="ibring-img-vespa" />
               </div>
-              <div class="card-content">
-                <h5 class="card-title">Você escolhe
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
+                <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Você escolhe
                   <span class="iBring-strong">qual veículo é melhor</span> para sua entrega</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row iBring-cards-group">
+      <div class="row iBring-home-mainWrapper__iBring-cards-group">
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-image"><img src="./img/img-delivery.svg" alt="Imagem Termo" /></div>
-              <div class="card-content">
-                <h5 class="card-title">Sua encomenda chega com
+          <div class="iBring-home-mainWrapper__iBring-cards-group__card">
+            <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-delivery.svg"
+                  alt="Imagem Termo" /></div>
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
+                <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Sua encomenda chega com
                   <span class="iBring-strong">agilidade e segurança!</span></h5>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-image"><img src="./img/img-term.svg" alt="Imagem Termo" /></div>
-              <div class="card-content">
-                <h5 class="card-title">Apenas
+          <div class="iBring-home-mainWrapper__iBring-cards-group__card">
+            <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-term.svg"
+                  alt="Imagem Termo" /></div>
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
+                <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Apenas
                   <span class="iBring-strong">entregadores regularizados</span></h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row iBring-cards-group">
+      <div class="row iBring-home-mainWrapper__iBring-cards-group">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-image"><img src="./img/img-money.svg" alt="Imagem Termo" /></div>
-              <div class="card-content">
-                <h5 class="card-title">Transparência: o cliente sabe
+          <div class="iBring-home-mainWrapper__iBring-cards-group__card">
+            <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-money.svg"
+                  alt="Imagem Termo" /></div>
+              <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
+                <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Transparência: o cliente sabe
                   <span class="iBring-strong">quanto o entregador recebe</span></h5>
               </div>
             </div>
@@ -158,30 +162,40 @@
       </div>
       <!-- Como Funciona -->
       <div id="iBring-comoFunciona">&nbsp;</div>
-      <div id="iBring-comoFunciona-dica" class="iBring-comoFunciona-dica">
-        <div class="iBring-left">
+      <div id="iBring-comoFunciona-dica" class="iBring-home-mainWrapper__iBring-comoFunciona-dica">
+        <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left">
           <h2>E como o <span class="iBring-strong">IBring funciona</span>?</h2>
-          <div class="iBring-step">
-            <div class="iBring-step-first iBring-step-content">
-              <div class="iBring-step-bullet">1</div>
-              <div class="iBring-step-text">Escolha o <span class="iBring-strong">tipo de transporte</span> ideal para
+          <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step">
+            <div
+              class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-first iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-content">
+              <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-bullet">1</div>
+              <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text">Escolha o
+                <span class="iBring-strong">tipo de transporte</span> ideal para
                 seus produtos</div>
             </div>
-            <div class="iBring-step-second iBring-step-content">
-              <div class="iBring-step-bullet">2</div>
-              <div class="iBring-step-text">Escolha <span class="iBring-strong">local, data e horário para a
+            <div
+              class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-second iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-content">
+              <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-bullet">2</div>
+              <div
+                class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-second__iBring-step-text">
+                Escolha
+                <span class="iBring-strong">local, data e horário para a
                   entrega</span> e pague pelo app
               </div>
             </div>
-            <div class="iBring-step-third iBring-step-content">
-              <div class="iBring-step-bullet">3</div>
-              <div class="iBring-step-text">Nossos entregadores irão <span class="iBring-strong">retirar e entregar com
+            <div
+              class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-third iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-content">
+              <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-bullet">3</div>
+              <div
+                class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-third__iBring-step-text">
+                Nossos
+                entregadores irão <span class="iBring-strong">retirar e entregar com
                   aglidade e segurança</span>, por um preço justo!
               </div>
             </div>
           </div>
         </div>
-        <div class="iBring-right">
+        <div class="iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-right">
           <img src="./img/img-device-app.png" alt="Device App">
         </div>
       </div>
@@ -190,113 +204,132 @@
       </div>
     </article>
     <!-- Serviços -->
-    <article id="iBring-servicos" class="iBring-panel iBring-servicos">
+    <article id="iBring-servicos"
+      class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-servicos">
       <h3>Nossos serviços</h3>
       <div class="row">
         <div class="col-sm-4">
           <img src="./img/img-daybyday.png" alt="Entregas do dia a dia">
-          <p class="card-text">Entregas do <span class="iBring-strong">dia a dia</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas do <span class="iBring-strong">dia a
+              dia</span></p>
         </div>
         <div class="col-sm-4">
           <img src="./img/img-ecommerce.png" alt="Entregas para e-commercer">
-          <p class="card-text">Entregas para <span class="iBring-strong">e-commerce</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas para <span
+              class="iBring-strong">e-commerce</span></p>
         </div>
         <div class="col-sm-4">
           <img src="./img/img-calendar.png" alt="Entregas agendadas">
-          <p class="card-text">Entregas <span class="iBring-strong">agendadas</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span
+              class="iBring-strong">agendadas</span></p>
         </div>
       </div>
-      <div class="row iBring-card-last">
+      <div class="row iBring-home-mainWrapper__iBring-servicos__iBring-card-last">
         <div class="col-sm-4">
           <img src="./img/img-deliveryhard.png" alt="Entregas pesadas">
-          <p class="card-text">Entregas <span class="iBring-strong">pesadas</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span
+              class="iBring-strong">pesadas</span></p>
         </div>
         <div class="col-sm-4">
           <img src="./img/img-quant.png" alt="Entregas em quantidade">
-          <p class="card-text">Entregas <span class="iBring-strong">em quantidade</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span class="iBring-strong">em
+              quantidade</span></p>
         </div>
         <div class="col-sm-4">
           <img src="./img/img-security.png" alt="Entregas com seguro">
-          <p class="card-text">Entregas <span class="iBring-strong">com seguro</span></p>
+          <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span class="iBring-strong">com
+              seguro</span></p>
         </div>
       </div>
     </article>
     <!-- Seja Um Entregador -->
-    <article id="iBring-sejaUmEntregador" class="iBring-panel iBring-sejaUmEntregador">
-      <div class="iBring-sejaUmEntregador-block">
+    <article id="iBring-sejaUmEntregador"
+      class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-sejaUmEntregador">
+      <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador__block">
         <img id="iBring-bg-entregador" src="./img/img-entregador.png" alt="Imagem Entregador"
-          class="iBring-bg-entregador">
+          class="iBring-home-mainWrapper__iBring-sejaUmEntregador__bg">
         <h2>Seja um <span class="iBring-strong">entregador profissional</span> IBring e <span class="iBring-strong">seja
             valorizado.</span></h2>
-        <div class="row iBring-bullets">
+        <div class="row iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets">
           <div class="col-sm-3">
             <img src="./img/img-bullet-km.svg" alt="Mínino de R$ 2,00 por Km">
-            <p class="iBring-bullets-text">Mínino de R$ 2,00 por Km</p>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Mínino de R$ 2,00 por Km
+            </p>
           </div>
           <div class="col-sm-3">
             <img src="./img/img-bullet-sac.svg" alt="Central de Atendimento rápido">
-            <p class="iBring-bullets-text">Central de Atendimento rápido</p>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Central de Atendimento
+              rápido</p>
           </div>
           <div class="col-sm-3">
             <img src="./img/img-bullet-value.svg" alt="Transparência nos valores e destinos">
-            <p class="iBring-bullets-text">Transparência nos valores e destinos</p>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Transparência nos valores e
+              destinos</p>
           </div>
           <div class="col-sm-3">
             <img src="./img/img-bullet-time.svg" alt="Receba no mesmo dia">
-            <p class="iBring-bullets-text">Receba no mesmo dia</p>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Receba no mesmo dia</p>
           </div>
         </div>
-        <div class="row iBring-callToAction">
-          <button type="button" class="btn btn-primary iBring-button">Quero ser um entregador IBring</button>
+        <div class="row iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-callToAction">
+          <button type="button"
+            class="btn btn-primary iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button">Quero ser um
+            entregador IBring</button>
         </div>
       </div>
-      <div class="iBring-sejaUmEntregador-porque">
+      <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque">
         <h3><span class="iBring-strong">Por que confiar</span> nos nossos entregadores?</h3>
-        <p class="iBring-sejaUmEntregador-subtitle">Veja por que é seguro enviar pelo IBring:</p>
-        <div class="iBring-sejaUmEntregador-card">
-          <div class="iBring-sejaUmEntregdor-item">
+        <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__subtitle">Veja por
+          que é seguro enviar pelo IBring:</p>
+        <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-entregador.svg" alt="imagem">
-            <p class="iBring-sejaUmEntregador-item-text">Entregadores <span class="iBring-strong">regularizados e
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Entregadores <span
+                class="iBring-strong">regularizados e
                 valorizados</span></p>
           </div>
-          <div class="iBring-sejaUmEntregdor-item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-voz.svg" alt="imagem">
-            <p class="iBring-sejaUmEntregador-item-text">Profissionais <span class="iBring-strong">com voz ativa</span>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Profissionais <span
+                class="iBring-strong">com voz ativa</span>
             </p>
           </div>
-          <div class="iBring-sejaUmEntregdor-item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-processo.svg" alt="imagem">
-            <p class="iBring-sejaUmEntregador-item-text">Rígido processo <span class="iBring-strong">de seleção</span>
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Rígido processo <span
+                class="iBring-strong">de seleção</span>
             </p>
           </div>
-          <div class="iBring-sejaUmEntregdor-item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-treinamento.svg" alt="imagem">
-            <p class="iBring-sejaUmEntregador-item-text">Programas de <span class="iBring-strong">treinamento e
+            <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Programas de <span
+                class="iBring-strong">treinamento e
                 desempenho</span></p>
           </div>
         </div>
       </div>
     </article>
     <!-- Contato -->
-    <article class="iBring-contato">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">
+    <article class="iBring-home-mainWrapper__iBring-contato">
+      <div class="iBring-home-mainWrapper__iBring-contato__card">
+        <div class="iBring-home-mainWrapper__iBring-contato__card-body">
+          <h5 class="iBring-home-mainWrapper__iBring-contato__card-title">
             <span class="iBring-strong">Entre em contato conosco</span> para saber mais sobre o IBring!
           </h5>
-          <button type="button" class="btn btn-lg btn-primary">Contato</button>
+          <button type="button"
+            class="btn btn-lg btn-primary iBring-home-mainWrapper__iBring-contato__btn">Contato</button>
         </div>
       </div>
-      <div class="iBring-contato-logo">
+      <div class="iBring-home-mainWrapper__iBring-contato__logo">
         <img src="./img/logo-ibring-rgb-vert.svg" alt="Logo iBring" />
       </div>
     </article>
     <!-- Footer -->
-    <article class="iBring-footer iBring-panel">
+    <article class="iBring-home-mainWrapper__iBring-footer iBring-home-mainWrapper__iBring-panel">
       <div class="row">
         <div class="col-sm-8">
-          <p class="iBring-footer-title">O que é IBring?</p>
-          <p class="iBring-footer-text">
+          <p class="iBring-home-mainWrapper__iBring-footer__title">O que é IBring?</p>
+          <p class="iBring-home-mainWrapper__iBring-footer__text">
             IBring é o primeiro aplicativo de entregas que dá voz aos seus entregadores. Uma parceria comercial baseada
             em
             transparência, diálogo, respeito e comércio justo, com o objetivo de conectar entregadores a milhares de
@@ -316,14 +349,5 @@
 </script>
 <script src="js/bootstrap.js">
 </script>
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script> -->
 
 </html>

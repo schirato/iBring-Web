@@ -1,0 +1,73 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import "./typography";
+@import './common';
+@import './navbar';
+@import './home';
+
+*,
+:before,
+:after {
+  outline: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: theme-color("white");
+  font-family: $font-opensans-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 19px;
+  color: #393939;
+  position: relative;
+}
+
+h1 {
+  @include h1;
+  margin: 0;
+  z-index: 5;
+}
+
+h2 {
+  @include h2;
+  margin: 0;
+  z-index: 5;
+}
+
+h3 {
+  @include h3;
+  margin: 0;
+  z-index: 5;
+}
+
+.btn-primary {
+  background: theme-color("primary");
+  border: 1px solid theme-color("primary");
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:focus {
+  background-color: theme-color("primary");
+  border-color: theme-color("primary");
+}
+
+img {
+  width: 100%;
+}
+
+.iBring-strong {
+  font-family: $font-opensans-bold;
+}

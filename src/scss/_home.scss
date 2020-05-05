@@ -1,0 +1,422 @@
+.iBring-home-mainWrapper {
+  position: relative;
+  height: auto;
+
+  &__iBring-panel {
+    background-color: theme-color("gray-light");
+    position: relative;
+  }
+
+  &__ibring-background-image {
+    display: none;
+  }
+
+  &__iBring-comoFunciona-content {
+    @include mainContentRulers(24px, 24px);
+
+    &__iBring-logo {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__iBring-comoFunciona-content-app {
+    @include mainContentRulers(0, 17%);
+
+    &__iBring-lead {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 31px;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      position: relative;
+    }
+  }
+
+  &__iBring-cards-group {
+    &__card {
+      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 55px;
+    }
+
+    &__card-title {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4em;
+      line-height: 27px;
+    }
+  }
+
+  &__iBring-servicos {
+    @include mainContentRulers(84px, 17%);
+
+    h3 {
+      font-family: $font-opensans-bold;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__iBring-sejaUmEntregador {
+    &__block {
+      @include mainContentRulers(70px, 17%);
+      background: linear-gradient(289.48deg, #63d673 -9.54%, #005abc 102.28%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    h2 {
+      color: theme-color("white");
+      width: 80%;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__iBring-sejaUmEntregador-porque {
+    @include mainContentRulers(69px, 17%);
+    text-align: center;
+
+    &__subtitle {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 29px;
+      text-align: center;
+      color: theme-color("gray-dark");
+    }
+  }
+
+  &__iBring-footer {
+    @include mainContentRulers(60px, 17%);
+
+    &__title {
+      font-family: $font-opensans-bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: justify;
+    }
+
+    &__text {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: justify;
+    }
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    margin: 0 auto;
+
+    &__ibring-background-image {
+      @include flexbox;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__iBring-comoFunciona {
+      padding-bottom: 91px;
+    }
+
+    &__iBring-comoFunciona-content {
+      @include mainContentRulers(84px, 7%, 0, 17%);
+      @include flexbox;
+      @include justify-content(space-between);
+      position: relative;
+
+      &__iBring-logo {
+        width: 147px;
+        height: 73px;
+      }
+
+      h1 {
+        width: 360px;
+      }
+
+      &__iBring-right {
+        img {
+          width: auto;
+        }
+      }
+    }
+
+    &__iBring-comoFunciona-content-app {
+      &__iBring-app-button {
+        @include flexbox;
+        @include align-items(center);
+        position: relative;
+      }
+
+      &__iBring-app-iOS {
+        margin-right: 29px;
+      }
+
+      &__iBring-app-iOS,
+      &__iBring-app-android {
+        width: 216px;
+        height: 65px;
+      }
+    }
+
+    &__iBring-cards-group {
+      @include mainContentRulers(0, 17%);
+      margin-right: 0;
+
+      &__card {
+        @include flexbox;
+        height: 183px;
+        background-color: theme-color("white");
+      }
+
+      &__card-body {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+      }
+
+      &__card-image {
+        text-align: left;
+        margin-left: 12px;
+      }
+
+      &__card-content {
+        margin-left: 22px;
+        margin-top: 0;
+        width: 200px;
+      }
+    }
+
+    &__iBring-cards-group-first {
+      padding-top: 118px;
+    }
+  }
+
+  &__iBring-comoFunciona-dica {
+    @include mainContentRulers(0, 17%);
+    position: relative;
+    margin-top: 110px;
+    margin-bottom: 130px;
+
+    &__iBring-left {
+      @include mainContentRulers(43px, 38px);
+      background-color: theme-color("gray");
+      border-radius: 18px;
+
+      h2 {
+        color: theme-color("secondary");
+      }
+    }
+
+    &__iBring-right {
+      position: absolute;
+      top: -200px;
+      right: 20px;
+    }
+
+    &__iBring-step {
+      @include flexbox;
+      margin-top: 45px;
+
+      &__iBring-step-content {
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        margin-right: 29px;
+      }
+
+      &__iBring-step-bullet {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        background: theme-color("secondary");
+        box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 41px;
+        line-height: 48px;
+        color: theme-color("white");
+      }
+
+      &__iBring-step-text {
+        margin-top: 31px;
+        width: 120px;
+        text-align: center;
+      }
+
+      &__iBring-step-second {
+
+        &__iBring-step-text {
+          width: 130px;
+        }
+      }
+
+      &__iBring-step-third {
+
+        &__iBring-step-text {
+          width: 160px;
+        }
+      }
+    }
+
+  }
+
+  &__iBring-entregamosParaVoce {
+    @include mainContentRulers(0, 17%);
+    color: theme-color("white");
+    text-align: center;
+    position: relative;
+  }
+
+  &__iBring-servicos {
+    &__card-text {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 23px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__iBring-card-last {
+      margin-top: 50px;
+    }
+  }
+
+  &__iBring-sejaUmEntregador {
+
+    &__bg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: auto;
+    }
+
+    &__iBring-bullets,
+    &__iBring-callToAction {
+      width: 75%;
+    }
+
+    &__iBring-bullets-text {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: theme-color("white");
+      margin: 0 auto;
+    }
+
+    &__iBring-button {
+      @include mainContentRulers(17px, 33px);
+      font-family: $font-opensans-bold;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      background: theme-color("green-medium-button");
+      border-radius: 12px;
+      margin: 45px auto;
+    }
+  }
+
+  &__iBring-sejaUmEntregador-porque {
+
+    &__card {
+      @include mainContentRulers(34px, 0);
+      @include flexbox;
+      @include justify-content(center);
+      background-color: theme-color("white");
+      border-radius: 18px;
+      margin-top: 29px;
+
+      img {
+        width: auto;
+      }
+    }
+
+    &__item {
+      border-right: 2px solid #dcdbde;
+      width: 150px;
+      margin-right: 12px;
+      padding-right: 12px;
+
+      &:last-child {
+        border: none;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__item-text {
+      margin-top: 10px;
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+
+  &__iBring-contato {
+    @include mainContentRulers(80px, 17%);
+    background-color: theme-color("white");
+
+    &__card {
+      @include mainContentRulers(41px, 20px);
+      background: theme-color("white");
+      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+    }
+
+    &__card-body {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+    }
+
+    &__card-title {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 29px;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 35px;
+      width: 40%;
+    }
+
+    &__logo {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      margin-top: 45px;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+
+}

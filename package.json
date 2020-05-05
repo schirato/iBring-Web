@@ -1,13 +1,13 @@
 {
-  "name": "iBringWeb",
+  "name": "ibringweb",
   "version": "1.0",
   "main": "index.js",
   "repository": "https://github.com/schirato/iBring-Web.git",
   "author": "Erik Schirato",
   "license": "MIT",
   "scripts": {
-    "server": "gulp",
-    "watch": "gulp watch"
+    "server": "gulp browser-sync",
+    "sass": "gulp"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
