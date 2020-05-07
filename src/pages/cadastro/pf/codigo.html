@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>iBring - Código</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/cadastro.css">
+</head>
+
+<body>
+  <section id="iBring-Cadastro-PF" class="iBring-cadastro iBring-cadastro-pf">
+    <div id="iBring-Cadastro-Bg" class="iBring-cadastro__bg">
+      <img src="../../../img/bg-cadastro.svg" alt="background">
+    </div>
+    <div class="row iBring-cadastro__row">
+      <div class="col-lg-3">&nbsp;</div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="iBring-cadastro__conteudo">
+          <div id="iBring-Cadastro-Voltar" class="iBring-cadastro__conteudo__btnVoltar">
+            <a href="passo3.html" title="Cadastro Passo 3" class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
+              <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar">
+              Voltar
+            </a>
+          </div>
+          <h2 class="iBring-cadastro__conteudo__titulo">Bem Vindo ao IBring</h2>
+          <p class="iBring-cadastro__conteudo__subtitulo iBring-cadastro__conteudo__codigo__subtitulo">Enviamos um
+            código de confirmação para o seu celular!</p>
+          <p class="iBring-cadastro__conteudo__codigo__texto">
+            Usaremos seu celular para avisar sobre quaisquer imprevistos nas suas entregas! Não deixe de confirmá-lo.
+          </p>
+          <p class="iBring-cadastro__conteudo__codigo__texto">
+            Código enviado para <a href="tel:21123456789" title="Telefone"
+              class="iBring-cadastro__conteudo__codigo__texto__linkTelefone">(21) 12345-6789</a>.
+            <a href="" title="Alterar" class="iBring-cadastro__conteudo__codigo__texto__link">Alterar</a>
+          </p>
+          <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate>
+            <div class="form-row align-items-center">
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom01"
+                    class="iBring-cadastro__conteudo__form__label iBring-cadastro__conteudo__codigo__label">Código</label>
+                  <input type="text"
+                    class="form-control iBring-cadastro__conteudo__form__input iBring-cadastro__conteudo__codigo__input"
+                    id="validationCustom01" required maxlength="4" pattern="^[0-9]+$">
+                  <span
+                    class="iBring-cadastro__conteudo__codigo__input__line iBring-cadastro__conteudo__codigo__input__line--1">&nbsp;</span>
+                  <span
+                    class="iBring-cadastro__conteudo__codigo__input__line iBring-cadastro__conteudo__codigo__input__line--2">&nbsp;</span>
+                  <span
+                    class="iBring-cadastro__conteudo__codigo__input__line iBring-cadastro__conteudo__codigo__input__line--3">&nbsp;</span>
+                  <span
+                    class="iBring-cadastro__conteudo__codigo__input__line iBring-cadastro__conteudo__codigo__input__line--4">&nbsp;</span>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="iBring-cadastro__conteudo__codigo__texto iBring-cadastro__conteudo__codigo__texto__reenviar">
+              Não recebeu o código?
+              <a href="" title="Alterar" class="iBring-cadastro__conteudo__codigo__texto__link">Reenviar</a>
+            </p>
+            <div class="form-row align-items-center iBring-cadastro__conteudo__form__button">
+              <div class="col-auto">
+                <button class="btn btn-primary" type="submit">Continuar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3">&nbsp;</div>
+    </div>
+  </section>
+
+</body>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+
+<script src="js/jquery.js">
+</script>
+<script src="js/popper.js">
+</script>
+<script src="js/bootstrap.js">
+</script>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>iBring - Passo 1</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/cadastro.css">
+</head>
+
+<body>
+  <section id="iBring-Cadastro-PF" class="iBring-cadastro iBring-cadastro-pf">
+    <div id="iBring-Cadastro-Bg" class="iBring-cadastro__bg">
+      <img src="../../../img/bg-cadastro.svg" alt="background">
+    </div>
+    <div class="row iBring-cadastro__row">
+      <div class="col-lg-3">&nbsp;</div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="iBring-cadastro__conteudo">
+          <h2 class="iBring-cadastro__conteudo__titulo">Bem Vindo ao IBring</h2>
+          <div id="iBring-Cadastro-Passos" class="iBring-cadastro__conteudo__passos">
+            <div id="iBring-Cadastro-Passos-Primeiro"
+              class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
+              1
+            </div>
+            <div id="iBring-Cadastro-Passos-Linha" class="iBring-cadastro__conteudo__passos__linha">&nbsp;</div>
+            <div id="iBring-Cadastro-Passos-Segundo" class="iBring-cadastro__conteudo__passos__bullets">
+              2
+            </div>
+            <div id="iBring-Cadastro-Passos-Linha" class="iBring-cadastro__conteudo__passos__linha">&nbsp;</div>
+            <div id="iBring-Cadastro-Passos-Segundo" class="iBring-cadastro__conteudo__passos__bullets">
+              3
+            </div>
+          </div>
+          <p class="iBring-cadastro__conteudo__subtitulo">Primeiro, precisamos de alguns dados pessoais</p>
+          <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate action="passo2.html">
+            <div class="form-row align-items-center">
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom01" class="iBring-cadastro__conteudo__form__label">Nome</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom01"
+                    placeholder="Nome" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom02">Sobrenome</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom02"
+                    placeholder="Sobrenome" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom03">Celular</label>
+                  <input type="phone" class="form-control iBring-cadastro__conteudo__form__input"
+                    id="validationCustom03" pattern="[\(]\d{2}[\)]\s\d{5}[\-]\d{4}" maxlength="15"
+                    placeholder="(XX) XXXXX-XXXX" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom04">E-mail</label>
+                  <input type="email" class="form-control iBring-cadastro__conteudo__form__input"
+                    id="validationCustom04" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="Este será seu Login" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row align-items-center iBring-cadastro__conteudo__form__button">
+              <div class="col-auto">
+                <button class="btn btn-primary" type="submit">Continuar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3">&nbsp;</div>
+    </div>
+  </section>
+
+</body>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+
+<script src="js/jquery.js">
+</script>
+<script src="js/popper.js">
+</script>
+<script src="js/bootstrap.js">
+</script>
+
+</html>

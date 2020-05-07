@@ -7286,172 +7286,120 @@ img {
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
 
-/* Folha de Estilo: Contato */
-.ibring-background-image {
-  display: none; }
+/* $theme-colors: (
+    // Marca
+    $primaria: #61B46C,
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: #63d673; }
 
-.ibring-contact-form {
-  background-color: #f9f9f9; }
+    // Suporte
 
-.ibring-contact-form-content {
-  padding: 15% 0 15% 0;
-  height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden; }
+    // Ações
 
-.ibring-contact-form-content .display-4 {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 37px;
-  letter-spacing: 0.185em;
-  color: #393939;
-  text-transform: uppercase; }
+    // Alertas
 
-.ibring-contact-form-content-form {
-  margin-top: 10%; }
+    // Cinzas
+  ); */
+.form-control:focus {
+  border-color: #A0A0A0;
+  box-shadow: none; }
 
-.ibring-contact-form-content-form form {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+.was-validated .form-control:valid {
+  border-color: #A0A0A0;
+  background-image: none; }
 
-.form__group {
-  padding: 3% 0 3% 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 10px; }
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #A0A0A0;
+  box-shadow: none; }
 
-.form__field {
-  padding: 7px 0 7px 3%;
-  height: 100%;
-  font-family: inherit;
-  width: 100%;
-  border: none;
-  outline: 0;
-  font-size: 16px;
-  color: #212121;
-  background: #ffffff;
-  transition: border-color 0.2s; }
+.was-validated .form-control:invalid {
+  background-image: none; }
 
-.form__field::placeholder {
-  color: transparent; }
-
-.form__field:placeholder-shown ~ .form__label {
+.iBring-form input {
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  cursor: text;
-  top: 20px;
-  padding-left: 3%; }
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  height: 45px; }
 
-label,
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: -10px;
-  display: block;
-  transition: 0.2s;
+.iBring-form label {
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
-  color: #A0A0A0; }
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale; }
 
-.form__field:focus ~ .form__label {
-  color: #63d673; }
+.iBring-form__checkboxContainer {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #393939 !important; }
+  .iBring-form__checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox {
+    background: #63d673; }
+  .iBring-form__checkboxContainer__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background: #ffffff;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 2px; }
+    .iBring-form__checkboxContainer__checkbox:after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #ffffff;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox:after {
+    display: block; }
+  .iBring-form__checkboxContainer__termos {
+    color: #63d673; }
+    .iBring-form__checkboxContainer__termos:hover {
+      color: #63d673;
+      text-decoration: none; }
 
-.ibring-contact-form-footer {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  color: #A0A0A0; }
-
-.ibring-contact-form-footer a {
-  font-weight: 700;
-  color: #A0A0A0; }
-
-.ibring-contact-form-content .btn {
-  background: #63d673;
-  color: #ffffff;
-  border-radius: 12px;
-  width: 180px;
-  height: 46px;
-  margin-top: 5%;
-  font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase; }
-
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-  .form__field:placeholder-shown ~ .form__label {
-    top: 29px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0; } }
-
-@media (min-width: 768px) {
-  .form__field:placeholder-shown ~ .form__label {
-    top: 30px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0px; } }
-
-@media (min-width: 992px) {
-  .ibring-contact-form {
-    width: 1024px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%; }
-  .ibring-contact-form .row {
-    margin-right: 0;
+/* Folha de Estilo: Contato */
+.iBring-cadastro {
+  background-color: #f9f9f9;
+  overflow: hidden; }
+  .iBring-cadastro__bg {
+    display: none; }
+  .iBring-cadastro__conteudo {
+    padding: 15% 10% 15% 10%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center;
@@ -7461,18 +7409,331 @@ label,
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    -ms-flex-pack: center; }
-  .ibring-background-image {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-  .form__field:placeholder-shown ~ .form__label {
-    top: 26px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0; } }
+    -ms-flex-pack: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden; }
+    .iBring-cadastro__conteudo__btnVoltar {
+      position: absolute;
+      left: -130px;
+      top: 12%; }
+      .iBring-cadastro__conteudo__btnVoltar img {
+        margin-right: 14px; }
+      .iBring-cadastro__conteudo__btnVoltar__hyperlink {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 123.1%;
+        letter-spacing: 0.12em;
+        color: #696969;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smooyhing: grayscale; }
+        .iBring-cadastro__conteudo__btnVoltar__hyperlink:hover {
+          color: #696969;
+          text-decoration: none; }
+    .iBring-cadastro__conteudo__titulo {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: 0.185em;
+      color: #393939;
+      text-transform: uppercase;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smooyhing: grayscale; }
+    .iBring-cadastro__conteudo__subtitulo {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #393939;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smooyhing: grayscale; }
+    .iBring-cadastro__conteudo__codigo__subtitulo {
+      padding: 10% 0 0 0;
+      height: 100%; }
+    .iBring-cadastro__conteudo__codigo__texto {
+      padding: 3% 0 3% 0;
+      height: 100%;
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #696969;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smooyhing: grayscale;
+      color: #A0A0A0;
+      text-align: center;
+      height: auto; }
+      .iBring-cadastro__conteudo__codigo__texto__linkTelefone {
+        color: #A0A0A0; }
+        .iBring-cadastro__conteudo__codigo__texto__linkTelefone:focus, .iBring-cadastro__conteudo__codigo__texto__linkTelefone:hover, .iBring-cadastro__conteudo__codigo__texto__linkTelefone:active {
+          color: #A0A0A0;
+          text-decoration: none; }
+      .iBring-cadastro__conteudo__codigo__texto__link {
+        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #696969;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smooyhing: grayscale;
+        color: #63d673; }
+        .iBring-cadastro__conteudo__codigo__texto__link:focus, .iBring-cadastro__conteudo__codigo__texto__link:hover, .iBring-cadastro__conteudo__codigo__texto__link:active {
+          color: #63d673;
+          text-decoration: none; }
+      .iBring-cadastro__conteudo__codigo__texto__reenviar {
+        padding: 13% 0 0 0;
+        height: 100%;
+        height: auto; }
+    .iBring-cadastro__conteudo__codigo__label {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 19px !important;
+      line-height: 26px !important;
+      text-align: center !important; }
+    .iBring-cadastro__conteudo__codigo__input {
+      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 21px !important;
+      line-height: 25px !important;
+      letter-spacing: 2.1rem;
+      text-align: left !important;
+      width: 217px;
+      height: 70px !important;
+      margin: 0 auto;
+      color: #000000 !important;
+      padding: 0 32px; }
+      .iBring-cadastro__conteudo__codigo__input__line {
+        border-bottom: 1px solid #000000;
+        position: absolute; }
+        .iBring-cadastro__conteudo__codigo__input__line--1 {
+          top: 70px;
+          left: 160px;
+          width: 37.5px; }
+        .iBring-cadastro__conteudo__codigo__input__line--2 {
+          top: 70px;
+          left: 210px;
+          width: 37.5px; }
+        .iBring-cadastro__conteudo__codigo__input__line--3 {
+          top: 70px;
+          left: 258px;
+          width: 37.5px; }
+        .iBring-cadastro__conteudo__codigo__input__line--4 {
+          top: 70px;
+          left: 305px;
+          width: 37.5px; }
+    .iBring-cadastro__conteudo__passos {
+      padding: 10% 0 10% 0;
+      height: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center; }
+      .iBring-cadastro__conteudo__passos__bullets {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: #e5e5e5;
+        color: #ffffff;
+        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center; }
+        .iBring-cadastro__conteudo__passos__bullets--ativo {
+          background-color: #63d673; }
+      .iBring-cadastro__conteudo__passos__linha {
+        width: 98px;
+        height: 1px;
+        border: 1px solid #e5e5e5;
+        margin: 0 8px; }
+        .iBring-cadastro__conteudo__passos__linha--ativo {
+          border: 1px solid #63d673; }
+    .iBring-cadastro__conteudo__form {
+      padding: 10% 0 10% 0;
+      height: 100%;
+      width: 100%; }
+      .iBring-cadastro__conteudo__form__row {
+        margin-top: 5%; }
+      .iBring-cadastro__conteudo__form__col {
+        padding-right: 20px !important; }
+        .iBring-cadastro__conteudo__form__col:last-child {
+          padding-right: 5px !important; }
+      .iBring-cadastro__conteudo__form__alertaImg {
+        width: 13px;
+        height: 13px;
+        margin-right: 8px; }
+      .iBring-cadastro__conteudo__form__iconEye {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 38px;
+        right: 25px;
+        width: 30px;
+        height: 30px; }
+        .iBring-cadastro__conteudo__form__iconEye--hide {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          width: 24px;
+          height: 10px;
+          background: url(../img/img-eye-closed.svg) center no-repeat; }
+        .iBring-cadastro__conteudo__form__iconEye--show {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          width: 25px;
+          height: 16px;
+          background: url(../img/img-eye-opened.svg) center no-repeat; }
+      .iBring-cadastro__conteudo__form__textoPular {
+        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smooyhing: grayscale;
+        color: #61B46C;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: -5%;
+        cursor: pointer; }
+      .iBring-cadastro__conteudo__form__button {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        margin-top: 10%; }
+        .iBring-cadastro__conteudo__form__button button {
+          font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.03em;
+          color: #ffffff;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smooyhing: grayscale;
+          border-radius: 12px;
+          width: 183px;
+          height: 45px;
+          background-color: #63d673;
+          border-color: #63d673; }
+      .iBring-cadastro__conteudo__form .btn-primary:hover,
+      .iBring-cadastro__conteudo__form .btn-primary:focus,
+      .iBring-cadastro__conteudo__form .btn-primary:not(:disabled):not(.disabled):active {
+        background-color: #63d673;
+        border-color: #63d673; }
+  @media (min-width: 992px) {
+    .iBring-cadastro {
+      width: 1024px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%; }
+      .iBring-cadastro__bg {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .iBring-cadastro__conteudo {
+        padding: 15% 0 15% 0;
+        height: 100%; }
+        .iBring-cadastro__conteudo__passos__linha {
+          width: 138px; } }

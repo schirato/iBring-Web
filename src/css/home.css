@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7162,6 +7163,19 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal; }
 
+/* $theme-colors: (
+    // Marca
+    $primaria: #61B46C,
+
+
+    // Suporte
+
+    // Ações
+
+    // Alertas
+
+    // Cinzas
+  ); */
 /* HEADER */
 .navbar {
   background-color: #ffffff;
@@ -7357,8 +7371,7 @@ img {
   @media (min-width: 992px) {
     .iBring-home-mainWrapper {
       width: 1024px;
-      margin: 0 auto;
-      height: 100%; }
+      margin: 0 auto; }
       .iBring-home-mainWrapper__ibring-background-image {
         display: -webkit-box;
         display: -moz-box;

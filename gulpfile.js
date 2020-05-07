@@ -20,7 +20,13 @@ gulp.task('browser-sync', function () {
       baseDir: "./src"
     }
   });
-  gulp.watch(["src/*.html", "src/scss/*.scss"]).on("change", reload);
+  gulp.watch(["src/*.html", "src/**/**/**/*.html", "src/scss/*.scss"]).on("change", reload);
+  // Remover se necessário
+  gulp.watch(['node_modules/bootstrap/scss/*.scss', 'src/scss/*.scss'], gulp.parallel(['sass']));
+  gulp.src(['node_modules/bootstrap/scss/*.scss', 'src/scss/*.scss'])
+    .pipe(sass()) // converter o Sass em CSS
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default', gulp.series(['sass', 'watch']));

@@ -269,6 +269,115 @@
   -moz-osx-font-smooyhing: grayscale;
 }
 
+@mixin titulo {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.185em;
+  color: theme-color("gray-darked");
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin subtitulo {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: theme-color("gray-darked");
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto-bold {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto-pequeno {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto-pequeno-bold {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin label {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto-botao {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: theme-color("white");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin hyperlink {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 123.1%;
+  letter-spacing: 0.12em;
+  color: #696969;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+
+  &:hover {
+    color: #696969;
+    text-decoration: none;
+  }
+}
+
 // INPUT
 
 @mixin input-label {

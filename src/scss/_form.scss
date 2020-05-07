@@ -1,0 +1,100 @@
+@import './mixin';
+@import './theme';
+
+// Folha de estilo: Formulario
+
+.form-control:focus {
+  border-color: #A0A0A0;
+  box-shadow: none;
+}
+
+.was-validated .form-control:valid {
+  border-color: #A0A0A0;
+  background-image: none;
+}
+
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #A0A0A0;
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+
+.iBring-form {
+  input {
+    @include label;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    height: 45px;
+  }
+
+  label {
+    @include label;
+  }
+
+  &__checkboxContainer {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: theme-color("gray-darked") !important;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    input:checked~.iBring-form__checkboxContainer__checkbox {
+      background: theme-color("green-medium-button");
+    }
+
+    &__checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 19px;
+      width: 19px;
+      background: theme-color("white");
+      border: 1px solid theme-color("gray-medium");
+      box-sizing: border-box;
+      border-radius: 2px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid theme-color("white");
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    input:checked~.iBring-form__checkboxContainer__checkbox:after {
+      display: block;
+    }
+
+    &__termos {
+      color: theme-color("green-medium-button");
+
+      &:hover {
+        color: theme-color("green-medium-button");
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+@import './base';
+@import './form';
+
+/* Folha de Estilo: Contato */
+
+.iBring-cadastro {
+  background-color: theme-color("gray-light");
+  overflow: hidden;
+
+  &__bg {
+    display: none;
+  }
+
+  &__conteudo {
+    @include mainContentRulers(15%, 10%);
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+    overflow: hidden;
+
+    &__btnVoltar {
+      position: absolute;
+      left: -130px;
+      top: 12%;
+
+      img {
+        margin-right: 14px;
+      }
+
+      &__hyperlink {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        @include hyperlink;
+      }
+    }
+
+    &__titulo {
+      @include titulo;
+    }
+
+    &__subtitulo {
+      @include subtitulo;
+    }
+
+    &__codigo {
+      &__subtitulo {
+        @include mainContentRulers(10%, 0, 0);
+      }
+
+      &__texto {
+        @include mainContentRulers(3%, 0);
+        @include texto;
+        color: #A0A0A0;
+        text-align: center;
+        height: auto;
+
+        &__linkTelefone {
+          color: #A0A0A0;
+
+          &:focus,
+          &:hover,
+          &:active {
+            color: #A0A0A0;
+            text-decoration: none;
+          }
+        }
+
+        &__link {
+          @include texto-bold;
+          color: theme-color("green-medium-button");
+
+          &:focus,
+          &:hover,
+          &:active {
+            color: theme-color("green-medium-button");
+            text-decoration: none;
+          }
+        }
+
+        &__reenviar {
+          @include mainContentRulers(13%, 0, 0);
+          height: auto;
+        }
+      }
+
+      &__label {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        font-family: $font-opensans-bold !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 19px !important;
+        line-height: 26px !important;
+        text-align: center !important;
+      }
+
+      &__input {
+        font-family: $font-opensans-bold !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 21px !important;
+        line-height: 25px !important;
+        letter-spacing: 2.1rem;
+        text-align: left !important;
+        width: 217px;
+        height: 70px !important;
+        margin: 0 auto;
+        color: #000000 !important;
+        padding: 0 32px;
+
+        &__line {
+          border-bottom: 1px solid #000000;
+          position: absolute;
+
+          &--1 {
+            top: 70px;
+            left: 160px;
+            width: 37.5px;
+          }
+
+          &--2 {
+            top: 70px;
+            left: 210px;
+            width: 37.5px;
+          }
+
+          &--3 {
+            top: 70px;
+            left: 258px;
+            width: 37.5px;
+          }
+
+          &--4 {
+            top: 70px;
+            left: 305px;
+            width: 37.5px;
+          }
+        }
+      }
+    }
+
+    &__passos {
+      @include mainContentRulers(10%, 0);
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+
+      &__bullets {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background-color: theme-color("step-bullet");
+        color: theme-color("white");
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+
+        &--ativo {
+          background-color: theme-color("green-medium-button");
+        }
+      }
+
+      &__linha {
+        width: 98px;
+        height: 1px;
+        border: 1px solid theme-color("step-bullet");
+        margin: 0 8px;
+
+        &--ativo {
+          border: 1px solid theme-color("green-medium-button");
+        }
+      }
+    }
+
+    &__form {
+      @include mainContentRulers(10%, 0);
+      width: 100%;
+
+      &__row {
+        margin-top: 5%;
+      }
+
+      &__col {
+        padding-right: 20px !important;
+
+        &:last-child {
+          padding-right: 5px !important;
+        }
+      }
+
+      &__alertaImg {
+        width: 13px;
+        height: 13px;
+        margin-right: 8px;
+      }
+
+      &__iconEye {
+        @include flexbox;
+        @include align-items(center);
+        position: absolute;
+        top: 38px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+
+        &--hide {
+          @include flexbox;
+          width: 24px;
+          height: 10px;
+          background: url(../img/img-eye-closed.svg) center no-repeat;
+        }
+
+        &--show {
+          @include flexbox;
+          width: 25px;
+          height: 16px;
+          background: url(../img/img-eye-opened.svg) center no-repeat;
+        }
+      }
+
+      &__textoPular {
+        @include texto-pequeno-bold;
+        color: theme-color("green-light");
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: -5%;
+        cursor: pointer;
+      }
+
+      &__button {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        margin-top: 10%;
+
+        button {
+          @include texto-botao;
+          border-radius: 12px;
+          width: 183px;
+          height: 45px;
+          background-color: theme-color("green-medium-button");
+          border-color: theme-color("green-medium-button");
+        }
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus,
+      .btn-primary:not(:disabled):not(.disabled):active {
+        background-color: theme-color("green-medium-button");
+        border-color: theme-color("green-medium-button");
+      }
+    }
+  }
+
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+    &__bg {
+      @include flexbox;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__conteudo {
+      @include mainContentRulers(15%, 0);
+
+      &__passos {
+
+        &__linha {
+          width: 138px;
+        }
+      }
+    }
+  }
+}

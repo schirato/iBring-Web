@@ -1,8 +1,6 @@
 @import './base';
 
-body {
-  background-color: theme-color("gray-light");
-}
+/* Folha de Estilo: Contato */
 
 .ibring-background-image {
   display: none;
@@ -10,6 +8,10 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active {
   color: theme-color("green-medium-button");
+}
+
+.ibring-contact-form {
+  background-color: theme-color("gray-light");
 }
 
 .ibring-contact-form-content {
@@ -167,7 +169,6 @@ label,
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
   }
 
   .form__field:placeholder-shown~.form__label {
