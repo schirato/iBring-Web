@@ -44,6 +44,17 @@
       @include subtitulo;
     }
 
+    &__pj {
+      &__texto {
+        @include mainContentRulers(0);
+        @include texto;
+        color: #A0A0A0;
+        text-align: center;
+        height: auto;
+      }
+    }
+
+
     &__codigo {
       &__subtitulo {
         @include mainContentRulers(10%, 0, 0);
@@ -185,6 +196,17 @@
       @include mainContentRulers(10%, 0);
       width: 100%;
 
+      &__pj {
+
+        &__col {
+          margin-top: 5%;
+        }
+
+        &__checkbox {
+          margin-top: 0;
+        }
+      }
+
       &__row {
         margin-top: 5%;
       }
@@ -257,6 +279,29 @@
       .btn-primary:not(:disabled):not(.disabled):active {
         background-color: theme-color("green-medium-button");
         border-color: theme-color("green-medium-button");
+      }
+
+      &__btnOutline {
+        @include texto;
+        font-size: 13px;
+        width: 100%;
+        height: 43px;
+        margin: 0 auto;
+        border: 1px solid #A0A0A0;
+        box-sizing: border-box;
+        border-radius: 50px;
+
+        &:hover,
+        &:not(:disabled):not(.disabled):active {
+          border: 1px solid #63D673;
+          background-color: transparent;
+          color: #63D673;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+
       }
     }
   }

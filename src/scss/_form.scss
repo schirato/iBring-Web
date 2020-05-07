@@ -23,6 +23,17 @@
   background-image: none;
 }
 
+.custom-select {
+  background: #ffffff url(../img/img-arrow-down.svg) no-repeat right 0.75rem center/14px 8px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
 .iBring-form {
   input {
     @include label;
@@ -33,6 +44,10 @@
 
   label {
     @include label;
+
+    span {
+      color: #a0a0a0;
+    }
   }
 
   &__checkboxContainer {

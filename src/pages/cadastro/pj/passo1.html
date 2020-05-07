@@ -7,7 +7,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>iBring - Passo 3</title>
+  <title>iBring - Passo 1</title>
 
   <!-- FavIcon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -38,46 +38,41 @@
       <div class="col-lg-3">&nbsp;</div>
       <div class="col-sm-12 col-lg-6">
         <div class="iBring-cadastro__conteudo">
-          <div id="iBring-Cadastro-Voltar" class="iBring-cadastro__conteudo__btnVoltar">
-            <a href="passo2.html" title="Cadastro Passo 2" class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
-              <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar">
-              Voltar
-            </a>
-          </div>
           <h2 class="iBring-cadastro__conteudo__titulo">Bem Vindo ao IBring</h2>
           <div id="iBring-Cadastro-Passos" class="iBring-cadastro__conteudo__passos">
             <div id="iBring-Cadastro-Passos-Primeiro"
               class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
               1
             </div>
-            <div id="iBring-Cadastro-Passos-Linha"
-              class="iBring-cadastro__conteudo__passos__linha iBring-cadastro__conteudo__passos__linha--ativo">&nbsp;
-            </div>
-            <div id="iBring-Cadastro-Passos-Segundo"
-              class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
+            <div id="iBring-Cadastro-Passos-Linha" class="iBring-cadastro__conteudo__passos__linha">&nbsp;</div>
+            <div id="iBring-Cadastro-Passos-Segundo" class="iBring-cadastro__conteudo__passos__bullets">
               2
             </div>
-            <div id="iBring-Cadastro-Passos-Linha"
-              class="iBring-cadastro__conteudo__passos__linha iBring-cadastro__conteudo__passos__linha--ativo">&nbsp;
-            </div>
-            <div id="iBring-Cadastro-Passos-Segundo"
-              class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
+            <div id="iBring-Cadastro-Passos-Linha" class="iBring-cadastro__conteudo__passos__linha">&nbsp;</div>
+            <div id="iBring-Cadastro-Passos-Segundo" class="iBring-cadastro__conteudo__passos__bullets">
               3
             </div>
           </div>
-          <p class="iBring-cadastro__conteudo__subtitulo">Pronto! Agora é só criar uma senha.</p>
-          <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate action="passo3.html">
+          <p class="iBring-cadastro__conteudo__subtitulo">Primeiro, precisamos de alguns dados pessoais</p>
+          <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate action="passo2.html">
             <div class="form-row align-items-center">
               <div class="col iBring-cadastro__conteudo__form__col">
                 <div class="form__group">
-                  <label for="show_hide_password" class="iBring-cadastro__conteudo__form__label">Senha</label>
-                  <input type="password" class="form-control iBring-cadastro__conteudo__form__input"
-                    id="show_hide_password" placeholder="Sua senha deve ter no mínimo 8 caracteres" required>
-                  <div class="iBring-cadastro__conteudo__form__iconEye">
-                    <a href="">
-                      <i class="iBring-cadastro__conteudo__form__iconEye--hide" aria-hidden="true"></i>
-                    </a>
+                  <label for="validationCustom01" class="iBring-cadastro__conteudo__form__label">Nome</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom01"
+                    placeholder="Nome" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
                   </div>
+                </div>
+              </div>
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom02">Sobrenome</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom02"
+                    placeholder="Sobrenome" required>
                   <div class="invalid-feedback">
                     <img src="../../../img/img-form-alert.svg" alt="Alerta"
                       class="iBring-cadastro__conteudo__form__alertaImg">
@@ -88,13 +83,48 @@
             </div>
             <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
               <div class="col iBring-cadastro__conteudo__form__col">
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label iBring-form__checkboxContainer" for="defaultCheck1">
-                    Li e concordo com os <a href="" title="Termos e Condições"
-                      class=" iBring-form__checkboxContainer__termos">Termos e Condições</a> de uso do IBring
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <span class="iBring-form__checkboxContainer__checkbox">&nbsp;</span>
-                  </label>
+                <div class="form__group">
+                  <label for="validationCustom03">Celular</label>
+                  <input type="phone" class="form-control iBring-cadastro__conteudo__form__input"
+                    id="validationCustom03" pattern="[\(]\d{2}[\)]\s\d{5}[\-]\d{4}" maxlength="15"
+                    placeholder="(XX) XXXXX-XXXX" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom04">E-mail</label>
+                  <input type="email" class="form-control iBring-cadastro__conteudo__form__input"
+                    id="validationCustom04" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="Este será seu Login" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom03">Em que cidade vai utilizar o IBring? <span>Essas são as cidades onde
+                      atuamos:</span></label>
+                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Rio de Janeiro</option>
+                    <option value="1">Belo Horizonte</option>
+                    <option value="2">São Paulo</option>
+                    <option value="3">Curitiba</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,24 +163,6 @@
   })();
 </script>
 
-
-<script>
-  // Show Hide Password
-  $(document).ready(function () {
-    $("#show_hide_password a").on('click', function (event) {
-      event.preventDefault();
-      if ($('#show_hide_password input').attr("type") == "text") {
-        $('#show_hide_password input').attr('type', 'password');
-        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--show");
-        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--hide");
-      } else if ($('#show_hide_password input').attr("type") == "password") {
-        $('#show_hide_password input').attr('type', 'text');
-        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--show");
-        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--hide");
-      }
-    });
-  });
-</script>
 
 <script src="js/jquery.js">
 </script>

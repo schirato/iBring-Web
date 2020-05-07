@@ -7,7 +7,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>iBring - Passo 3</title>
+  <title>iBring - Passo 2</title>
 
   <!-- FavIcon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -39,7 +39,8 @@
       <div class="col-sm-12 col-lg-6">
         <div class="iBring-cadastro__conteudo">
           <div id="iBring-Cadastro-Voltar" class="iBring-cadastro__conteudo__btnVoltar">
-            <a href="passo2.html" title="Cadastro Passo 2" class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
+            <a href="passo2-entregas.html" title="Cadastro Passo 1"
+              class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
               <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar">
               Voltar
             </a>
@@ -57,27 +58,21 @@
               class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
               2
             </div>
-            <div id="iBring-Cadastro-Passos-Linha"
-              class="iBring-cadastro__conteudo__passos__linha iBring-cadastro__conteudo__passos__linha--ativo">&nbsp;
-            </div>
-            <div id="iBring-Cadastro-Passos-Segundo"
-              class="iBring-cadastro__conteudo__passos__bullets iBring-cadastro__conteudo__passos__bullets--ativo">
+            <div id="iBring-Cadastro-Passos-Linha" class="iBring-cadastro__conteudo__passos__linha">&nbsp;</div>
+            <div id="iBring-Cadastro-Passos-Segundo" class="iBring-cadastro__conteudo__passos__bullets">
               3
             </div>
           </div>
-          <p class="iBring-cadastro__conteudo__subtitulo">Pronto! Agora é só criar uma senha.</p>
+          <p class="iBring-cadastro__conteudo__subtitulo">Onde o entregador fará as retiradas?</p>
+          <p class="iBring-cadastro__conteudo__pj__texto">Esse endereço poderá ser
+            alterado sempre que quiser!</p>
           <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate action="passo3.html">
             <div class="form-row align-items-center">
               <div class="col iBring-cadastro__conteudo__form__col">
                 <div class="form__group">
-                  <label for="show_hide_password" class="iBring-cadastro__conteudo__form__label">Senha</label>
-                  <input type="password" class="form-control iBring-cadastro__conteudo__form__input"
-                    id="show_hide_password" placeholder="Sua senha deve ter no mínimo 8 caracteres" required>
-                  <div class="iBring-cadastro__conteudo__form__iconEye">
-                    <a href="">
-                      <i class="iBring-cadastro__conteudo__form__iconEye--hide" aria-hidden="true"></i>
-                    </a>
-                  </div>
+                  <label for="validationCustom01" class="iBring-cadastro__conteudo__form__label">Endereço</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom01"
+                    placeholder="Ex.: Av. das américas, Barra da tijuca, 500" required>
                   <div class="invalid-feedback">
                     <img src="../../../img/img-form-alert.svg" alt="Alerta"
                       class="iBring-cadastro__conteudo__form__alertaImg">
@@ -88,11 +83,35 @@
             </div>
             <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
               <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form__group">
+                  <label for="validationCustom02">Complemento</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom02"
+                    placeholder="ex.: apto. 202" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+              <div class="col iBring-cadastro__conteudo__form__col">
                 <div class="form-check form-check-inline">
                   <label class="form-check-label iBring-form__checkboxContainer" for="defaultCheck1">
-                    Li e concordo com os <a href="" title="Termos e Condições"
-                      class=" iBring-form__checkboxContainer__termos">Termos e Condições</a> de uso do IBring
+                    Não há complemento
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <span class="iBring-form__checkboxContainer__checkbox">&nbsp;</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
+              <div class="col iBring-cadastro__conteudo__form__col">
+                <div class="form-check form-check-inline">
+                  <label
+                    class="form-check-label iBring-form__checkboxContainer iBring-cadastro__conteudo__form__pj__checkbox"
+                    for="defaultCheck2">
+                    Esse também é o endereço do faturamento
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                     <span class="iBring-form__checkboxContainer__checkbox">&nbsp;</span>
                   </label>
                 </div>
@@ -131,25 +150,6 @@
       });
     }, false);
   })();
-</script>
-
-
-<script>
-  // Show Hide Password
-  $(document).ready(function () {
-    $("#show_hide_password a").on('click', function (event) {
-      event.preventDefault();
-      if ($('#show_hide_password input').attr("type") == "text") {
-        $('#show_hide_password input').attr('type', 'password');
-        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--show");
-        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--hide");
-      } else if ($('#show_hide_password input').attr("type") == "password") {
-        $('#show_hide_password input').attr('type', 'text');
-        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--show");
-        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--hide");
-      }
-    });
-  });
 </script>
 
 <script src="js/jquery.js">

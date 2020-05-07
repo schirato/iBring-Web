@@ -39,7 +39,8 @@
       <div class="col-sm-12 col-lg-6">
         <div class="iBring-cadastro__conteudo">
           <div id="iBring-Cadastro-Voltar" class="iBring-cadastro__conteudo__btnVoltar">
-            <a href="passo2.html" title="Cadastro Passo 2" class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
+            <a href="passo2-endereco.html" title="Cadastro Passo 2"
+              class="iBring-cadastro__conteudo__btnVoltar__hyperlink">
               <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar">
               Voltar
             </a>
@@ -65,19 +66,14 @@
               3
             </div>
           </div>
-          <p class="iBring-cadastro__conteudo__subtitulo">Pronto! Agora é só criar uma senha.</p>
+          <p class="iBring-cadastro__conteudo__subtitulo">Precisamos de mais alguns dados sobre a sua empresa</p>
           <form class="needs-validation iBring-form iBring-cadastro__conteudo__form" novalidate action="passo3.html">
             <div class="form-row align-items-center">
               <div class="col iBring-cadastro__conteudo__form__col">
                 <div class="form__group">
-                  <label for="show_hide_password" class="iBring-cadastro__conteudo__form__label">Senha</label>
-                  <input type="password" class="form-control iBring-cadastro__conteudo__form__input"
-                    id="show_hide_password" placeholder="Sua senha deve ter no mínimo 8 caracteres" required>
-                  <div class="iBring-cadastro__conteudo__form__iconEye">
-                    <a href="">
-                      <i class="iBring-cadastro__conteudo__form__iconEye--hide" aria-hidden="true"></i>
-                    </a>
-                  </div>
+                  <label for="validationCustom01" class="iBring-cadastro__conteudo__form__label">Nome da empresa</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom01"
+                    placeholder="Razão social" required>
                   <div class="invalid-feedback">
                     <img src="../../../img/img-form-alert.svg" alt="Alerta"
                       class="iBring-cadastro__conteudo__form__alertaImg">
@@ -86,15 +82,32 @@
                 </div>
               </div>
             </div>
-            <div class="form-row align-items-center iBring-cadastro__conteudo__form__row">
-              <div class="col iBring-cadastro__conteudo__form__col">
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label iBring-form__checkboxContainer" for="defaultCheck1">
-                    Li e concordo com os <a href="" title="Termos e Condições"
-                      class=" iBring-form__checkboxContainer__termos">Termos e Condições</a> de uso do IBring
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <span class="iBring-form__checkboxContainer__checkbox">&nbsp;</span>
-                  </label>
+            <div class="form-row align-items-center">
+              <div class="col iBring-cadastro__conteudo__form__col iBring-cadastro__conteudo__form__pj__col">
+                <div class="form__group">
+                  <label for="validationCustom02" class="iBring-cadastro__conteudo__form__label">Nome fantasia</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom02"
+                    placeholder="O nome comercial da sua empresa" required>
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col iBring-cadastro__conteudo__form__col iBring-cadastro__conteudo__form__pj__col">
+                <div class="form__group">
+                  <label for="validationCustom03" class="iBring-cadastro__conteudo__form__label">CNPJ</label>
+                  <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom03"
+                    placeholder="00.000.000/0000-00" required maxlength="18"
+                    pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})">
+                  <div class="invalid-feedback">
+                    <img src="../../../img/img-form-alert.svg" alt="Alerta"
+                      class="iBring-cadastro__conteudo__form__alertaImg">
+                    Campo inválido.
+                  </div>
                 </div>
               </div>
             </div>
