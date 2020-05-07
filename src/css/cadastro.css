@@ -7427,9 +7427,10 @@ select {
     flex-direction: column;
     overflow: hidden; }
     .iBring-cadastro__conteudo__btnVoltar {
-      position: absolute;
-      left: -130px;
-      top: 12%; }
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 5%; }
       .iBring-cadastro__conteudo__btnVoltar img {
         margin-right: 14px; }
       .iBring-cadastro__conteudo__btnVoltar__hyperlink {
@@ -7576,19 +7577,19 @@ select {
         position: absolute; }
         .iBring-cadastro__conteudo__codigo__input__line--1 {
           top: 70px;
-          left: 160px;
+          left: 65px;
           width: 37.5px; }
         .iBring-cadastro__conteudo__codigo__input__line--2 {
           top: 70px;
-          left: 210px;
+          left: 112px;
           width: 37.5px; }
         .iBring-cadastro__conteudo__codigo__input__line--3 {
           top: 70px;
-          left: 258px;
+          left: 158px;
           width: 37.5px; }
         .iBring-cadastro__conteudo__codigo__input__line--4 {
           top: 70px;
-          left: 305px;
+          left: 205px;
           width: 37.5px; }
     .iBring-cadastro__conteudo__passos {
       padding: 10% 0 10% 0;
@@ -7768,6 +7769,18 @@ select {
           color: #63D673; }
         .iBring-cadastro__conteudo__form__btnOutline:focus {
           box-shadow: none; }
+  .iBring-cadastro .col-lg-3,
+  .iBring-cadastro .col-lg-6 {
+    margin-top: 5%; }
+  @media (min-width: 667px) {
+    .iBring-cadastro__conteudo__codigo__input__line--1 {
+      left: 183px; }
+    .iBring-cadastro__conteudo__codigo__input__line--2 {
+      left: 229px; }
+    .iBring-cadastro__conteudo__codigo__input__line--3 {
+      left: 275px; }
+    .iBring-cadastro__conteudo__codigo__input__line--4 {
+      left: 319px; } }
   @media (min-width: 992px) {
     .iBring-cadastro {
       width: 1024px;
@@ -7786,5 +7799,21 @@ select {
       .iBring-cadastro__conteudo {
         padding: 15% 0 15% 0;
         height: 100%; }
+        .iBring-cadastro__conteudo__btnVoltar {
+          position: absolute;
+          left: -130px;
+          top: 12%;
+          padding: 0; }
         .iBring-cadastro__conteudo__passos__linha {
-          width: 138px; } }
+          width: 138px; }
+        .iBring-cadastro__conteudo__codigo__input__line--1 {
+          left: 160px; }
+        .iBring-cadastro__conteudo__codigo__input__line--2 {
+          left: 210px; }
+        .iBring-cadastro__conteudo__codigo__input__line--3 {
+          left: 258px; }
+        .iBring-cadastro__conteudo__codigo__input__line--4 {
+          left: 305px; }
+      .iBring-cadastro .col-lg-3,
+      .iBring-cadastro .col-lg-6 {
+        margin-top: 0; } }

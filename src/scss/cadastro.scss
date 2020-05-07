@@ -20,9 +20,11 @@
     overflow: hidden;
 
     &__btnVoltar {
-      position: absolute;
-      left: -130px;
-      top: 12%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 5%;
+
 
       img {
         margin-right: 14px;
@@ -128,25 +130,25 @@
 
           &--1 {
             top: 70px;
-            left: 160px;
+            left: 65px;
             width: 37.5px;
           }
 
           &--2 {
             top: 70px;
-            left: 210px;
+            left: 112px;
             width: 37.5px;
           }
 
           &--3 {
             top: 70px;
-            left: 258px;
+            left: 158px;
             width: 37.5px;
           }
 
           &--4 {
             top: 70px;
-            left: 305px;
+            left: 205px;
             width: 37.5px;
           }
         }
@@ -306,6 +308,37 @@
     }
   }
 
+  .col-lg-3,
+  .col-lg-6 {
+    margin-top: 5%;
+  }
+
+  @media (min-width: 667px) {
+    &__conteudo {
+      &__codigo {
+        &__input {
+          &__line {
+            &--1 {
+              left: 183px;
+            }
+
+            &--2 {
+              left: 229px;
+            }
+
+            &--3 {
+              left: 275px;
+            }
+
+            &--4 {
+              left: 319px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 
   @media (min-width: 992px) {
     width: 1024px;
@@ -323,12 +356,46 @@
     &__conteudo {
       @include mainContentRulers(15%, 0);
 
+      &__btnVoltar {
+        position: absolute;
+        left: -130px;
+        top: 12%;
+        padding: 0;
+      }
+
       &__passos {
 
         &__linha {
           width: 138px;
         }
       }
+
+      &__codigo {
+        &__input {
+          &__line {
+            &--1 {
+              left: 160px;
+            }
+
+            &--2 {
+              left: 210px;
+            }
+
+            &--3 {
+              left: 258px;
+            }
+
+            &--4 {
+              left: 305px;
+            }
+          }
+        }
+      }
+    }
+
+    .col-lg-3,
+    .col-lg-6 {
+      margin-top: 0;
     }
   }
 }
