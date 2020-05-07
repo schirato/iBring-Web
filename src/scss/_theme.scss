@@ -1,31 +1,21 @@
-$theme-colors: ("primary": #61B46C,
-  "secondary": #005ABC,
-  "danger": #D5051D,
-  "success": #5A9F63,
-  "dark": #212121,
-  "green-light": #61B46C,
-  "green-medium": #5A9F63,
-  "green-medium-button": #63d673,
-  "green-dark": #4C7E55,
-  "gray": #f2f2f2,
-  "gray-light": #f9f9f9,
-  "gray-lighten": #c4c4c4,
-  "gray-medium": #DADADA,
-  "gray-dark": #A0A0A0,
-  "gray-darked": #393939,
-  "white": #ffffff,
-  "step-bullet": #e5e5e5);
+$theme-colors: ( // Marca
+  "primaria": #63D673, // Links, botoes ativos
+  "secundaria": #61B46C, // Links secundarios, botoes ativos secundarios
+  "terciaria": #005ABC, // Links secundarios, botoes ativos secundarios
+  "quaternaria": #eaf9ea, // Hover de botao secundario e destaque
 
-/* $theme-colors: (
-    // Marca
-    $primaria: #61B46C,
+  // Cinza
+  "cinza-escuro": #393939, // Textos gerais, campos texto ativos
+  "cinza-secundario": #696969, // Titulos de campos, outros textos
+  "cinza-intermediario": #A0A0A0, // Textos inativos e stroke de campos ativos
+  "cinza-botao": #DADADA, // Bg de botoes inativos
+  "cinza-inativo": #E5E5E5, // Stroke de campos inativos e vazios
+  "cinza-claro": #F4F3F4, // Bg de boxes e menus
+  "cinza-bg": #F9F9F9, // Bg de interfaces
+  "branca": #FFFFFF,
+  "preta": #000000,
 
-
-    // Suporte
-
-    // Ações
-
-    // Alertas
-
-    // Cinzas
-  ); */
+  // Alertas
+  "alerta-erro": #D6152B, // Erros e Cancelamentos
+  "alerta-atencao": #FF9200 // Atencao
+);

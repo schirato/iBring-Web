@@ -4,7 +4,7 @@
 /* Folha de Estilo: Contato */
 
 .iBring-cadastro {
-  background-color: theme-color("gray-light");
+  background-color: theme-color("cinza-bg");
   overflow: hidden;
 
   &__bg {
@@ -50,7 +50,7 @@
       &__texto {
         @include mainContentRulers(0);
         @include texto;
-        color: #A0A0A0;
+        color: theme-color("cinza-intermediario");
         text-align: center;
         height: auto;
       }
@@ -65,29 +65,29 @@
       &__texto {
         @include mainContentRulers(3%, 0);
         @include texto;
-        color: #A0A0A0;
+        color: theme-color("cinza-intermediario");
         text-align: center;
         height: auto;
 
         &__linkTelefone {
-          color: #A0A0A0;
+          color: theme-color("cinza-intermediario");
 
           &:focus,
           &:hover,
           &:active {
-            color: #A0A0A0;
+            color: theme-color("cinza-intermediario");
             text-decoration: none;
           }
         }
 
         &__link {
           @include texto-bold;
-          color: theme-color("green-medium-button");
+          color: theme-color("primaria");
 
           &:focus,
           &:hover,
           &:active {
-            color: theme-color("green-medium-button");
+            color: theme-color("primaria");
             text-decoration: none;
           }
         }
@@ -121,11 +121,11 @@
         width: 217px;
         height: 70px !important;
         margin: 0 auto;
-        color: #000000 !important;
+        color: theme-color("preta") !important;
         padding: 0 32px;
 
         &__line {
-          border-bottom: 1px solid #000000;
+          border-bottom: 1px solid theme-color("preta");
           position: absolute;
 
           &--1 {
@@ -168,8 +168,8 @@
         width: 27px;
         height: 27px;
         border-radius: 50%;
-        background-color: theme-color("step-bullet");
-        color: theme-color("white");
+        background-color: theme-color("cinza-inativo");
+        color: theme-color("branca");
         font-family: $font-opensans-regular;
         font-style: normal;
         font-weight: normal;
@@ -178,18 +178,18 @@
         text-align: center;
 
         &--ativo {
-          background-color: theme-color("green-medium-button");
+          background-color: theme-color("primaria");
         }
       }
 
       &__linha {
         width: 98px;
         height: 1px;
-        border: 1px solid theme-color("step-bullet");
+        border: 1px solid theme-color("cinza-inativo");
         margin: 0 8px;
 
         &--ativo {
-          border: 1px solid theme-color("green-medium-button");
+          border: 1px solid theme-color("primaria");
         }
       }
     }
@@ -253,7 +253,7 @@
 
       &__textoPular {
         @include texto-pequeno-bold;
-        color: theme-color("green-light");
+        color: theme-color("secundaria");
         text-align: center;
         margin-top: 10%;
         margin-bottom: -5%;
@@ -271,16 +271,16 @@
           border-radius: 12px;
           width: 183px;
           height: 45px;
-          background-color: theme-color("green-medium-button");
-          border-color: theme-color("green-medium-button");
+          background-color: theme-color("primaria");
+          border-color: theme-color("primaria");
         }
       }
 
       .btn-primary:hover,
       .btn-primary:focus,
       .btn-primary:not(:disabled):not(.disabled):active {
-        background-color: theme-color("green-medium-button");
-        border-color: theme-color("green-medium-button");
+        background-color: theme-color("primaria");
+        border-color: theme-color("primaria");
       }
 
       &__btnOutline {
@@ -289,15 +289,15 @@
         width: 100%;
         height: 43px;
         margin: 0 auto;
-        border: 1px solid #A0A0A0;
+        border: 1px solid theme-color("cinza-intermediario");
         box-sizing: border-box;
         border-radius: 50px;
 
         &:hover,
         &:not(:disabled):not(.disabled):active {
-          border: 1px solid #63D673;
+          border: 1px solid theme-color("primaria");
           background-color: transparent;
-          color: #63D673;
+          color: theme-color("primaria");
         }
 
         &:focus {

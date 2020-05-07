@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7163,22 +7162,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal; }
 
-/* $theme-colors: (
-    // Marca
-    $primaria: #61B46C,
-
-
-    // Suporte
-
-    // Ações
-
-    // Alertas
-
-    // Cinzas
-  ); */
 /* HEADER */
 .navbar {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.07); }
 
 .nav-link {
@@ -7188,11 +7174,10 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: .035em; }
 
 .ibring-navbar-divider {
-  border-right: 1px solid #c4c4c4; }
+  border-right: 1px solid; }
 
 .navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase;
-  color: #393939; }
+  text-transform: uppercase; }
 
 @media (min-width: 992px) {
   .navbar-brand {
@@ -7225,7 +7210,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7269,16 +7254,9 @@ h3 {
   z-index: 5; }
 
 .btn-primary {
-  background: #61B46C;
-  border: 1px solid #61B46C;
+  border: 1px solid;
   border-radius: 6px;
   text-transform: uppercase; }
-
-.btn-primary:hover,
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:focus {
-  background-color: #61B46C;
-  border-color: #61B46C; }
 
 img {
   width: 100%; }
@@ -7290,7 +7268,7 @@ img {
   position: relative;
   height: auto; }
   .iBring-home-mainWrapper__iBring-panel {
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
     position: relative; }
   .iBring-home-mainWrapper__ibring-background-image {
     display: none; }
@@ -7336,7 +7314,7 @@ img {
     overflow: hidden;
     position: relative; }
   .iBring-home-mainWrapper__iBring-sejaUmEntregador h2 {
-    color: #ffffff;
+    color: #FFFFFF;
     width: 80%;
     margin-bottom: 45px; }
   .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque {
@@ -7433,7 +7411,7 @@ img {
           display: -webkit-flex;
           display: flex;
           height: 183px;
-          background-color: #ffffff; }
+          background-color: #FFFFFF; }
         .iBring-home-mainWrapper__iBring-cards-group__card-body {
           display: -webkit-box;
           display: -moz-box;
@@ -7468,7 +7446,7 @@ img {
     .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left {
       padding: 43px 38px 43px 38px;
       height: 100%;
-      background-color: #f2f2f2;
+      background-color: #FFFFFF;
       border-radius: 18px; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left h2 {
         color: #005ABC; }
@@ -7525,7 +7503,7 @@ img {
         font-weight: bold;
         font-size: 41px;
         line-height: 48px;
-        color: #ffffff; }
+        color: #FFFFFF; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text {
         margin-top: 31px;
         width: 120px;
@@ -7537,7 +7515,7 @@ img {
   .iBring-home-mainWrapper__iBring-entregamosParaVoce {
     padding: 0 17% 0 17%;
     height: 100%;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     position: relative; }
   .iBring-home-mainWrapper__iBring-servicos__card-text {
@@ -7564,7 +7542,7 @@ img {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #FFFFFF;
     margin: 0 auto; }
   .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button {
     padding: 17px 33px 17px 33px;
@@ -7574,9 +7552,14 @@ img {
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.05em;
-    background: #63d673;
+    background: #63D673;
+    border-color: #63D673;
     border-radius: 12px;
     margin: 45px auto; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:hover, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:focus, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:not(:disabled):not(.disabled):active {
+      background-color: #63D673;
+      border-color: #63D673;
+      box-shadow: none; }
   .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card {
     padding: 34px 0 34px 0;
     height: 100%;
@@ -7590,13 +7573,13 @@ img {
     -ms-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border-radius: 18px;
     margin-top: 29px; }
     .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card img {
       width: auto; }
   .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item {
-    border-right: 2px solid #dcdbde;
+    border-right: 2px solid #DADADA;
     width: 150px;
     margin-right: 12px;
     padding-right: 12px; }
@@ -7615,11 +7598,11 @@ img {
   .iBring-home-mainWrapper__iBring-contato {
     padding: 80px 17% 80px 17%;
     height: 100%;
-    background-color: #ffffff; }
+    background-color: #FFFFFF; }
     .iBring-home-mainWrapper__iBring-contato__card {
       padding: 41px 20px 41px 20px;
       height: 100%;
-      background: #ffffff;
+      background: #FFFFFF;
       box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
       border-radius: 15px; }
     .iBring-home-mainWrapper__iBring-contato__card-body {
@@ -7650,8 +7633,13 @@ img {
       line-height: 29px;
       text-align: center; }
     .iBring-home-mainWrapper__iBring-contato__btn {
+      background-color: #61B46C;
       margin-top: 35px;
       width: 40%; }
+      .iBring-home-mainWrapper__iBring-contato__btn:hover, .iBring-home-mainWrapper__iBring-contato__btn:focus, .iBring-home-mainWrapper__iBring-contato__btn:not(:disabled):not(.disabled):active {
+        background-color: #61B46C;
+        border-color: #61B46C;
+        box-shadow: none; }
     .iBring-home-mainWrapper__iBring-contato__logo {
       display: -webkit-box;
       display: -moz-box;

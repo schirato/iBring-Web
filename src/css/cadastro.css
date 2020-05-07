@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7163,22 +7162,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal; }
 
-/* $theme-colors: (
-    // Marca
-    $primaria: #61B46C,
-
-
-    // Suporte
-
-    // Ações
-
-    // Alertas
-
-    // Cinzas
-  ); */
 /* HEADER */
 .navbar {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.07); }
 
 .nav-link {
@@ -7188,11 +7174,10 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: .035em; }
 
 .ibring-navbar-divider {
-  border-right: 1px solid #c4c4c4; }
+  border-right: 1px solid; }
 
 .navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase;
-  color: #393939; }
+  text-transform: uppercase; }
 
 @media (min-width: 992px) {
   .navbar-brand {
@@ -7225,7 +7210,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7269,16 +7254,9 @@ h3 {
   z-index: 5; }
 
 .btn-primary {
-  background: #61B46C;
-  border: 1px solid #61B46C;
+  border: 1px solid;
   border-radius: 6px;
   text-transform: uppercase; }
-
-.btn-primary:hover,
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:focus {
-  background-color: #61B46C;
-  border-color: #61B46C; }
 
 img {
   width: 100%; }
@@ -7286,19 +7264,6 @@ img {
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
 
-/* $theme-colors: (
-    // Marca
-    $primaria: #61B46C,
-
-
-    // Suporte
-
-    // Ações
-
-    // Alertas
-
-    // Cinzas
-  ); */
 .form-control:focus {
   border-color: #A0A0A0;
   box-shadow: none; }
@@ -7358,7 +7323,7 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #393939 !important; }
+  color: !important; }
   .iBring-form__checkboxContainer input {
     position: absolute;
     opacity: 0;
@@ -7366,15 +7331,15 @@ select {
     height: 0;
     width: 0; }
   .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox {
-    background: #63d673; }
+    background: #63D673; }
   .iBring-form__checkboxContainer__checkbox {
     position: absolute;
     top: 0;
     left: 0;
     height: 19px;
     width: 19px;
-    background: #ffffff;
-    border: 1px solid #DADADA;
+    background: #FFFFFF;
+    border: 1px solid;
     box-sizing: border-box;
     border-radius: 2px; }
     .iBring-form__checkboxContainer__checkbox:after {
@@ -7384,7 +7349,7 @@ select {
       top: 2px;
       width: 5px;
       height: 10px;
-      border: solid #ffffff;
+      border: solid #FFFFFF;
       border-width: 0 1px 1px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -7392,14 +7357,14 @@ select {
   .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox:after {
     display: block; }
   .iBring-form__checkboxContainer__termos {
-    color: #63d673; }
+    color: #63D673; }
     .iBring-form__checkboxContainer__termos:hover {
-      color: #63d673;
+      color: #63D673;
       text-decoration: none; }
 
 /* Folha de Estilo: Contato */
 .iBring-cadastro {
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   overflow: hidden; }
   .iBring-cadastro__bg {
     display: none; }
@@ -7529,9 +7494,9 @@ select {
         color: #696969;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smooyhing: grayscale;
-        color: #63d673; }
+        color: #63D673; }
         .iBring-cadastro__conteudo__codigo__texto__link:focus, .iBring-cadastro__conteudo__codigo__texto__link:hover, .iBring-cadastro__conteudo__codigo__texto__link:active {
-          color: #63d673;
+          color: #63D673;
           text-decoration: none; }
       .iBring-cadastro__conteudo__codigo__texto__reenviar {
         padding: 13% 0 0 0;
@@ -7628,8 +7593,8 @@ select {
         width: 27px;
         height: 27px;
         border-radius: 50%;
-        background-color: #e5e5e5;
-        color: #ffffff;
+        background-color: #E5E5E5;
+        color: #FFFFFF;
         font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
         font-style: normal;
         font-weight: normal;
@@ -7637,14 +7602,14 @@ select {
         line-height: 20px;
         text-align: center; }
         .iBring-cadastro__conteudo__passos__bullets--ativo {
-          background-color: #63d673; }
+          background-color: #63D673; }
       .iBring-cadastro__conteudo__passos__linha {
         width: 98px;
         height: 1px;
-        border: 1px solid #e5e5e5;
+        border: 1px solid #E5E5E5;
         margin: 0 8px; }
         .iBring-cadastro__conteudo__passos__linha--ativo {
-          border: 1px solid #63d673; }
+          border: 1px solid #63D673; }
     .iBring-cadastro__conteudo__form {
       padding: 10% 0 10% 0;
       height: 100%;
@@ -7734,19 +7699,19 @@ select {
           font-size: 16px;
           line-height: 22px;
           letter-spacing: 0.03em;
-          color: #ffffff;
+          color: #FFFFFF;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smooyhing: grayscale;
           border-radius: 12px;
           width: 183px;
           height: 45px;
-          background-color: #63d673;
-          border-color: #63d673; }
+          background-color: #63D673;
+          border-color: #63D673; }
       .iBring-cadastro__conteudo__form .btn-primary:hover,
       .iBring-cadastro__conteudo__form .btn-primary:focus,
       .iBring-cadastro__conteudo__form .btn-primary:not(:disabled):not(.disabled):active {
-        background-color: #63d673;
-        border-color: #63d673; }
+        background-color: #63D673;
+        border-color: #63D673; }
       .iBring-cadastro__conteudo__form__btnOutline {
         font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
         font-style: normal;

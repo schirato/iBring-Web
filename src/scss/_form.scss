@@ -70,7 +70,7 @@ select {
     }
 
     input:checked~.iBring-form__checkboxContainer__checkbox {
-      background: theme-color("green-medium-button");
+      background: theme-color("primaria");
     }
 
     &__checkbox {
@@ -79,7 +79,7 @@ select {
       left: 0;
       height: 19px;
       width: 19px;
-      background: theme-color("white");
+      background: theme-color("branca");
       border: 1px solid theme-color("gray-medium");
       box-sizing: border-box;
       border-radius: 2px;
@@ -91,7 +91,7 @@ select {
         top: 2px;
         width: 5px;
         height: 10px;
-        border: solid theme-color("white");
+        border: solid theme-color("branca");
         border-width: 0 1px 1px 0;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -104,10 +104,10 @@ select {
     }
 
     &__termos {
-      color: theme-color("green-medium-button");
+      color: theme-color("primaria");
 
       &:hover {
-        color: theme-color("green-medium-button");
+        color: theme-color("primaria");
         text-decoration: none;
       }
     }

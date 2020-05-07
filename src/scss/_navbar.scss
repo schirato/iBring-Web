@@ -1,7 +1,7 @@
 /* HEADER */
 
 .navbar {
-  background-color: theme-color("white");
+  background-color: theme-color("branca");
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.07);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .ibring-navbar-divider {
-  border-right: 1px solid theme-color("gray-lighten");
+  border-right: 1px solid theme-color("$cinza-bgen");
 }
 
 .navbar-light .navbar-nav .nav-link {

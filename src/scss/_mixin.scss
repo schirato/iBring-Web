@@ -86,30 +86,30 @@
   margin: 0 auto;
 }
 
-@mixin button-primary($bgCor: "primary") {
+@mixin button-primary($bgCor: "primaria") {
   @extend %standardButton;
   background-color: theme-color($bgCor);
   border-color: theme-color($bgCor);
   padding: 12px 24px;
-  color: theme-color("white");
+  color: theme-color("branca");
   font-size: 14px;
   line-height: 19px;
 
   &:focus,
   &:hover,
   &:active {
-    background-color: theme-color("green-medium-button") !important;
-    border-color: theme-color("green-medium-button") !important;
-    color: theme-color("white") !important;
+    background-color: theme-color("primaria") !important;
+    border-color: theme-color("primaria") !important;
+    color: theme-color("branca") !important;
   }
 }
 
 @mixin button-primary-disabled {
   @extend %standardButton;
-  background-color: theme-color("gray-medium");
-  border-color: theme-color("gray-medium");
+  background-color: theme-color("cinza-botao");
+  border-color: theme-color("cinza-botao");
   padding: 12px 24px;
-  color: theme-color("gray-dark");
+  color: theme-color("cinza-intermediario");
   font-size: 14px;
   line-height: 19px;
   cursor: pointer;
@@ -117,9 +117,9 @@
   &:focus,
   &:hover,
   &:active {
-    background-color: theme-color("gray-medium") !important;
-    border-color: theme-color("gray-medium") !important;
-    color: theme-color("gray-dark") !important;
+    background-color: theme-color("cinza-botao") !important;
+    border-color: theme-color("cinza-botao") !important;
+    color: theme-color("cinza-intermediario") !important;
   }
 }
 
@@ -143,7 +143,7 @@
   cursor: pointer;
 }
 
-@mixin button-outline($bgCor: "green-medium") {
+@mixin button-outline($bgCor: "primaria") {
   @extend %standardButtonOutline;
   border: 1px solid theme-color($bgCor);
   padding: 12px 12px;
@@ -156,16 +156,16 @@
   &:hover,
   &:active {
     background-color: transparent !important;
-    border-color: theme-color("green-medium") !important;
-    color: theme-color("green-medium") !important;
+    border-color: theme-color("primaria") !important;
+    color: theme-color("primaria") !important;
   }
 }
 
 @mixin button-secondary-outline {
   @extend %standardButtonOutline;
-  border: 1px solid theme-color("secondary");
+  border: 1px solid theme-color("terciaria");
   padding: 12px 24px;
-  color: theme-color("secondary");
+  color: theme-color("terciaria");
   font-size: 14px;
   line-height: 19px;
 
@@ -173,16 +173,16 @@
   &:hover,
   &:active {
     background-color: transparent !important;
-    border-color: theme-color("secondary") !important;
-    color: theme-color("secondary") !important;
+    border-color: theme-color("terciaria") !important;
+    color: theme-color("terciaria") !important;
   }
 }
 
 @mixin button-secondary-outline-disabled {
   @extend %standardButtonOutline;
-  border: 1px solid theme-color("gray-dark");
+  border: 1px solid theme-color("cinza-intermediario");
   padding: 12px 24px;
-  color: theme-color("gray-dark");
+  color: theme-color("cinza-intermediario");
   font-size: 14px;
   line-height: 19px;
 
@@ -190,8 +190,8 @@
   &:hover,
   &:active {
     background-color: transparent !important;
-    border-color: theme-color("gray-dark") !important;
-    color: theme-color("gray-dark") !important;
+    border-color: theme-color("cinza-intermediario") !important;
+    color: theme-color("cinza-intermediario") !important;
   }
 }
 
@@ -253,7 +253,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: theme-color("white");
+  color: theme-color("branca");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -264,7 +264,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: theme-color("white");
+  color: theme-color("branca");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -276,7 +276,7 @@
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.185em;
-  color: theme-color("gray-darked");
+  color: theme-color("cinza-escuro");
   text-transform: uppercase;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -289,7 +289,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: theme-color("gray-darked");
+  color: theme-color("cinza-escuro");
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
@@ -301,7 +301,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: #696969;
+  color: theme-color("cinza-secundario");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -312,7 +312,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: #696969;
+  color: theme-color("cinza-secundario");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -343,7 +343,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: #696969;
+  color: theme-color("cinza-secundario");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -355,7 +355,7 @@
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.03em;
-  color: theme-color("white");
+  color: theme-color("branca");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }
@@ -367,13 +367,13 @@
   font-size: 16px;
   line-height: 123.1%;
   letter-spacing: 0.12em;
-  color: #696969;
+  color: theme-color("cinza-secundario");
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 
   &:hover {
-    color: #696969;
+    color: theme-color("cinza-secundario");
     text-decoration: none;
   }
 }
@@ -386,7 +386,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: theme-color("gray-darked");
+  color: theme-color("cinza-intermediario");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
   padding-left: 5px;
@@ -399,10 +399,10 @@
   font-weight: normal !important;
   font-size: 13px !important;
   line-height: 18px !important;
-  color: theme-color("gray-darked") !important;
-  background-color: theme-color("gray-light") !important;
+  color: theme-color("cinza-intermediario") !important;
+  background-color: theme-color("cinza-bg") !important;
   border-radius: 10px !important;
-  border: 1px solid theme-color("gray-light") !important;
+  border: 1px solid theme-color("cinza-bg") !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale;
 }

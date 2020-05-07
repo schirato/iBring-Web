@@ -5,7 +5,7 @@
   height: auto;
 
   &__iBring-panel {
-    background-color: theme-color("gray-light");
+    background-color: theme-color("cinza-bg");
     position: relative;
   }
 
@@ -72,7 +72,7 @@
     }
 
     h2 {
-      color: theme-color("white");
+      color: theme-color("branca");
       width: 80%;
       margin-bottom: 45px;
     }
@@ -89,7 +89,7 @@
       font-size: 21px;
       line-height: 29px;
       text-align: center;
-      color: theme-color("gray-dark");
+      color: theme-color("cinza-intermediario");
     }
   }
 
@@ -178,7 +178,7 @@
       &__card {
         @include flexbox;
         height: 183px;
-        background-color: theme-color("white");
+        background-color: theme-color("branca");
       }
 
       &__card-body {
@@ -212,11 +212,11 @@
 
     &__iBring-left {
       @include mainContentRulers(43px, 38px);
-      background-color: theme-color("gray");
+      background-color: theme-color("branca");
       border-radius: 18px;
 
       h2 {
-        color: theme-color("secondary");
+        color: theme-color("terciaria");
       }
     }
 
@@ -241,7 +241,7 @@
         @include flexbox;
         @include align-items(center);
         @include justify-content(center);
-        background: theme-color("secondary");
+        background: theme-color("terciaria");
         box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         width: 60px;
@@ -251,7 +251,7 @@
         font-weight: bold;
         font-size: 41px;
         line-height: 48px;
-        color: theme-color("white");
+        color: theme-color("branca");
       }
 
       &__iBring-step-text {
@@ -279,7 +279,7 @@
 
   &__iBring-entregamosParaVoce {
     @include mainContentRulers(0, 17%);
-    color: theme-color("white");
+    color: theme-color("branca");
     text-align: center;
     position: relative;
   }
@@ -321,7 +321,7 @@
       font-size: 15px;
       line-height: 20px;
       text-align: center;
-      color: theme-color("white");
+      color: theme-color("branca");
       margin: 0 auto;
     }
 
@@ -332,9 +332,18 @@
       line-height: 25px;
       text-align: center;
       letter-spacing: 0.05em;
-      background: theme-color("green-medium-button");
+      background: theme-color("primaria");
+      border-color: theme-color("primaria");
       border-radius: 12px;
       margin: 45px auto;
+
+      &:hover,
+      &:focus,
+      &:not(:disabled):not(.disabled):active {
+        background-color: theme-color("primaria");
+        border-color: theme-color("primaria");
+        box-shadow: none;
+      }
     }
   }
 
@@ -344,7 +353,7 @@
       @include mainContentRulers(34px, 0);
       @include flexbox;
       @include justify-content(center);
-      background-color: theme-color("white");
+      background-color: theme-color("branca");
       border-radius: 18px;
       margin-top: 29px;
 
@@ -354,7 +363,7 @@
     }
 
     &__item {
-      border-right: 2px solid #dcdbde;
+      border-right: 2px solid theme-color("cinza-botao");
       width: 150px;
       margin-right: 12px;
       padding-right: 12px;
@@ -379,11 +388,11 @@
 
   &__iBring-contato {
     @include mainContentRulers(80px, 17%);
-    background-color: theme-color("white");
+    background-color: theme-color("branca");
 
     &__card {
       @include mainContentRulers(41px, 20px);
-      background: theme-color("white");
+      background: theme-color("branca");
       box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
       border-radius: 15px;
     }
@@ -405,8 +414,17 @@
     }
 
     &__btn {
+      background-color: theme-color("secundaria");
       margin-top: 35px;
       width: 40%;
+
+      &:hover,
+      &:focus,
+      &:not(:disabled):not(.disabled):active {
+        background-color: theme-color("secundaria");
+        border-color: theme-color("secundaria");
+        box-shadow: none;
+      }
     }
 
     &__logo {

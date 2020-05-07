@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7163,22 +7162,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal; }
 
-/* $theme-colors: (
-    // Marca
-    $primaria: #61B46C,
-
-
-    // Suporte
-
-    // Ações
-
-    // Alertas
-
-    // Cinzas
-  ); */
 /* HEADER */
 .navbar {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.07); }
 
 .nav-link {
@@ -7188,11 +7174,10 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: .035em; }
 
 .ibring-navbar-divider {
-  border-right: 1px solid #c4c4c4; }
+  border-right: 1px solid; }
 
 .navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase;
-  color: #393939; }
+  text-transform: uppercase; }
 
 @media (min-width: 992px) {
   .navbar-brand {
@@ -7225,7 +7210,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7269,16 +7254,9 @@ h3 {
   z-index: 5; }
 
 .btn-primary {
-  background: #61B46C;
-  border: 1px solid #61B46C;
+  border: 1px solid;
   border-radius: 6px;
   text-transform: uppercase; }
-
-.btn-primary:hover,
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:focus {
-  background-color: #61B46C;
-  border-color: #61B46C; }
 
 img {
   width: 100%; }
@@ -7291,10 +7269,10 @@ img {
   display: none; }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #63d673; }
+  color: #63D673; }
 
 .ibring-contact-form {
-  background-color: #f9f9f9; }
+  background-color: #F9F9F9; }
 
 .ibring-contact-form-content {
   padding: 15% 0 15% 0;
@@ -7327,7 +7305,7 @@ img {
   font-size: 27px;
   line-height: 37px;
   letter-spacing: 0.185em;
-  color: #393939;
+  color: #A0A0A0;
   text-transform: uppercase; }
 
 .ibring-contact-form-content-form {
@@ -7369,8 +7347,8 @@ img {
   border: none;
   outline: 0;
   font-size: 16px;
-  color: #212121;
-  background: #ffffff;
+  color: #393939;
+  background: #FFFFFF;
   transition: border-color 0.2s; }
 
 .form__field::placeholder {
@@ -7400,7 +7378,7 @@ label,
   color: #A0A0A0; }
 
 .form__field:focus ~ .form__label {
-  color: #63d673; }
+  color: #63D673; }
 
 .ibring-contact-form-footer {
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
@@ -7415,8 +7393,8 @@ label,
   color: #A0A0A0; }
 
 .ibring-contact-form-content .btn {
-  background: #63d673;
-  color: #ffffff;
+  background: #63D673;
+  color: #FFFFFF;
   border-radius: 12px;
   width: 180px;
   height: 46px;
@@ -7472,7 +7450,7 @@ label,
     bottom: 0;
     right: 0; }
   .form__field:placeholder-shown ~ .form__label {
-    top: 26px; }
+    top: 20px; }
   label,
   .form__field:focus ~ .form__label {
     top: 0; } }
