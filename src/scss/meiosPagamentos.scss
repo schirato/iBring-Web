@@ -1,0 +1,118 @@
+@import './base';
+@import './menuPrincipal';
+@import './menuSecundario';
+@import './form';
+
+.iBring-meiosPagamentos {
+
+  &__menu {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__menu {
+      @include flexbox;
+      height: 100%;
+    }
+
+    &__conteudoPrincipal {
+      @include mainContentRulers(40px, 55px, 40px, 55px, auto);
+      width: 100%;
+
+      &__cabecalho {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        border-bottom: .5px solid theme-color("cinza-intermediario");
+
+        &__titulo {
+          @include titulo-grupo-form;
+        }
+      }
+
+      &__adicionarCartaoCredito {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(flex-end);
+        border: none;
+        background: transparent;
+        margin-top: 20px;
+        position: absolute;
+        right: 50px;
+
+        &__texto {
+          @include label;
+          color: theme-color("primaria");
+          margin-bottom: 0;
+        }
+
+        &__img {
+          width: 12px;
+          height: 12px;
+          margin-left: 10px;
+        }
+      }
+
+      &__listaCartaoCredito {
+        @include mainContentRulers(10px, 10px, 10px, 10px, auto);
+        position: relative;
+        margin-top: 80px;
+
+        &__cabecalho {
+          border-bottom: .5px solid theme-color("cinza-inativo");
+
+          &__titulo {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 136%;
+            color: theme-color("cinza-secundario");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            text-align: center;
+          }
+        }
+
+        &__conteudo {
+          border-bottom: .5px solid theme-color("cinza-inativo");
+
+          &__texto {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 136%;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            text-align: center;
+            margin-top: 1rem;
+
+            &__cardImg {
+              width: 27px;
+              height: 26px;
+              margin-right: 8px;
+            }
+          }
+
+          &__img {
+            margin-top: 1rem;
+            background: transparent;
+            border: none;
+
+            img {
+              width: 10px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
