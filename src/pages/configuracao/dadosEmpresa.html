@@ -7,7 +7,7 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <title>iBring - Dados Pessoais</title>
+  <title>iBring - Dados da Empresa</title>
 
   <!-- FavIcon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
@@ -26,12 +26,12 @@
   <link rel="manifest" href="/manifest.json" />
 
   <!-- StyleSheet -->
-  <link rel="stylesheet" href="../../../css/dadosPessoais.css" />
+  <link rel="stylesheet" href="../../../css/dadosEmpresa.css" />
 </head>
 
 <body>
-  <section id="iBring-DadosCadastrais" class="iBring-dadosCadastrais">
-    <div id="iBring-DadosCadastrais" class="iBring-dadosCadastrais__menu">
+  <section id="iBring-DadosEmpresa" class="iBring-dadosEmpresa">
+    <div id="iBring-DadosEmpresa" class="iBring-dadosEmpresa__menu">
       <!-- Menu Principal -->
       <section id="iBring-MenuPrincipal" class="iBring-menuPrincipal">
         <div class="iBring-menuPrincipal__marca">
@@ -98,9 +98,8 @@
             class="iBring-menuSecundario__menuSecao__icone" />
           <p class="iBring-menuSecundario__menuSecao__titulo">Meu perfil</p>
         </div>
-        <div class="iBring-menuSecundario__menu iBring-menuSecundario__menu--ativo">
-          <a href="" title="Dados de cadastro" target="_self"
-            class="iBring-menuSecundario__menu__item iBring-menuSecundario__menu__item--ativo">
+        <div class="iBring-menuSecundario__menu">
+          <a href="" title="Dados de cadastro" target="_self" class="iBring-menuSecundario__menu__item">
             Dados de cadastro
           </a>
         </div>
@@ -108,8 +107,9 @@
           <img src="../../img/img-ico-dadosempresa.svg" alt="Empresa" class="iBring-menuSecundario__menuSecao__icone" />
           <p class="iBring-menuSecundario__menuSecao__titulo">Empresa</p>
         </div>
-        <div class="iBring-menuSecundario__menu">
-          <a href="" title="Dados da empresa" target="_self" class="iBring-menuSecundario__menu__item">
+        <div class="iBring-menuSecundario__menu iBring-menuSecundario__menu--ativo">
+          <a href="" title="Dados da empresa" target="_self"
+            class="iBring-menuSecundario__menu__item iBring-menuSecundario__menu__item--ativo">
             Dados da empresa
           </a>
         </div>
@@ -130,33 +130,33 @@
         </div>
       </section>
       <!-- Conteúdo Principal -->
-      <section id="iBring-DadosCadastrais-ConteudoPrincipal" class="iBring-dadosCadastrais__conteudoPrincipal">
+      <section id="iBring-DadosEmpresa-ConteudoPrincipal" class="iBring-dadosEmpresa__conteudoPrincipal">
         <form class="needs-validation iBring-form" novalidate action="">
-          <div id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm"
-            class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm">
-            <p id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm-Titulo"
-              class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__titulo">
-              Dados pessoais
+          <div id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm"
+            class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm">
+            <p id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm-Titulo"
+              class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__titulo">
+              Dados da empresa
             </p>
-            <button class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnEditar"
+            <button class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnEditar"
               onclick="hideShowDadosPessoais()">
               <p id="iBring-btnAtualizar-DadosPessoais"
-                class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnAtualizar">Atualizar</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnAtualizar">Atualizar</p>
               <img src="../../img/img-ico-editar.svg" alt="Editar" id="iBring-btnEditar-DadosPessoais"
-                class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__editar" />
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__editar" />
             </button>
           </div>
-          <div class="form-row align-items-center iBring-dadosCadastrais__conteudoPrincipal__formRow">
+          <div class="form-row align-items-center iBring-dadosEmpresa__conteudoPrincipal__formRow">
             <div class="col-lg-6">
               <div id="form-itens-nome"
-                class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens--show">
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__label">Nome</p>
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__value">Sérgio</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">Nome</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">LAB77</p>
               </div>
               <div id="form-group-nome"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden">
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
                 <label for="validationCustom01">Nome</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Sérgio" required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="LAB77" required>
                 <div class="invalid-feedback">
                   <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
                   Campo inválido.
@@ -165,14 +165,16 @@
             </div>
             <div class="col-lg-6">
               <div id="form-itens-sobrenome"
-                class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens--show">
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__label">Sobrenome</p>
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__value">Dutra</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">CNPJ</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">xx.xxx.xxx/xxxx-xx</p>
               </div>
               <div id="form-group-sobrenome"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden">
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
                 <label for="validationCustom02">Sobrenome</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Dutra" required>
+                <input type="text" class="form-control iBring-cadastro__conteudo__form__input" id="validationCustom03"
+                  placeholder="xx.xxx.xxx/xxxx-xx" required maxlength="18"
+                  pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})">
                 <div class="invalid-feedback">
                   <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
                   Campo inválido.
@@ -180,29 +182,29 @@
               </div>
             </div>
           </div>
-          <div id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm"
-            class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm iBring-dadosCadastrais__conteudoPrincipal__grupoForm--contato">
-            <p id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm-Titulo"
-              class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__titulo">
+          <div id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm"
+            class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm iBring-dadosEmpresa__conteudoPrincipal__grupoForm--contato">
+            <p id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm-Titulo"
+              class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__titulo">
               Dados de contato
             </p>
-            <button class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnEditar"
+            <button class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnEditar"
               onclick="hideShowDadosContato()">
               <p id="iBring-btnAtualizar-DadosContatos"
-                class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnAtualizar">Atualizar</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnAtualizar">Atualizar</p>
               <img src="../../img/img-ico-editar.svg" alt="Editar" id="iBring-btnEditar-DadosContatos"
-                class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__editar" />
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__editar" />
             </button>
           </div>
-          <div class="form-row align-items-center iBring-dadosCadastrais__conteudoPrincipal__formRow">
+          <div class="form-row align-items-center iBring-dadosEmpresa__conteudoPrincipal__formRow">
             <div class="col-lg-6">
               <div id="form-itens-celular"
-                class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens--show">
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__label">Celular</p>
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__value">(21) 12345-6789</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">Telefone</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">(21) 12345-6789</p>
               </div>
               <div id="form-group-celular"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden">
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
                 <label for="validationCustom03">Celular</label>
                 <input type="phone" class="form-control" id="validationCustom03" pattern="[\(]\d{2}[\)]\s\d{5}[\-]\d{4}"
                   maxlength="15" placeholder="(21) 12345-6789" required>
@@ -214,12 +216,12 @@
             </div>
             <div class="col-lg-6">
               <div id="form-itens-email"
-                class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens--show">
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__label">E-mail</p>
-                <p class="iBring-dadosCadastrais__conteudoPrincipal__formRow__form-itens__value">contato@lab77.com</p>
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">E-mail</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">contato@lab77.com</p>
               </div>
               <div id="form-group-email"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden">
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
                 <label for="validationCustom04">E-mail</label>
                 <input type="email" class="form-control" id="validationCustom04"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="contato@lab77.com" required>
@@ -230,55 +232,33 @@
               </div>
             </div>
           </div>
-          <div id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm"
-            class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm iBring-dadosCadastrais__conteudoPrincipal__grupoForm--segurancaConta">
-            <p id="iBring-DadosCadastrais-ConteudoPrincipal-GrupoForm-Titulo"
-              class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__titulo">
-              Segurança da conta
+          <div id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm"
+            class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm iBring-dadosEmpresa__conteudoPrincipal__grupoForm--contato">
+            <p id="iBring-DadosEmpresa-ConteudoPrincipal-GrupoForm-Titulo"
+              class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__titulo">
+              Endereço
             </p>
-            <button class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnEditar"
-              onclick="hideShowSegurancaConta()">
-              <div id="iBring-btnAtualizar-SegurancaConta"
-                class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnAtualizar-segurancaConta">
-                <p
-                  class="iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnAtualizar iBring-dadosCadastrais__conteudoPrincipal__grupoForm__btnAtualizar--show">
-                  Atualizar senha
-                  <img src="../../img/img-ico-close.svg" alt="Fehar" id="iBring-btnFechar-SegurancaConta">
-                </p>
-              </div>
+            <button class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnEditar" onclick="hideShowEndereco()">
+              <p id="iBring-btnAtualizar-Endereco"
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__btnAtualizar">Atualizar</p>
+              <img src="../../img/img-ico-editar.svg" alt="Editar" id="iBring-btnEditar-Endereco"
+                class="iBring-dadosEmpresa__conteudoPrincipal__grupoForm__editar" />
             </button>
           </div>
-          <div class="form-row align-items-center iBring-dadosCadastrais__conteudoPrincipal__formRow">
+          <div class="form-row align-items-center iBring-dadosEmpresa__conteudoPrincipal__formRow">
             <div class="col-lg-10">
-              <button id="iBring-btn-alterarSenha" type="button"
-                class="btn btn-outline-secondary iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup__btnOutline"
-                onclick="hideShowSegurancaConta()">Alterar
-                senha</button>
-              <div id="form-group-senhaAtual"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden">
-                <label for="show_hide_password">Senha atual</label>
-                <input type="password" class="form-control" id="show_hide_password" placeholder="Digite sua senha atual"
-                  required>
-                <div class="iBring-form__iconEye">
-                  <a href="">
-                    <i class="iBring-form__iconEye--hide" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="invalid-feedback">
-                  <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
-                  Campo inválido.
-                </div>
+              <div id="form-itens-endereco"
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">Endereço</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">Avenida das Américas,
+                  500, Barra da Tijuca - Rio de Janeiro
+                  00000-000</p>
               </div>
-              <div id="form-group-senhaNova"
-                class="form__group iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup--hidden iBring-dadosCadastrais__conteudoPrincipal__formRow__formGroup__novaSenha">
-                <label for="show_hide_password">Nova senha</label>
-                <input type="password" class="form-control" id="show_hide_password"
-                  placeholder="Sua senha deve ter no mínimo 8 caracteres" required>
-                <div class="iBring-form__iconEye">
-                  <a href="">
-                    <i class="iBring-form__iconEye--hide" aria-hidden="true"></i>
-                  </a>
-                </div>
+              <div id="form-group-endereco"
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
+                <label for="validationCustom05">Endereço</label>
+                <input type="text" class="form-control" id="validationCustom05"
+                  placeholder="Avenida das Américas, 500, Barra da Tijuca - Rio de Janeiro 00000-000" required>
                 <div class="invalid-feedback">
                   <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
                   Campo inválido.
@@ -286,6 +266,26 @@
               </div>
             </div>
           </div>
+          <div class="form-row align-items-center iBring-dadosEmpresa__conteudoPrincipal__formRow">
+            <div class="col-lg-10">
+              <div id="form-itens-complemento"
+                class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens--show">
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__label">Complemento</p>
+                <p class="iBring-dadosEmpresa__conteudoPrincipal__formRow__form-itens__value">Bloco 14, loja 105</p>
+              </div>
+              <div id="form-group-complemento"
+                class="form__group iBring-dadosEmpresa__conteudoPrincipal__formRow__formGroup--hidden">
+                <label for="validationCustom06">Complemento</label>
+                <input type="text" class="form-control" id="validationCustom06" placeholder="Bloco 14, loja 105"
+                  required>
+                <div class="invalid-feedback">
+                  <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
+                  Campo inválido.
+                </div>
+              </div>
+            </div>
+          </div>
+
         </form>
       </section>
     </div>
@@ -382,22 +382,28 @@
     }
   }
 
-  function hideShowSegurancaConta() {
-    var GroupSenhaAtual = document.getElementById("form-group-senhaAtual");
-    var GroupSenhaNova = document.getElementById("form-group-senhaNova");
-    var btnAlterarSenha = document.getElementById("iBring-btn-alterarSenha");
-    var btnAtualizar = document.getElementById("iBring-btnAtualizar-SegurancaConta");
+  function hideShowEndereco() {
+    var itensEndereco = document.getElementById("form-itens-endereco");
+    var itensComplemento = document.getElementById("form-itens-complemento");
+    var GroupEndereco = document.getElementById("form-group-endereco");
+    var GroupComplemento = document.getElementById("form-group-complemento");
+    var btnAtualizar = document.getElementById("iBring-btnAtualizar-Endereco");
+    var btnEditar = document.getElementById("iBring-btnEditar-Endereco");
 
-    if (GroupSenhaAtual.style.display === "block" && GroupSenhaNova.style.display === "block") {
-      btnAlterarSenha.style.display = "block";
+    if (itensEndereco.style.display === "none" && itensComplemento.style.display === "none") {
+      btnEditar.style.display = "block";
       btnAtualizar.style.display = "none";
-      GroupSenhaAtual.style.display = "none";
-      GroupSenhaNova.style.display = "none";
+      itensEndereco.style.display = "block";
+      itensComplemento.style.display = "block";
+      GroupEndereco.style.display = "none";
+      GroupComplemento.style.display = "none";
     } else {
-      btnAlterarSenha.style.display = "none";
+      btnEditar.style.display = "none";
       btnAtualizar.style.display = "block";
-      GroupSenhaAtual.style.display = "block";
-      GroupSenhaNova.style.display = "block";
+      itensEndereco.style.display = "none";
+      itensComplemento.style.display = "none";
+      GroupEndereco.style.display = "block";
+      GroupComplemento.style.display = "block";
     }
   }
 </script>
