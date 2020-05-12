@@ -1,0 +1,71 @@
+@import './mixin';
+@import './theme';
+
+.iBring-menuSecundario {
+  @include mainContentRulers(90px, 0, 90px, 17px, auto);
+  width: 46.2%;
+  background-color: theme-color("cinza-claro");
+
+  &__menuSecao {
+    @include mainContentRulers(0, 0, 0, 17px, auto);
+    @include flexbox;
+    @include align-items(center);
+
+    &__icone {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    &__titulo {
+      @include texto-bold;
+      margin-bottom: 0;
+    }
+
+    &--empresa {
+      margin-top: 20px;
+    }
+  }
+
+  &__menu {
+    @include mainContentRulers(10px, 0, 0, 43px, auto);
+
+    &:hover {
+      padding-left: 0;
+
+      .iBring-menuSecundario__menu__item {
+        &:hover {
+          @include texto-menu-secundario-bold;
+          background-color: rgba(99, 214, 115, 0.12);
+          text-decoration: none;
+          padding-left: 43px;
+        }
+      }
+    }
+
+    &--ativo {
+      padding-left: 0;
+    }
+
+    &__item {
+      @include mainContentRulers(15px, 15px, 15px, 0, auto);
+      @include flexbox;
+      @include align-items(center);
+      @include texto-menu-secundario;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        @include texto-menu-secundario-bold;
+        text-decoration: none;
+      }
+
+      &--ativo {
+        @include texto-menu-secundario-bold;
+        background-color: rgba(99, 214, 115, 0.12);
+        text-decoration: none;
+        padding-left: 43px;
+      }
+    }
+  }
+}

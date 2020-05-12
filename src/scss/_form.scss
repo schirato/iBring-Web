@@ -50,6 +50,36 @@ select {
     }
   }
 
+  &__alertaImg {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+  }
+
+  &__iconEye {
+    @include flexbox;
+    @include align-items(center);
+    position: absolute;
+    top: 38px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+
+    &--hide {
+      @include flexbox;
+      width: 24px;
+      height: 10px;
+      background: url(../img/img-eye-closed.svg) center no-repeat;
+    }
+
+    &--show {
+      @include flexbox;
+      width: 25px;
+      height: 16px;
+      background: url(../img/img-eye-opened.svg) center no-repeat;
+    }
+  }
+
   &__checkboxContainer {
     position: relative;
     padding-left: 35px;

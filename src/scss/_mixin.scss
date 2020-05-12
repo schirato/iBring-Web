@@ -360,6 +360,39 @@
   -moz-osx-font-smooyhing: grayscale;
 }
 
+@mixin texto-menu-secundario {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: theme-color("cinza-secundario");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin texto-menu-secundario-bold {
+  font-family: $font-opensans-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: theme-color("secundaria");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
+@mixin titulo-grupo-form {
+  font-family: $font-opensans-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: theme-color("cinza-escuro");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+}
+
 @mixin hyperlink {
   font-family: $font-opensans-regular;
   font-style: normal;

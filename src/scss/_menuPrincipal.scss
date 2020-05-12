@@ -1,0 +1,167 @@
+@import './mixin';
+@import './theme';
+
+.iBring-menuPrincipal {
+  width: 174px;
+  box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+  background-color: theme-color("branca");
+
+  &__marca {
+    @include mainContentRulers(22px, 40px, 22px, 40px, auto);
+    border-bottom: 1px solid theme-color("cinza-inativo");
+
+    &__logo {
+      width: 93px;
+      height: 23px;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__saudacao {
+    @include mainContentRulers(30px, 35px, 30px, 35px, auto);
+    font-family: $font-opensans-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    color: theme-color("cinza-secundario");
+  }
+
+  &__menu {
+    @include mainContentRulers(0, 15px, 0, 15px, auto);
+
+    &--ativo {
+      padding-right: 0;
+    }
+
+    &--footer {
+      margin-top: 55%;
+    }
+
+    &:hover {
+      padding-right: 0;
+
+      .iBring-menuPrincipal__menu__item {
+        &:hover {
+          background-color: theme-color("primaria");
+          color: theme-color("branca") !important;
+          border-top: 1px solid theme-color("primaria");
+        }
+      }
+    }
+
+    &__item {
+      @include mainContentRulers(15px, 15px, 15px, 15px, auto);
+      @include flexbox;
+      @include align-items(center);
+      @include texto-pequeno-bold;
+      color: theme-color("cinza-secundario") !important;
+      border-top: 1px solid theme-color("cinza-inativo");
+      cursor: pointer;
+      text-decoration: none;
+
+      &--ativo {
+        background-color: theme-color("primaria");
+        color: theme-color("branca") !important;
+        border-top: 1px solid theme-color("primaria");
+
+        .iBring-menuPrincipal__menu__item__icone--novoPedido {
+          background: url('../img/img-ico-novopedido-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--acompanhar {
+          background: url('../img/img-ico-acompanhar-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--historico {
+          background: url('../img/img-ico-historico-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--financeiro {
+          background: url('../img/img-ico-financeiro-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--configuracao {
+          background: url('../img/img-ico-configuracao-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--sac {
+          background: url('../img/img-ico-sac-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--sair {
+          background: url('../img/img-ico-sair-ativo.svg') no-repeat center;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        .iBring-menuPrincipal__menu__item__icone--novoPedido {
+          background: url('../img/img-ico-novopedido-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--acompanhar {
+          background: url('../img/img-ico-acompanhar-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--historico {
+          background: url('../img/img-ico-historico-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--financeiro {
+          background: url('../img/img-ico-financeiro-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--configuracao {
+          background: url('../img/img-ico-configuracao-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--sac {
+          background: url('../img/img-ico-sac-ativo.svg') no-repeat center;
+        }
+
+        .iBring-menuPrincipal__menu__item__icone--sair {
+          background: url('../img/img-ico-sair-ativo.svg') no-repeat center;
+        }
+      }
+
+      &__icone {
+        width: 21px;
+        height: 21px;
+        margin-right: 11px;
+
+        &--novoPedido {
+          background: url('../img/img-ico-novopedido.svg') no-repeat center;
+        }
+
+        &--acompanhar {
+          background: url('../img/img-ico-acompanhar.svg') no-repeat center;
+        }
+
+        &--historico {
+          background: url('../img/img-ico-historico.svg') no-repeat center;
+        }
+
+        &--financeiro {
+          background: url('../img/img-ico-financeiro.svg') no-repeat center;
+        }
+
+        &--configuracao {
+          background: url('../img/img-ico-configuracao.svg') no-repeat center;
+        }
+
+        &--sac {
+          background: url('../img/img-ico-sac.svg') no-repeat center;
+        }
+
+        &--sair {
+          background: url('../img/img-ico-sair.svg') no-repeat center;
+        }
+      }
+    }
+  }
+}
