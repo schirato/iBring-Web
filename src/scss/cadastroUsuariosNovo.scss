@@ -1,0 +1,115 @@
+@import './base';
+@import './menuPrincipal';
+@import './menuSecundario';
+@import './form';
+
+.iBring-cadastroUsuariosNovo {
+
+  &__menu {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__menu {
+      @include flexbox;
+      height: 100%;
+    }
+
+    &__conteudoPrincipal {
+      @include mainContentRulers(40px, 55px, 40px, 55px, auto);
+      width: 100%;
+
+      &__grupoForm {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        border-bottom: .5px solid theme-color("cinza-intermediario");
+
+        &__titulo {
+          @include titulo-grupo-form;
+        }
+
+        &__btnVoltar {
+
+          img {
+            margin-right: 10px;
+          }
+
+          &__hyperlink {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include hyperlink;
+            font-size: 12px;
+            line-height: 123.1%;
+          }
+        }
+      }
+
+      &__formRow {
+        margin-top: 30px;
+
+        &__autocomplete {
+          @include mainContentRulers(14px, 20px, 12px, 20px, auto);
+          border: 1px solid theme-color("secundaria");
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          margin-top: 3px;
+
+          &--ativo {
+            background-color: theme-color("quaternaria");
+          }
+
+          &__texto {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: theme-color("secundaria");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+          }
+        }
+
+        &__formGroup {
+
+          &__btnOutline {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            margin-top: 90px;
+
+            button {
+              width: 199px;
+              height: 44px;
+              margin: 0 auto;
+              border-radius: 12px;
+              font-family: $font-opensans-bold;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.03em;
+              color: theme-color("cinza-secundario");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+          }
+        }
+      }
+    }
+
+    .custom-select {
+      height: 45px;
+      border-radius: 8px;
+      border: 1px solid theme-color("cinza-inativo");
+    }
+  }
+}
