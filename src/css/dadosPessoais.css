@@ -7177,7 +7177,8 @@ a.text-dark:hover, a.text-dark:focus {
   border-right: 1px solid; }
 
 .navbar-light .navbar-nav .nav-link {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #393939; }
 
 @media (min-width: 992px) {
   .navbar-brand {
@@ -7575,7 +7576,7 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: !important; }
+  color: #393939 !important; }
   .iBring-form__checkboxContainer input {
     position: absolute;
     opacity: 0;
@@ -7583,7 +7584,8 @@ select {
     height: 0;
     width: 0; }
   .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox {
-    background: #63D673; }
+    background: #63D673;
+    border-color: #DADADA; }
   .iBring-form__checkboxContainer__checkbox {
     position: absolute;
     top: 0;
@@ -7591,7 +7593,7 @@ select {
     height: 19px;
     width: 19px;
     background: #FFFFFF;
-    border: 1px solid;
+    border: 1px solid #696969;
     box-sizing: border-box;
     border-radius: 2px; }
     .iBring-form__checkboxContainer__checkbox:after {

@@ -13,12 +13,12 @@
 }
 
 .ibring-navbar-divider {
-  border-right: 1px solid theme-color("$cinza-bgen");
+  border-right: 1px solid theme-color("$cinza-bg");
 }
 
 .navbar-light .navbar-nav .nav-link {
   text-transform: uppercase;
-  color: theme-color("gray-darked");
+  color: theme-color("cinza-escuro");
 }
 
 @media (min-width: 992px) {

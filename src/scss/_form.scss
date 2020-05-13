@@ -89,7 +89,7 @@ select {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: theme-color("gray-darked") !important;
+    color: theme-color("cinza-escuro") !important;
 
     input {
       position: absolute;
@@ -101,6 +101,7 @@ select {
 
     input:checked~.iBring-form__checkboxContainer__checkbox {
       background: theme-color("primaria");
+      border-color: theme-color("cinza-botao");
     }
 
     &__checkbox {
@@ -110,7 +111,7 @@ select {
       height: 19px;
       width: 19px;
       background: theme-color("branca");
-      border: 1px solid theme-color("gray-medium");
+      border: 1px solid theme-color("cinza-secundario");
       box-sizing: border-box;
       border-radius: 2px;
 
