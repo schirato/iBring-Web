@@ -65,10 +65,117 @@ h3 {
   border-color: theme-color("primary");
 }
 
+a:not([href]) {
+  color: theme-color("secundaria");
+}
+
+a:hover {
+  text-decoration: none;
+  color: theme-color("secundaria");
+}
+
 img {
   width: 100%;
 }
 
+.iBring-hidden {
+  display: none;
+}
+
 .iBring-strong {
   font-family: $font-opensans-bold;
+}
+
+.iBring-btnOutline {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  button {
+    width: 199px;
+    height: 44px;
+    margin: 40px auto;
+    border-radius: 12px;
+    font-family: $font-opensans-bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    border: 1px solid theme-color("cinza-secundario");
+    background-color: transparent;
+    color: theme-color("cinza-secundario");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+
+    &:hover,
+    &:not(:disabled):not(.disabled):active {
+      border: 1px solid theme-color("primaria");
+      background-color: transparent;
+      color: theme-color("primaria");
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.iBring-btnVoltar {
+  margin-bottom: 0.5rem;
+
+  img {
+    width: 7px;
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  &__hyperlink {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    @include hyperlink;
+    font-size: 12px;
+  }
+}
+
+.iBring-btn-icone {
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    border: none;
+  }
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  &__icoLixeira {
+    width: 10px;
+    height: 16px;
+  }
+
+  &__icoEditar {
+    width: 11px;
+    height: 11px;
+  }
+
+  &__icoCadeado {
+    width: 13px;
+    height: 17px;
+  }
+
+  &__icoAlerta {
+    width: 13px;
+    height: 13px;
+  }
+
+  &__icoAdicionar {
+    width: 16px;
+    height: 16px;
+  }
 }

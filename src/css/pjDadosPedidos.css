@@ -7259,11 +7259,122 @@ h3 {
   border-radius: 6px;
   text-transform: uppercase; }
 
+a:not([href]) {
+  color: #61B46C; }
+
+a:hover {
+  text-decoration: none;
+  color: #61B46C; }
+
 img {
   width: 100%; }
 
+.iBring-hidden {
+  display: none; }
+
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
+
+.iBring-btnOutline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .iBring-btnOutline button {
+    width: 199px;
+    height: 44px;
+    margin: 40px auto;
+    border-radius: 12px;
+    font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    border: 1px solid #696969;
+    background-color: transparent;
+    color: #696969;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale; }
+    .iBring-btnOutline button:hover, .iBring-btnOutline button:not(:disabled):not(.disabled):active {
+      border: 1px solid #63D673;
+      background-color: transparent;
+      color: #63D673; }
+    .iBring-btnOutline button:focus {
+      box-shadow: none; }
+
+.iBring-btnVoltar {
+  margin-bottom: 0.5rem; }
+  .iBring-btnVoltar img {
+    width: 7px;
+    height: 12px;
+    margin-right: 10px; }
+  .iBring-btnVoltar__hyperlink {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 123.1%;
+    letter-spacing: 0.12em;
+    color: #696969;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    font-size: 12px; }
+    .iBring-btnVoltar__hyperlink:hover {
+      color: #696969;
+      text-decoration: none; }
+
+.iBring-btn-icone {
+  background-color: transparent;
+  border: none; }
+  .iBring-btn-icone:hover, .iBring-btn-icone:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    border: none; }
+  .iBring-btn-icone:focus {
+    border: none;
+    box-shadow: none; }
+  .iBring-btn-icone__icoLixeira {
+    width: 10px;
+    height: 16px; }
+  .iBring-btn-icone__icoEditar {
+    width: 11px;
+    height: 11px; }
+  .iBring-btn-icone__icoCadeado {
+    width: 13px;
+    height: 17px; }
+  .iBring-btn-icone__icoAlerta {
+    width: 13px;
+    height: 13px; }
+  .iBring-btn-icone__icoAdicionar {
+    width: 16px;
+    height: 16px; }
 
 .iBring-menuPrincipal {
   width: 174px;
@@ -7426,7 +7537,7 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smooyhing: grayscale; }
   .iBring-form label span {
-    color: #a0a0a0; }
+    color: #A0A0A0; }
 
 .iBring-form__alertaImg {
   width: 13px;
@@ -7516,6 +7627,85 @@ select {
     .iBring-form__checkboxContainer__termos:hover {
       color: #63D673;
       text-decoration: none; }
+
+.iBring-form-noLabel .form__group {
+  margin-bottom: 20px; }
+
+.iBring-form-noLabel .form-control {
+  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: initial;
+  padding-left: 0;
+  border-color: #393939;
+  color: #979797; }
+
+.iBring-form-noLabel .form-control-fullBorder {
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+  height: 45px; }
+
+.iBring-form-noLabel .form-control.is-valid {
+  border-color: #63D673;
+  background-image: none;
+  color: #393939; }
+
+.iBring-form-noLabel__imgAlert {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px; }
+
+.iBring-form-noLabel__checkboxContainer {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #393939 !important; }
+  .iBring-form-noLabel__checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox {
+    background: #63D673;
+    border-color: #DADADA; }
+  .iBring-form-noLabel__checkboxContainer__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 2px; }
+    .iBring-form-noLabel__checkboxContainer__checkbox:after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #FFFFFF;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
+    display: block; }
 
 .iBring-dadosPedidos {
   display: -webkit-box;
@@ -7744,13 +7934,16 @@ select {
             text-align: center;
             text-transform: uppercase;
             background-color: #DADADA;
-            border-color: #DADADA;
             border-top-left-radius: 12px;
-            border-top-right-radius: 12px; }
+            border-top-right-radius: 12px;
+            border: none; }
             .iBring-dadosPedidos__conteudoPrincipal__conteudo__btnContinuar--ativo {
               background-color: #63D673;
-              border-color: #63D673;
-              color: #FFFFFF; }
+              color: #FFFFFF;
+              border: none; }
+            .iBring-dadosPedidos__conteudoPrincipal__conteudo__btnContinuar:focus {
+              border: none;
+              box-shadow: none; }
         .iBring-dadosPedidos__conteudoPrincipal__bgMapa__img {
           width: 327px;
           height: 100%; } }

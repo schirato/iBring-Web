@@ -7489,105 +7489,6 @@ img {
         .iBring-menuPrincipal__menu__item__icone--sair {
           background: url("../img/img-ico-sair.svg") no-repeat center; }
 
-.iBring-menuSecundario {
-  padding: 90px 0 90px 17px;
-  height: auto;
-  width: 46.2%;
-  background-color: #F4F3F4; }
-  .iBring-menuSecundario__menuSecao {
-    padding: 0 0 0 17px;
-    height: auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .iBring-menuSecundario__menuSecao__icone {
-      width: 15px;
-      height: 15px;
-      margin-right: 10px; }
-    .iBring-menuSecundario__menuSecao__titulo {
-      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      color: #696969;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smooyhing: grayscale;
-      margin-bottom: 0; }
-    .iBring-menuSecundario__menuSecao--empresa {
-      margin-top: 20px; }
-  .iBring-menuSecundario__menu {
-    padding: 10px 0 0 43px;
-    height: auto; }
-    .iBring-menuSecundario__menu:hover {
-      padding-left: 0; }
-      .iBring-menuSecundario__menu:hover .iBring-menuSecundario__menu__item:hover {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        background-color: rgba(99, 214, 115, 0.12);
-        text-decoration: none;
-        padding-left: 43px; }
-    .iBring-menuSecundario__menu--ativo {
-      padding-left: 0; }
-    .iBring-menuSecundario__menu__item {
-      padding: 15px 15px 15px 0;
-      height: auto;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 11px;
-      line-height: 15px;
-      color: #696969;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smooyhing: grayscale;
-      cursor: pointer;
-      text-decoration: none; }
-      .iBring-menuSecundario__menu__item:hover {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        text-decoration: none; }
-      .iBring-menuSecundario__menu__item--ativo {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        background-color: rgba(99, 214, 115, 0.12);
-        text-decoration: none;
-        padding-left: 43px; }
-
 .form-control:focus {
   border-color: #A0A0A0;
   box-shadow: none; }
@@ -7806,144 +7707,387 @@ select {
   .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
     display: block; }
 
-.iBring-meiosPagamentosNovo__menu {
-  display: none; }
-
-@media (min-width: 992px) {
-  .iBring-meiosPagamentosNovo {
-    width: 1024px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative; }
-    .iBring-meiosPagamentosNovo__menu {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      height: 100%; }
-    .iBring-meiosPagamentosNovo__conteudoPrincipal {
-      padding: 40px 55px 40px 55px;
-      height: auto;
-      width: 100%; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__titulo {
-        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
-        color: #393939;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        margin-top: 40px; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm {
+.iBring-entregadorDiaria {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .iBring-entregadorDiaria__menu {
+    display: none; }
+  @media (min-width: 992px) {
+    .iBring-entregadorDiaria {
+      width: 1024px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .iBring-entregadorDiaria__menu {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
-        -ms-flex-pack: space-between;
-        border-bottom: 0.5px solid #A0A0A0; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__titulo {
-          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 25px;
-          color: #393939;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smooyhing: grayscale; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar img {
-          margin-right: 10px; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar__hyperlink {
+        height: 100%; }
+      .iBring-entregadorDiaria__conteudoPrincipal {
+        position: relative; }
+        .iBring-entregadorDiaria__conteudoPrincipal__row {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
           display: -webkit-flex;
           display: flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center;
-          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 123.1%;
-          letter-spacing: 0.12em;
-          color: #696969;
-          text-transform: uppercase;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smooyhing: grayscale;
-          font-size: 12px;
-          line-height: 123.1%; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar__hyperlink:hover {
-            color: #696969;
-            text-decoration: none; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow {
-        margin-top: 30px; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete {
-          padding: 14px 20px 12px 20px;
-          height: auto;
-          border: 1px solid #61B46C;
-          border-bottom-left-radius: 6px;
-          border-bottom-right-radius: 6px;
-          margin-top: 3px; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete--ativo {
-            background-color: #eaf9ea; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete__texto {
+          height: 100%; }
+        .iBring-entregadorDiaria__conteudoPrincipal__conteudo {
+          padding: 40px 40px 40px 40px;
+          height: 100%;
+          box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+          width: 523px; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__cabecalho {
+            border-bottom: 0.5px solid #E5E5E5; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__cabecalho__titulo {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 25px;
+              line-height: 34px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__titulo {
+            margin-top: 30px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__titulo__texto {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 22px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__titulo__texto__btn {
+                background-color: transparent;
+                border: none; }
+                .iBring-entregadorDiaria__conteudoPrincipal__conteudo__titulo__texto__btn__atualizar {
+                  font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #63D673;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smooyhing: grayscale;
+                  margin-bottom: 0; }
+                .iBring-entregadorDiaria__conteudoPrincipal__conteudo__titulo__texto__btn__editar {
+                  display: none;
+                  width: 15px;
+                  height: 15px; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__colItem, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__colItem {
+            display: none; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__col__item__texto, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__col__item__texto {
             font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 11px;
-            line-height: 15px;
-            color: #61B46C;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale;
-            margin-bottom: 0; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__formGroup__btnOutline {
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center;
-          margin-top: 30px; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__formGroup__btnOutline button {
-            width: 199px;
-            height: 44px;
-            margin: 0 auto;
-            border-radius: 12px;
-            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 19px;
-            letter-spacing: 0.03em;
             color: #696969;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale; } }
+            -moz-osx-font-smooyhing: grayscale; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__col__item__alerta, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__col__item__alerta {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 14px;
+            color: #FF9200;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__col__item__alerta span, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__col__item__alerta span {
+              display: block;
+              margin-left: 23px;
+              margin-top: 3px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__col__item__alerta img, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__col__item__alerta img {
+              width: 13px;
+              height: 13px;
+              margin-right: 8px; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__subtexto, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__subtexto {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #696969;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-top: 1rem;
+            margin-bottom: 1rem; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__item, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__item {
+            padding: 10px 0 10px 0;
+            height: auto;
+            width: 100%;
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            color: #696969;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            border: 1px solid #696969;
+            background-color: #FFFFFF; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__item--ativo, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__item--ativo {
+              background-color: #eaf9ea;
+              border: 2px solid #61B46C;
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              color: #61B46C; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__item:hover, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__item:hover {
+              background-color: #eaf9ea; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__chk, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__chk {
+            margin-right: 0; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__chk .iBring-form__checkboxContainer, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__chk .iBring-form__checkboxContainer {
+              font-size: 12px;
+              line-height: 18px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__entregas__chk label, .iBring-entregadorDiaria__conteudoPrincipal__conteudo__especificacao__chk label {
+              margin-top: 10px; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__horarioServico {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__horarioServico__texto {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: #696969;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin: 0 16px; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumbox {
+            padding: 14px 20px 14px 20px;
+            height: auto;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            background-color: #F9F9F9;
+            border-radius: 12px;
+            margin-top: 30px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumbox__img {
+              width: 24px;
+              height: 26px;
+              margin-right: 16px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumbox__texto {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumbox__codigo {
+              padding: 10px 20px 10px 20px;
+              height: auto;
+              border: 1px solid #A0A0A0;
+              border-radius: 8px;
+              background-color: #FFFFFF;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar {
+            padding: 18px 35px 18px 35px;
+            height: auto;
+            border: 1px solid #61B46C;
+            border-radius: 12px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__cabecalho {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              margin-bottom: 8px; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__cabecalho__texto {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #393939;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: 0; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__cabecalho__btnEditar {
+                width: 15px;
+                height: 15px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__texto {
+              width: 300px;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__entregador {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-top: 16px; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__entregador__img {
+                width: 24px;
+                height: 26px;
+                margin-right: 16px; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__entregador__titulo {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #393939;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: 0; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__jumboContratar__entregador__nome {
+                width: 300px;
+                font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #696969;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: 0; }
+          .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #393939;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-top: 20px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio span {
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio__alerta {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 14px;
+              color: #61B46C;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+              .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio__alerta img {
+                width: 13px;
+                height: 13px;
+                margin-right: 8px; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio__btn {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between; }
+            .iBring-entregadorDiaria__conteudoPrincipal__conteudo__precoMedio__termos {
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #63D673;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin: -20px 0 40px 40px; }
+        .iBring-entregadorDiaria__conteudoPrincipal__bgMapa__img {
+          width: 327px;
+          height: 100%; } }

@@ -231,14 +231,19 @@
           text-align: center;
           text-transform: uppercase;
           background-color: theme-color("cinza-botao");
-          border-color: theme-color("cinza-botao");
           border-top-left-radius: 12px;
           border-top-right-radius: 12px;
+          border: none;
 
           &--ativo {
             background-color: theme-color("primaria");
-            border-color: theme-color("primaria");
             color: theme-color("branca");
+            border: none;
+          }
+
+          &:focus {
+            border: none;
+            box-shadow: none;
           }
         }
       }

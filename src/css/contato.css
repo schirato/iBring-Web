@@ -7259,11 +7259,122 @@ h3 {
   border-radius: 6px;
   text-transform: uppercase; }
 
+a:not([href]) {
+  color: #61B46C; }
+
+a:hover {
+  text-decoration: none;
+  color: #61B46C; }
+
 img {
   width: 100%; }
 
+.iBring-hidden {
+  display: none; }
+
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
+
+.iBring-btnOutline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .iBring-btnOutline button {
+    width: 199px;
+    height: 44px;
+    margin: 40px auto;
+    border-radius: 12px;
+    font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    border: 1px solid #696969;
+    background-color: transparent;
+    color: #696969;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale; }
+    .iBring-btnOutline button:hover, .iBring-btnOutline button:not(:disabled):not(.disabled):active {
+      border: 1px solid #63D673;
+      background-color: transparent;
+      color: #63D673; }
+    .iBring-btnOutline button:focus {
+      box-shadow: none; }
+
+.iBring-btnVoltar {
+  margin-bottom: 0.5rem; }
+  .iBring-btnVoltar img {
+    width: 7px;
+    height: 12px;
+    margin-right: 10px; }
+  .iBring-btnVoltar__hyperlink {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 123.1%;
+    letter-spacing: 0.12em;
+    color: #696969;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    font-size: 12px; }
+    .iBring-btnVoltar__hyperlink:hover {
+      color: #696969;
+      text-decoration: none; }
+
+.iBring-btn-icone {
+  background-color: transparent;
+  border: none; }
+  .iBring-btn-icone:hover, .iBring-btn-icone:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    border: none; }
+  .iBring-btn-icone:focus {
+    border: none;
+    box-shadow: none; }
+  .iBring-btn-icone__icoLixeira {
+    width: 10px;
+    height: 16px; }
+  .iBring-btn-icone__icoEditar {
+    width: 11px;
+    height: 11px; }
+  .iBring-btn-icone__icoCadeado {
+    width: 13px;
+    height: 17px; }
+  .iBring-btn-icone__icoAlerta {
+    width: 13px;
+    height: 13px; }
+  .iBring-btn-icone__icoAdicionar {
+    width: 16px;
+    height: 16px; }
 
 /* Folha de Estilo: Contato */
 .ibring-background-image {
