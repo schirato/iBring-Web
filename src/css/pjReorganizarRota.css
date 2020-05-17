@@ -7728,42 +7728,42 @@ select {
   .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
     display: block; }
 
-.iBring-dadosRetirada {
+.iBring-reorganizarRota {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
-  .iBring-dadosRetirada__menu {
+  .iBring-reorganizarRota__menu {
     display: none; }
   @media (min-width: 992px) {
-    .iBring-dadosRetirada {
+    .iBring-reorganizarRota {
       width: 1024px;
       height: 100%;
       margin: 0 auto;
       position: relative; }
-      .iBring-dadosRetirada__menu {
+      .iBring-reorganizarRota__menu {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         height: 100%; }
-      .iBring-dadosRetirada__conteudoPrincipal {
+      .iBring-reorganizarRota__conteudoPrincipal {
         position: relative; }
-        .iBring-dadosRetirada__conteudoPrincipal__row {
+        .iBring-reorganizarRota__conteudoPrincipal__row {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
           display: -webkit-flex;
           display: flex;
           height: 100%; }
-        .iBring-dadosRetirada__conteudoPrincipal__conteudo {
+        .iBring-reorganizarRota__conteudoPrincipal__conteudo {
           padding: 40px 40px 40px 40px;
           height: 100%;
           box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
           width: 523px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho {
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__cabecalho {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7781,7 +7781,7 @@ select {
             -ms-flex-pack: space-between;
             border-bottom: 0.5px solid #E5E5E5;
             margin-bottom: 30px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho__titulo {
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__cabecalho__titulo {
               font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
               font-style: normal;
               font-weight: normal;
@@ -7790,7 +7790,9 @@ select {
               color: #393939;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smooyhing: grayscale; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo {
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__cabecalho__btnVoltar {
+              display: flex; }
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__bloco {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7807,126 +7809,29 @@ select {
             justify-content: space-between;
             -ms-flex-pack: space-between;
             margin-bottom: 1.5rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 22px;
-              color: #393939;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-bottom: 0; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__letra {
-              padding: 0 10px 0 10px;
-              height: auto;
-              background-color: #DADADA;
-              border-radius: 6px;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #FFFFFF;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-right: 10px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete {
-            display: none;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            border: 1px solid #61B46C;
-            background-color: #FFFFFF;
-            position: absolute;
-            z-index: 2;
-            width: 98%; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto {
-              padding: 1rem 1rem 1rem 1rem;
-              height: auto;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 11px;
-              line-height: 15px;
-              color: #61B46C;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              border-bottom: 0.5px solid #E5E5E5;
-              margin-bottom: 0; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:last-child {
-                border-bottom: none; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:hover {
-                background-color: #eaf9ea;
-                border-color: transparent; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox {
-            padding: 16px 22px 16px 22px;
-            height: auto;
-            background-color: #F4F3F4;
-            border-radius: 12px;
-            margin-top: 1rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__titulo {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #393939;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #696969;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-left: 8px;
-              margin-right: 8px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__campos {
-              display: -webkit-box;
-              display: -moz-box;
-              display: -ms-flexbox;
-              display: -webkit-flex;
-              display: flex;
-              -webkit-align-items: center;
-              -moz-align-items: center;
-              -ms-align-items: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-justify-content: space-between;
-              -moz-justify-content: space-between;
-              -ms-justify-content: space-between;
-              justify-content: space-between;
-              -ms-flex-pack: space-between; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__link {
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            -ms-justify-content: flex-end;
-            justify-content: flex-end;
-            -ms-flex-pack: flex-end;
-            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 11px;
-            line-height: 15px;
-            color: #61B46C;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale;
-            text-align: right;
-            margin-top: 1rem;
-            cursor: pointer; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa {
-            display: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox {
-              padding: 16px 0 16px 0;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            justify-content: space-between;
+            -ms-flex-pack: space-between;
+            margin-bottom: 0; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo--cadastrado {
+              padding: 10px 12px 10px 12px;
               height: auto;
+              border: 1px solid #DADADA;
+              border-radius: 7px; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__reorganiza {
               display: -webkit-box;
               display: -moz-box;
               display: -ms-flexbox;
@@ -7942,20 +7847,200 @@ select {
               -ms-justify-content: center;
               justify-content: center;
               -ms-flex-pack: center;
-              background-color: #FFFFFF;
-              border: 1px solid #979797;
-              border-radius: 12px; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox__texto {
+              -webkit-flex-direction: column;
+              -moz-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__reorganiza__setaBaixo {
+                transform: rotate(180deg); }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__texto {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-direction: column;
+              -moz-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0;
+              width: 240px; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__texto__pedido {
                 font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 19px;
-                color: #979797;
+                font-size: 10px;
+                line-height: 14px;
+                color: #393939;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-top: 4px; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__texto__nome {
+                margin-left: 1.5rem; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__texto--cadastrado {
+                font-size: 11px;
+                line-height: 15px;
+                color: #696969; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__complemento {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-direction: column;
+              -moz-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__complemento--cadastrado {
+                font-size: 11px;
+                line-height: 15px;
+                color: #696969; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__letra {
+              padding: 0 10px 0 10px;
+              height: auto;
+              background-color: #DADADA;
+              border-radius: 6px;
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-right: 10px; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__titulo__letra--cadastrado {
+                background-color: #61B46C; }
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo {
+            position: absolute;
+            bottom: 42px;
+            left: 1px;
+            background-color: #eaf9ea;
+            width: 61.5%; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__itens {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              padding: 17px 36px 17px 36px;
+              height: auto; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__titulo {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.03em;
+              color: #696969;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center;
+              margin-bottom: 0; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__valor {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 17px;
+              line-height: 23px;
+              letter-spacing: 0.03em;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__rodape {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: center;
+              -moz-justify-content: center;
+              -ms-justify-content: center;
+              justify-content: center;
+              -ms-flex-pack: center;
+              padding: 17px 36px 17px 36px;
+              height: auto;
+              background-color: #F9F9F9; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: #393939;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smooyhing: grayscale;
                 margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter {
+                .iBring-reorganizarRota__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto__destaque {
+                  color: #61B46C;
+                  margin-right: 8px; }
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnOutline {
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnOutline button {
+              border: 1px solid #63D673;
+              background-color: transparent;
+              color: #63D673; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnOutline button:hover {
+                background-color: #eaf9ea; }
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnOutline__link {
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.03em;
+              color: #D6152B;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+              .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnOutline__link:hover {
+                color: #D6152B; }
+          .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnSubmeter {
             padding: 10px 0 10px 0;
             height: auto;
             position: absolute;
@@ -7977,14 +8062,14 @@ select {
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
             border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter--ativo {
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnSubmeter--ativo {
               background-color: #63D673;
               color: #FFFFFF;
               border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter:focus {
+            .iBring-reorganizarRota__conteudoPrincipal__conteudo__btnSubmeter:focus {
               border: none;
               box-shadow: none; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local {
+        .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
@@ -8003,9 +8088,8 @@ select {
           position: absolute;
           width: 78px;
           height: 78px;
-          background: url(../img/img-bg-posicao.svg) center no-repeat;
-          display: none; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local__texto {
+          background: url(../img/img-bg-posicao.svg) center no-repeat; }
+          .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local__texto {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -8034,9 +8118,18 @@ select {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smooyhing: grayscale;
             margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local--posA {
+          .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local--posA {
             top: 21%;
             right: 7%; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__img {
+          .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local--posB {
+            top: 37%;
+            right: 23%; }
+          .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local--posC {
+            top: 67%;
+            right: 16%; }
+          .iBring-reorganizarRota__conteudoPrincipal__bgMapa__local--posD {
+            top: 55%;
+            right: 2%; }
+        .iBring-reorganizarRota__conteudoPrincipal__bgMapa__img {
           width: 327px;
           height: 100%; } }

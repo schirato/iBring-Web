@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../../favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>iBring - Pagamento</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../../manifest.json" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/pjPagamento.css" />
+</head>
+
+<body>
+  <section id="iBring-pagamento" class="iBring-pagamento">
+    <div id="iBring-pagamento-Menu" class="iBring-pagamento__menu">
+      <!-- Menu Principal -->
+      <section id="iBring-MenuPrincipal" class="iBring-menuPrincipal">
+        <div class="iBring-menuPrincipal__marca">
+          <img src="../../../img/logo-ibring-rgb-menu.svg" alt="Logo iBring"
+            class="iBring-menuPrincipal__marca__logo" />
+        </div>
+        <div class="iBring-menuPrincipal__saudacao">
+          Bem vindo, <span class="iBring-strong">Sergio Dutra</span>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--ativo">
+          <a href="" title="Novo Pedido" target="_self"
+            class="iBring-menuPrincipal__menu__item iBring-menuPrincipal__menu__item--ativo">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--novoPedido">&nbsp;</span>
+            Novo pedido
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Acompanhar" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--acompanhar">&nbsp;</span>
+            Acompanhar
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--historico">&nbsp;</span>
+            Histórico
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico financeiro" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--financeiro">&nbsp;</span>
+            Histórico financeiro
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Configuração" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--configuracao">&nbsp;</span>
+            Configuração
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--footer">
+          <a href="" title="Fale conosco" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sac">&nbsp;</span>
+            Fale conosco
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Sair" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sair">&nbsp;</span>
+            Sair
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Conteúdo Principal -->
+    <section class="iBring-pagamento__conteudoPrincipal">
+      <div class="iBring-pagamento__conteudoPrincipal__row">
+        <div class="iBring-pagamento__conteudoPrincipal__conteudo">
+          <div class="iBring-pagamento__conteudoPrincipal__conteudo__cabecalho">
+            <p class="iBring-pagamento__conteudoPrincipal__conteudo__cabecalho__titulo">
+              Pagamento
+            </p>
+            <!-- Botao Voltar -->
+            <div id="iBring-pagamento-BtnVoltar"
+              class="iBring-btnVoltar iBring-pagamento__conteudoPrincipal__conteudo__cabecalho__btnVoltar">
+              <a href="" title="Voltar" class="iBring-btnVoltar__hyperlink">
+                <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar" />
+                Voltar
+              </a>
+            </div>
+          </div>
+          <p class="iBring-btnVoltar iBring-pagamento__conteudoPrincipal__conteudo__titulo">Qual será a forma de
+            pagamento?</p>
+          <div id="accordion" class="iBring-accordion">
+            <div class="card iBring-accordion__card">
+              <div class="card-header iBring-accordion__card__header" id="boletoBancario">
+                <button class="d-flex btn collapsed iBring-accordion__card__header__titulo" data-toggle="collapse"
+                  data-target="#collapseBoletoBancario" aria-expanded="false" aria-controls="collapseBoletoBancario">
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__texto"><span
+                      class="iBring-strong">Boleto bancário</span>Faturamento mensal</p>
+                  <p
+                    class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha--hidden">
+                    Comercial</p>
+                </button>
+              </div>
+              <div id="collapseBoletoBancario" class="collapse" aria-labelledby="boletoBancario"
+                data-parent="#accordion">
+                <div class="card-body iBring-accordion__card__body">
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista">Comercial</p>
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista">Pessoal</p>
+                </div>
+              </div>
+            </div>
+            <div class="card iBring-accordion__card iBring-accordion__card--ativo">
+              <div class="card-header iBring-accordion__card__header" id="cartaoCredito">
+                <button class="d-flex btn collapsed iBring-accordion__card__header__titulo" data-toggle="collapse"
+                  data-target="#collapseCartaoCredito" aria-expanded="false" aria-controls="collapseCartaoCredito">
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__texto"><span
+                      class="iBring-strong">Cartão de crédito</span>A cada pedido</p>
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha">
+                    <img src="../../../img/img-card-mastercard.svg" alt="Mastercard"
+                      class="iBring-btn-icone__icoMastercard">**** 8295</p>
+                </button>
+              </div>
+              <div id="collapseCartaoCredito" class="collapse" aria-labelledby="cartaoCredito" data-parent="#accordion">
+                <div class="card-body iBring-accordion__card__body">
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista"><img
+                      src="../../../img/img-card-mastercard.svg" alt="Mastercard"
+                      class="iBring-btn-icone__icoMastercard">**** 8295</p>
+                  <p class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista"><img
+                      src="../../../img/img-card-visa.svg" alt="Visa" class="iBring-btn-icone__icoVisa">**** 3704
+                  </p>
+                  <a href=""
+                    class="iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista--link">Adicionar
+                    cartão
+                    <img src="../../../img/img-ico-plus.svg" alt="Adicionar" class="iBring-btn-icone__icoAdicionar"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo">
+            <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__itens">
+              <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Tempo de entrega
+                </p>
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  1h 34 min
+                </p>
+              </div>
+              <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Distância
+                </p>
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  54,8 km
+                </p>
+              </div>
+              <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Valor do seguro
+                </p>
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  R$ 70,00
+                </p>
+              </div>
+              <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Valor Total
+                </p>
+                <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  R$ 190,60
+                </p>
+              </div>
+            </div>
+            <div class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape">
+              <p class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto">
+                <span
+                  class="iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto__destaque">Transparência
+                  IBring</span>Nesta entrega, o entregador irá receber
+                <span class="iBring-strong">R$40,00</span>
+              </p>
+            </div>
+          </div>
+          <button
+            class="iBring-pagamento__conteudoPrincipal__conteudo__btnSubmeter iBring-pagamento__conteudoPrincipal__conteudo__btnSubmeter--ativo"
+            submit>
+            Finalizar
+          </button>
+        </div>
+        <div class="iBring-pagamento__conteudoPrincipal__bgMapa">
+          <!-- Posicao A -->
+          <div
+            class="iBring-pagamento__conteudoPrincipal__bgMapa__local iBring-pagamento__conteudoPrincipal__bgMapa__local--posA">
+            <p class="iBring-pagamento__conteudoPrincipal__bgMapa__local__texto">
+              A
+            </p>
+          </div>
+          <!-- Posicao B -->
+          <div
+            class="iBring-pagamento__conteudoPrincipal__bgMapa__local iBring-pagamento__conteudoPrincipal__bgMapa__local--posB">
+            <p class="iBring-pagamento__conteudoPrincipal__bgMapa__local__texto">
+              B
+            </p>
+          </div>
+          <!-- Posicao C -->
+          <div
+            class="iBring-pagamento__conteudoPrincipal__bgMapa__local iBring-pagamento__conteudoPrincipal__bgMapa__local--posC">
+            <p class="iBring-pagamento__conteudoPrincipal__bgMapa__local__texto">
+              C
+            </p>
+          </div>
+          <!-- Posicao D -->
+          <div
+            class="iBring-pagamento__conteudoPrincipal__bgMapa__local iBring-pagamento__conteudoPrincipal__bgMapa__local--posD">
+            <p class="iBring-pagamento__conteudoPrincipal__bgMapa__local__texto">
+              D
+            </p>
+          </div>
+          <img src="../../../img/bg-map.png" alt="Mapa" class="iBring-pagamento__conteudoPrincipal__bgMapa__img" />
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/popper.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
+
+</html>

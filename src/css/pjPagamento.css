@@ -7728,42 +7728,88 @@ select {
   .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
     display: block; }
 
-.iBring-dadosRetirada {
+.iBring-accordion__card {
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #696969;
+  margin-bottom: 1.5rem; }
+  .iBring-accordion__card--ativo {
+    border: 1px solid #61B46C; }
+    .iBring-accordion__card--ativo .iBring-accordion__card__header {
+      background-color: #eaf9ea;
+      border-radius: 12px !important; }
+    .iBring-accordion__card--ativo .iBring-accordion__card__header__titulo {
+      color: #61B46C; }
+  .iBring-accordion__card__header {
+    background-color: transparent;
+    border-bottom: none; }
+    .iBring-accordion__card__header__titulo {
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #696969;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smooyhing: grayscale;
+      width: 100%; }
+      .iBring-accordion__card__header__titulo:hover {
+        color: #696969; }
+      .iBring-accordion__card__header__titulo:focus {
+        box-shadow: none; }
+  .iBring-accordion__card__body {
+    padding: 0 1.25rem 0 1.25rem;
+    height: auto; }
+
+.iBring-accordion__card__header__titulo[aria-expanded="true"] {
+  color: #61B46C; }
+
+.iBring-pagamento {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
-  .iBring-dadosRetirada__menu {
+  .iBring-pagamento__menu {
     display: none; }
   @media (min-width: 992px) {
-    .iBring-dadosRetirada {
+    .iBring-pagamento {
       width: 1024px;
       height: 100%;
       margin: 0 auto;
       position: relative; }
-      .iBring-dadosRetirada__menu {
+      .iBring-pagamento__menu {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         height: 100%; }
-      .iBring-dadosRetirada__conteudoPrincipal {
+      .iBring-pagamento__conteudoPrincipal {
         position: relative; }
-        .iBring-dadosRetirada__conteudoPrincipal__row {
+        .iBring-pagamento__conteudoPrincipal__row {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
           display: -webkit-flex;
           display: flex;
           height: 100%; }
-        .iBring-dadosRetirada__conteudoPrincipal__conteudo {
+        .iBring-pagamento__conteudoPrincipal__conteudo {
           padding: 40px 40px 40px 40px;
           height: 100%;
           box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
           width: 523px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho {
+          .iBring-pagamento__conteudoPrincipal__conteudo__cabecalho {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7781,7 +7827,7 @@ select {
             -ms-flex-pack: space-between;
             border-bottom: 0.5px solid #E5E5E5;
             margin-bottom: 30px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho__titulo {
+            .iBring-pagamento__conteudoPrincipal__conteudo__cabecalho__titulo {
               font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
               font-style: normal;
               font-weight: normal;
@@ -7790,7 +7836,47 @@ select {
               color: #393939;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smooyhing: grayscale; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo {
+            .iBring-pagamento__conteudoPrincipal__conteudo__cabecalho__btnVoltar {
+              display: flex; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__titulo {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #393939;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 2rem; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__texto {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: left;
+            margin-bottom: 0; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #393939;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha img {
+              margin-right: 8px; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__card__header__titulo__escolha--hidden {
+              display: none; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista {
+            padding: 1rem 1rem 1rem 1rem;
+            height: auto;
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7801,90 +7887,48 @@ select {
             -ms-align-items: center;
             -ms-flex-align: center;
             align-items: center;
-            -webkit-justify-content: space-between;
-            -moz-justify-content: space-between;
-            -ms-justify-content: space-between;
-            justify-content: space-between;
-            -ms-flex-pack: space-between;
-            margin-bottom: 1.5rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 22px;
-              color: #393939;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-bottom: 0; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__letra {
-              padding: 0 10px 0 10px;
-              height: auto;
-              background-color: #DADADA;
-              border-radius: 6px;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #FFFFFF;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-right: 10px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete {
-            display: none;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            border: 1px solid #61B46C;
-            background-color: #FFFFFF;
-            position: absolute;
-            z-index: 2;
-            width: 98%; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto {
-              padding: 1rem 1rem 1rem 1rem;
-              height: auto;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 11px;
-              line-height: 15px;
-              color: #61B46C;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              border-bottom: 0.5px solid #E5E5E5;
-              margin-bottom: 0; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:last-child {
-                border-bottom: none; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:hover {
-                background-color: #eaf9ea;
-                border-color: transparent; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox {
-            padding: 16px 22px 16px 22px;
-            height: auto;
-            background-color: #F4F3F4;
-            border-radius: 12px;
-            margin-top: 1rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__titulo {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #393939;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #696969;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-left: 8px;
+            border-bottom: 0.5px solid #979797;
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #393939;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+            cursor: pointer; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista img {
               margin-right: 8px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__campos {
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista:first-child {
+              border-top: 0.5px solid #979797; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista:last-child {
+              border-bottom: none; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista:hover {
+              background-color: #eaf9ea;
+              border-color: #eaf9ea; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista--link {
+              padding: 1rem 0 1rem 0;
+              height: auto;
+              -webkit-justify-content: flex-end;
+              -moz-justify-content: flex-end;
+              -ms-justify-content: flex-end;
+              justify-content: flex-end;
+              -ms-flex-pack: flex-end;
+              color: #63D673; }
+              .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista--link:hover {
+                background-color: #FFFFFF;
+                border-color: #979797;
+                color: #63D673; }
+              .iBring-pagamento__conteudoPrincipal__conteudo__accordion__lista--link img {
+                margin-left: 8px; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo {
+            position: absolute;
+            bottom: 42px;
+            left: 1px;
+            background-color: #eaf9ea;
+            width: 61.5%; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__itens {
               display: -webkit-box;
               display: -moz-box;
               display: -ms-flexbox;
@@ -7899,34 +7943,33 @@ select {
               -moz-justify-content: space-between;
               -ms-justify-content: space-between;
               justify-content: space-between;
-              -ms-flex-pack: space-between; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__link {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            -ms-justify-content: flex-end;
-            justify-content: flex-end;
-            -ms-flex-pack: flex-end;
-            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 11px;
-            line-height: 15px;
-            color: #61B46C;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale;
-            text-align: right;
-            margin-top: 1rem;
-            cursor: pointer; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa {
-            display: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox {
-              padding: 16px 0 16px 0;
-              height: auto;
+              -ms-flex-pack: space-between;
+              padding: 17px 36px 17px 36px;
+              height: auto; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__titulo {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.03em;
+              color: #696969;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center;
+              margin-bottom: 0; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__valor {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 17px;
+              line-height: 23px;
+              letter-spacing: 0.03em;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape {
               display: -webkit-box;
               display: -moz-box;
               display: -ms-flexbox;
@@ -7942,20 +7985,29 @@ select {
               -ms-justify-content: center;
               justify-content: center;
               -ms-flex-pack: center;
-              background-color: #FFFFFF;
-              border: 1px solid #979797;
-              border-radius: 12px; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox__texto {
+              padding: 17px 36px 17px 36px;
+              height: auto;
+              background-color: #F9F9F9; }
+              .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto {
                 font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 19px;
-                color: #979797;
+                font-size: 11px;
+                line-height: 15px;
+                color: #393939;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smooyhing: grayscale;
                 margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter {
+                .iBring-pagamento__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto__destaque {
+                  color: #61B46C;
+                  margin-right: 8px; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__btnOutline button {
+            border: 1px solid #63D673;
+            background-color: transparent;
+            color: #63D673; }
+            .iBring-pagamento__conteudoPrincipal__conteudo__btnOutline button:hover {
+              background-color: #eaf9ea; }
+          .iBring-pagamento__conteudoPrincipal__conteudo__btnSubmeter {
             padding: 10px 0 10px 0;
             height: auto;
             position: absolute;
@@ -7977,14 +8029,14 @@ select {
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
             border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter--ativo {
+            .iBring-pagamento__conteudoPrincipal__conteudo__btnSubmeter--ativo {
               background-color: #63D673;
               color: #FFFFFF;
               border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter:focus {
+            .iBring-pagamento__conteudoPrincipal__conteudo__btnSubmeter:focus {
               border: none;
               box-shadow: none; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local {
+        .iBring-pagamento__conteudoPrincipal__bgMapa__local {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
@@ -8003,9 +8055,8 @@ select {
           position: absolute;
           width: 78px;
           height: 78px;
-          background: url(../img/img-bg-posicao.svg) center no-repeat;
-          display: none; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local__texto {
+          background: url(../img/img-bg-posicao.svg) center no-repeat; }
+          .iBring-pagamento__conteudoPrincipal__bgMapa__local__texto {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -8034,9 +8085,18 @@ select {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smooyhing: grayscale;
             margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local--posA {
+          .iBring-pagamento__conteudoPrincipal__bgMapa__local--posA {
             top: 21%;
             right: 7%; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__img {
+          .iBring-pagamento__conteudoPrincipal__bgMapa__local--posB {
+            top: 37%;
+            right: 23%; }
+          .iBring-pagamento__conteudoPrincipal__bgMapa__local--posC {
+            top: 67%;
+            right: 16%; }
+          .iBring-pagamento__conteudoPrincipal__bgMapa__local--posD {
+            top: 55%;
+            right: 2%; }
+        .iBring-pagamento__conteudoPrincipal__bgMapa__img {
           width: 327px;
           height: 100%; } }

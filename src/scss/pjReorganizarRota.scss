@@ -1,0 +1,360 @@
+@import './base';
+@import './menuPrincipal';
+@import './form';
+
+.iBring-reorganizarRota {
+  @include flexbox;
+
+  &__menu {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__menu {
+      @include flexbox;
+      height: 100%;
+    }
+
+    &__conteudoPrincipal {
+      position: relative;
+
+      &__row {
+        @include flexbox;
+        height: 100%;
+      }
+
+      &__conteudo {
+        @include mainContentRulers(40px, 40px);
+        box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+        width: 523px;
+
+        &__cabecalho {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(space-between);
+          border-bottom: .5px solid theme-color("cinza-inativo");
+          margin-bottom: 30px;
+
+          &__titulo {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 34px;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+          }
+
+          &__btnVoltar {
+            display: flex;
+          }
+        }
+
+        &__bloco {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(space-between);
+          margin-bottom: 1.5rem;
+        }
+
+        &__titulo {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(space-between);
+          margin-bottom: 0;
+
+          &--cadastrado {
+            @include mainContentRulers(10px, 12px, 10px, 12px, auto);
+            border: 1px solid theme-color("cinza-botao");
+            border-radius: 7px;
+          }
+
+          &__reorganiza {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+
+            &__setaBaixo {
+              transform: rotate(180deg);
+            }
+          }
+
+          &__texto {
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(space-between);
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+            width: 240px;
+
+            &__pedido {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 14px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-top: 4px;
+            }
+
+            &__nome {
+              margin-left: 1.5rem;
+            }
+
+            &--cadastrado {
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-secundario");
+            }
+          }
+
+          &__complemento {
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(space-between);
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+
+
+            &--cadastrado {
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-secundario");
+            }
+          }
+
+          &__letra {
+            @include mainContentRulers(0, 10px, 0, 10px, auto);
+            background-color: theme-color("cinza-botao");
+            border-radius: 6px;
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: theme-color("branca");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-right: 10px;
+
+            &--cadastrado {
+              background-color: theme-color("secundaria");
+            }
+          }
+        }
+
+        &__jumboBoxInfo {
+          position: absolute;
+          bottom: 42px;
+          left: 1px;
+          background-color: theme-color("quaternaria");
+          width: 61.5%;
+
+          &__itens {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(space-between);
+            @include mainContentRulers(17px, 36px, 17px, 36px, auto);
+          }
+
+          &__titulo {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            color: theme-color("cinza-secundario");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            text-align: center;
+            margin-bottom: 0;
+          }
+
+          &__valor {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            text-align: center;
+          }
+
+          &__rodape {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include mainContentRulers(17px, 36px, 17px, 36px, auto);
+            background-color: theme-color("cinza-bg");
+
+            &__texto {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0;
+
+              &__destaque {
+                color: theme-color("secundaria");
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+
+        &__btnOutline {
+          @include flex-direction(column);
+
+          button {
+            border: 1px solid theme-color("primaria");
+            background-color: transparent;
+            color: theme-color("primaria");
+
+            &:hover {
+              background-color: theme-color("quaternaria");
+            }
+          }
+
+          &__link {
+            font-family: $font-opensans-bold;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            color: theme-color("alerta-erro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+
+            &:hover {
+              color: theme-color("alerta-erro");
+            }
+          }
+        }
+
+        &__btnSubmeter {
+          @include mainContentRulers(10px, 0, 10px, 0, auto);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 523px;
+          font-family: $font-opensans-bold;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.03em;
+          color: theme-color("cinza-secundario");
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smooyhing: grayscale;
+          text-align: center;
+          text-transform: uppercase;
+          background-color: theme-color("cinza-botao");
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          border: none;
+
+          &--ativo {
+            background-color: theme-color("primaria");
+            color: theme-color("branca");
+            border: none;
+          }
+
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      &__bgMapa {
+
+        &__local {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+          position: absolute;
+          width: 78px;
+          height: 78px;
+          background: url(../img/img-bg-posicao.svg) center no-repeat;
+          //display: none; // remover quando for usar
+
+          &__texto {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: theme-color("secundaria");
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: theme-color("branca");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+          }
+
+          &--posA {
+            top: 21%;
+            right: 7%;
+          }
+
+          &--posB {
+            top: 37%;
+            right: 23%;
+          }
+
+          &--posC {
+            top: 67%;
+            right: 16%;
+          }
+
+          &--posD {
+            top: 55%;
+            right: 2%;
+          }
+        }
+
+        &__img {
+          width: 327px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -7728,42 +7728,42 @@ select {
   .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
     display: block; }
 
-.iBring-dadosRetirada {
+.iBring-resumoPedido {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
-  .iBring-dadosRetirada__menu {
+  .iBring-resumoPedido__menu {
     display: none; }
   @media (min-width: 992px) {
-    .iBring-dadosRetirada {
+    .iBring-resumoPedido {
       width: 1024px;
       height: 100%;
       margin: 0 auto;
       position: relative; }
-      .iBring-dadosRetirada__menu {
+      .iBring-resumoPedido__menu {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         height: 100%; }
-      .iBring-dadosRetirada__conteudoPrincipal {
+      .iBring-resumoPedido__conteudoPrincipal {
         position: relative; }
-        .iBring-dadosRetirada__conteudoPrincipal__row {
+        .iBring-resumoPedido__conteudoPrincipal__row {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
           display: -webkit-flex;
           display: flex;
           height: 100%; }
-        .iBring-dadosRetirada__conteudoPrincipal__conteudo {
+        .iBring-resumoPedido__conteudoPrincipal__conteudo {
           padding: 40px 40px 40px 40px;
           height: 100%;
           box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
           width: 523px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho {
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7781,7 +7781,7 @@ select {
             -ms-flex-pack: space-between;
             border-bottom: 0.5px solid #E5E5E5;
             margin-bottom: 30px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__cabecalho__titulo {
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho__titulo {
               font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
               font-style: normal;
               font-weight: normal;
@@ -7790,7 +7790,11 @@ select {
               color: #393939;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smooyhing: grayscale; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo {
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho__btnVoltar {
+              display: flex; }
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo {
+            padding: 1rem 0 1rem 0;
+            height: auto;
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -7806,85 +7810,126 @@ select {
             -ms-justify-content: space-between;
             justify-content: space-between;
             -ms-flex-pack: space-between;
-            margin-bottom: 1.5rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 22px;
-              color: #393939;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-bottom: 0; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__titulo__letra {
-              padding: 0 10px 0 10px;
-              height: auto;
-              background-color: #DADADA;
-              border-radius: 6px;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
-              color: #FFFFFF;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              margin-right: 10px; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete {
-            display: none;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            border: 1px solid #61B46C;
-            background-color: #FFFFFF;
-            position: absolute;
-            z-index: 2;
-            width: 98%; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto {
-              padding: 1rem 1rem 1rem 1rem;
-              height: auto;
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 11px;
-              line-height: 15px;
-              color: #61B46C;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smooyhing: grayscale;
-              border-bottom: 0.5px solid #E5E5E5;
-              margin-bottom: 0; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:last-child {
-                border-bottom: none; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__autocomplete__texto:hover {
-                background-color: #eaf9ea;
-                border-color: transparent; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox {
-            padding: 16px 22px 16px 22px;
-            height: auto;
-            background-color: #F4F3F4;
-            border-radius: 12px;
-            margin-top: 1rem; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__titulo {
+            border-bottom: 0.5px solid #DADADA; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo--last {
+              border-bottom: none; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda {
+              margin-right: 8px; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita {
+              margin-left: 8px; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto {
               font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
               line-height: 19px;
               color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0;
+              width: 24rem; }
+              .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto--quebra {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__link {
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #63D673;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smooyhing: grayscale; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__texto {
-              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              .iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__link:hover {
+                color: #63D673; }
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo {
+            padding: 16px 30px 16px 30px;
+            height: auto;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            justify-content: space-between;
+            -ms-flex-pack: space-between;
+            background-color: #F4F3F4;
+            border-radius: 12px;
+            margin-top: 3rem; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__texto {
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
               font-style: normal;
               font-weight: normal;
-              font-size: 14px;
-              line-height: 19px;
+              font-size: 10px;
+              line-height: 14px;
               color: #696969;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smooyhing: grayscale;
-              margin-left: 8px;
-              margin-right: 8px; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__jumboBox__campos {
+              width: 13rem; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__dimensao {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              -moz-justify-content: space-between;
+              -ms-justify-content: space-between;
+              justify-content: space-between;
+              -ms-flex-pack: space-between;
+              -webkit-flex-direction: column;
+              -moz-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column; }
+              .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__dimensao__texto {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                -ms-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-justify-content: space-between;
+                -moz-justify-content: space-between;
+                -ms-justify-content: space-between;
+                justify-content: space-between;
+                -ms-flex-pack: space-between;
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 14px;
+                color: #696969;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: 0; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__img {
+              width: 93px;
+              height: 83px; }
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo {
+            position: absolute;
+            bottom: 42px;
+            left: 1px;
+            background-color: #eaf9ea;
+            width: 61.5%; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__itens {
               display: -webkit-box;
               display: -moz-box;
               display: -ms-flexbox;
@@ -7899,34 +7944,33 @@ select {
               -moz-justify-content: space-between;
               -ms-justify-content: space-between;
               justify-content: space-between;
-              -ms-flex-pack: space-between; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__link {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            -ms-justify-content: flex-end;
-            justify-content: flex-end;
-            -ms-flex-pack: flex-end;
-            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 11px;
-            line-height: 15px;
-            color: #61B46C;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale;
-            text-align: right;
-            margin-top: 1rem;
-            cursor: pointer; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa {
-            display: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox {
-              padding: 16px 0 16px 0;
-              height: auto;
+              -ms-flex-pack: space-between;
+              padding: 17px 36px 17px 36px;
+              height: auto; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__titulo {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.03em;
+              color: #696969;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center;
+              margin-bottom: 0; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__valor {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 17px;
+              line-height: 23px;
+              letter-spacing: 0.03em;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape {
               display: -webkit-box;
               display: -moz-box;
               display: -ms-flexbox;
@@ -7942,20 +7986,29 @@ select {
               -ms-justify-content: center;
               justify-content: center;
               -ms-flex-pack: center;
-              background-color: #FFFFFF;
-              border: 1px solid #979797;
-              border-radius: 12px; }
-              .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__expressa__jumboBox__texto {
+              padding: 17px 36px 17px 36px;
+              height: auto;
+              background-color: #F9F9F9; }
+              .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto {
                 font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
-                line-height: 19px;
-                color: #979797;
+                font-size: 11px;
+                line-height: 15px;
+                color: #393939;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smooyhing: grayscale;
                 margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter {
+                .iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto__destaque {
+                  color: #61B46C;
+                  margin-right: 8px; }
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__btnOutline button {
+            border: 1px solid #63D673;
+            background-color: transparent;
+            color: #63D673; }
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__btnOutline button:hover {
+              background-color: #eaf9ea; }
+          .iBring-resumoPedido__conteudoPrincipal__conteudo__btnSubmeter {
             padding: 10px 0 10px 0;
             height: auto;
             position: absolute;
@@ -7977,14 +8030,14 @@ select {
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
             border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter--ativo {
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__btnSubmeter--ativo {
               background-color: #63D673;
               color: #FFFFFF;
               border: none; }
-            .iBring-dadosRetirada__conteudoPrincipal__conteudo__form__btnSubmeter:focus {
+            .iBring-resumoPedido__conteudoPrincipal__conteudo__btnSubmeter:focus {
               border: none;
               box-shadow: none; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local {
+        .iBring-resumoPedido__conteudoPrincipal__bgMapa__local {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
@@ -8003,9 +8056,8 @@ select {
           position: absolute;
           width: 78px;
           height: 78px;
-          background: url(../img/img-bg-posicao.svg) center no-repeat;
-          display: none; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local__texto {
+          background: url(../img/img-bg-posicao.svg) center no-repeat; }
+          .iBring-resumoPedido__conteudoPrincipal__bgMapa__local__texto {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -8034,9 +8086,18 @@ select {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smooyhing: grayscale;
             margin-bottom: 0; }
-          .iBring-dadosRetirada__conteudoPrincipal__bgMapa__local--posA {
+          .iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posA {
             top: 21%;
             right: 7%; }
-        .iBring-dadosRetirada__conteudoPrincipal__bgMapa__img {
+          .iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posB {
+            top: 37%;
+            right: 23%; }
+          .iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posC {
+            top: 67%;
+            right: 16%; }
+          .iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posD {
+            top: 55%;
+            right: 2%; }
+        .iBring-resumoPedido__conteudoPrincipal__bgMapa__img {
           width: 327px;
           height: 100%; } }

@@ -160,12 +160,12 @@ img {
   }
 
   &__icoEditar {
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    height: 16px;
   }
 
   &__icoCadeado {
-    width: 13px;
+    width: 17px;
     height: 17px;
   }
 
@@ -177,5 +177,40 @@ img {
   &__icoAdicionar {
     width: 16px;
     height: 16px;
+  }
+
+  &__icoSeta {
+    width: 12px;
+    height: 12px;
+  }
+
+  &__icoMastercard {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__icoVisa {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__icoMoto {
+    width: 19px;
+    height: 19px;
+  }
+
+  &__icoPreco {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__icoRetirada {
+    width: 19px;
+    height: 19px;
+  }
+
+  &__icoPin {
+    width: 19px;
+    height: 19px;
   }
 }

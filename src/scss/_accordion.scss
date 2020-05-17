@@ -1,0 +1,59 @@
+@import './mixin';
+@import './theme';
+
+.iBring-accordion {
+  &__card {
+    border-radius: 12px;
+    background-color: theme-color("branca");
+    border: 1px solid theme-color("cinza-secundario");
+    margin-bottom: 1.5rem;
+
+    &--ativo {
+      border: 1px solid theme-color("secundaria");
+
+      .iBring-accordion__card__header {
+        background-color: theme-color("quaternaria");
+        border-radius: 12px !important;
+      }
+
+      .iBring-accordion__card__header__titulo {
+        color: theme-color("secundaria");
+      }
+    }
+
+    &__header {
+      background-color: transparent;
+      border-bottom: none;
+
+      &__titulo {
+        @include justify-content(space-between);
+        @include align-items(center);
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: theme-color("cinza-secundario");
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smooyhing: grayscale;
+        width: 100%;
+
+        &:hover {
+          color: theme-color("cinza-secundario");
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    &__body {
+      @include mainContentRulers(0, 1.25rem, 0, 1.25rem, auto);
+    }
+  }
+}
+
+.iBring-accordion__card__header__titulo[aria-expanded="true"] {
+  color: theme-color("secundaria");
+}

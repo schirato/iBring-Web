@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../../favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>iBring - Resumo do Pedido</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../../manifest.json" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/pjResumoPedido.css" />
+</head>
+
+<body>
+  <section id="iBring-resumoPedido" class="iBring-resumoPedido">
+    <div id="iBring-resumoPedido-Menu" class="iBring-resumoPedido__menu">
+      <!-- Menu Principal -->
+      <section id="iBring-MenuPrincipal" class="iBring-menuPrincipal">
+        <div class="iBring-menuPrincipal__marca">
+          <img src="../../../img/logo-ibring-rgb-menu.svg" alt="Logo iBring"
+            class="iBring-menuPrincipal__marca__logo" />
+        </div>
+        <div class="iBring-menuPrincipal__saudacao">
+          Bem vindo, <span class="iBring-strong">Sergio Dutra</span>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--ativo">
+          <a href="" title="Novo Pedido" target="_self"
+            class="iBring-menuPrincipal__menu__item iBring-menuPrincipal__menu__item--ativo">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--novoPedido">&nbsp;</span>
+            Novo pedido
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Acompanhar" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--acompanhar">&nbsp;</span>
+            Acompanhar
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--historico">&nbsp;</span>
+            Histórico
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico financeiro" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--financeiro">&nbsp;</span>
+            Histórico financeiro
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Configuração" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--configuracao">&nbsp;</span>
+            Configuração
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--footer">
+          <a href="" title="Fale conosco" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sac">&nbsp;</span>
+            Fale conosco
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Sair" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sair">&nbsp;</span>
+            Sair
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Conteúdo Principal -->
+    <section class="iBring-resumoPedido__conteudoPrincipal">
+      <div class="iBring-resumoPedido__conteudoPrincipal__row">
+        <div class="iBring-resumoPedido__conteudoPrincipal__conteudo">
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho">
+            <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho__titulo">
+              Resumo do Pedido
+            </p>
+            <!-- Botao Voltar -->
+            <div id="iBring-resumoPedido-BtnVoltar"
+              class="iBring-btnVoltar iBring-resumoPedido__conteudoPrincipal__conteudo__cabecalho__btnVoltar">
+              <a href="" title="Voltar" class="iBring-btnVoltar__hyperlink">
+                <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar" />
+                Voltar
+              </a>
+            </div>
+          </div>
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo">
+            <img src="../../../img/img-ico-pin.svg" alt="Pin"
+              class="iBring-btn-icone__icoPin iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda">
+            <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto"><span
+                class="iBring-strong">3</span> destinos incluídos</p>
+            <a href="" class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__link">mostrar</a>
+            <button class="iBring-btn-icone">
+              <img src="../../../img/img-ico-editar.svg" alt="Editar"
+                class="iBring-btn-icone__icoEditar iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita">
+            </button>
+          </div>
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo">
+            <img src="../../../img/img-ico-retirada.svg" alt="Retirada"
+              class="iBring-btn-icone__icoRetirada iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda">
+            <p
+              class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto--quebra">
+              Retirada agendada<span class="iBring-strong">Hoje das 8h às 9h</span></p>
+            <button class="iBring-btn-icone">
+              <img src="../../../img/img-ico-editar.svg" alt="Editar"
+                class="iBring-btn-icone__icoEditar iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita">
+            </button>
+          </div>
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo">
+            <img src="../../../img/img-ico-cadeado.svg" alt="Cadeado"
+              class="iBring-btn-icone__icoCadeado iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda">
+            <p
+              class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto--quebra">
+              <span class="iBring-strong">Seguro Contratado</span></p>
+            <button class="iBring-btn-icone">
+              <img src="../../../img/img-ico-editar.svg" alt="Editar"
+                class="iBring-btn-icone__icoEditar iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita">
+            </button>
+          </div>
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo">
+            <img src="../../../img/img-ico-preco.svg" alt="Preco"
+              class="iBring-btn-icone__icoPreco iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda">
+            <p
+              class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto--quebra">
+              Pagamento<span class="iBring-strong">Cartão de crédito</span></p>
+            <button class="iBring-btn-icone">
+              <img src="../../../img/img-ico-editar.svg" alt="Editar"
+                class="iBring-btn-icone__icoEditar iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita">
+            </button>
+          </div>
+          <div
+            class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo iBring-resumoPedido__conteudoPrincipal__conteudo__resumo--last">
+            <img src="../../../img/img-ico-moto.svg" alt="Moto"
+              class="iBring-btn-icone__icoMoto iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgEsquerda">
+            <p
+              class="iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__texto--quebra">
+              <span class="iBring-strong">Entrega de moto</span></p>
+            <button class="iBring-btn-icone">
+              <img src="../../../img/img-ico-editar.svg" alt="Editar"
+                class="iBring-btn-icone__icoEditar iBring-resumoPedido__conteudoPrincipal__conteudo__resumo__imgDireita">
+            </button>
+          </div>
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo">
+            <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info">
+              <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__texto">Sua entrega deve
+                respeitar as dimenções do meio de transporte selecionado</p>
+              <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__dimensao">
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__dimensao__texto">
+                  Comprimento: 42cm<span>Largura: 44cm</span>
+                </p>
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__info__dimensao__texto">
+                  Altura: 32cm<span>Peso máxim: 20kg</span>
+                </p>
+              </div>
+            </div>
+            <img src="../../../img/img-bagagem-moto.svg" alt="Bagagem Moto"
+              class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxResumo__img">
+          </div>
+
+
+          <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo">
+            <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__itens">
+              <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Tempo de entrega
+                </p>
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  1h 34 min
+                </p>
+              </div>
+              <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Distância
+                </p>
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  54,8 km
+                </p>
+              </div>
+              <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Valor do seguro
+                </p>
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  R$ 70,00
+                </p>
+              </div>
+              <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__item">
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__titulo">
+                  Valor Total
+                </p>
+                <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__valor">
+                  R$ 190,60
+                </p>
+              </div>
+            </div>
+            <div class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape">
+              <p class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto">
+                <span
+                  class="iBring-resumoPedido__conteudoPrincipal__conteudo__jumboBoxInfo__rodape__texto__destaque">Transparência
+                  IBring</span>Nesta entrega, o entregador irá receber
+                <span class="iBring-strong">R$40,00</span>
+              </p>
+            </div>
+          </div>
+          <button
+            class="iBring-resumoPedido__conteudoPrincipal__conteudo__btnSubmeter iBring-resumoPedido__conteudoPrincipal__conteudo__btnSubmeter--ativo"
+            submit>
+            Finalizar
+          </button>
+        </div>
+        <div class="iBring-resumoPedido__conteudoPrincipal__bgMapa">
+          <!-- Posicao A -->
+          <div
+            class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posA">
+            <p class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local__texto">
+              A
+            </p>
+          </div>
+          <!-- Posicao B -->
+          <div
+            class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posB">
+            <p class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local__texto">
+              B
+            </p>
+          </div>
+          <!-- Posicao C -->
+          <div
+            class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posC">
+            <p class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local__texto">
+              C
+            </p>
+          </div>
+          <!-- Posicao D -->
+          <div
+            class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local iBring-resumoPedido__conteudoPrincipal__bgMapa__local--posD">
+            <p class="iBring-resumoPedido__conteudoPrincipal__bgMapa__local__texto">
+              D
+            </p>
+          </div>
+          <img src="../../../img/bg-map.png" alt="Mapa" class="iBring-resumoPedido__conteudoPrincipal__bgMapa__img" />
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/popper.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
+
+</html>

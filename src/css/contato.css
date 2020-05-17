@@ -7364,10 +7364,10 @@ img {
     width: 10px;
     height: 16px; }
   .iBring-btn-icone__icoEditar {
-    width: 11px;
-    height: 11px; }
+    width: 16px;
+    height: 16px; }
   .iBring-btn-icone__icoCadeado {
-    width: 13px;
+    width: 17px;
     height: 17px; }
   .iBring-btn-icone__icoAlerta {
     width: 13px;
@@ -7375,6 +7375,27 @@ img {
   .iBring-btn-icone__icoAdicionar {
     width: 16px;
     height: 16px; }
+  .iBring-btn-icone__icoSeta {
+    width: 12px;
+    height: 12px; }
+  .iBring-btn-icone__icoMastercard {
+    width: 26px;
+    height: 26px; }
+  .iBring-btn-icone__icoVisa {
+    width: 26px;
+    height: 26px; }
+  .iBring-btn-icone__icoMoto {
+    width: 19px;
+    height: 19px; }
+  .iBring-btn-icone__icoPreco {
+    width: 17px;
+    height: 17px; }
+  .iBring-btn-icone__icoRetirada {
+    width: 19px;
+    height: 19px; }
+  .iBring-btn-icone__icoPin {
+    width: 19px;
+    height: 19px; }
 
 /* Folha de Estilo: Contato */
 .ibring-background-image {
