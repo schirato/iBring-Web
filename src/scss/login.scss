@@ -1,0 +1,161 @@
+@import './base';
+@import './form';
+
+.iBring-login {
+  background-color: theme-color("cinza-bg");
+  overflow: hidden;
+
+  &__bg {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+    &__bg {
+      @include flexbox;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__conteudoPrincipal {
+      @include mainContentRulers(4.5rem, 4.5rem, 4.5rem, 4.5rem, auto);
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+      position: relative;
+
+      &__logo {
+        width: 160px;
+        height: 40px;
+      }
+
+      &__h3 {
+        font-family: $font-opensans-regular;
+        letter-spacing: 0.185em;
+        margin-top: 4rem;
+        text-transform: uppercase;
+      }
+
+      &__subtitulo {
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: theme-color("cinza-secundario");
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smooyhing: grayscale;
+        margin-top: 1rem;
+      }
+
+      &__lead {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+
+        &__link {
+          font-family: $font-opensans-bold;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          color: theme-color("secundaria");
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smooyhing: grayscale;
+        }
+      }
+
+      &__btnCadastro {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+
+        &__btnOutline {
+          @include flex-direction(column);
+          margin-right: 2rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          button {
+            width: 255px;
+            border-radius: 50px;
+            border-color: theme-color("primaria");
+            color: theme-color("primaria");
+            margin: 1rem 0;
+
+            &:hover,
+            &:not(:disabled):not(.disabled):active {
+              background-color: theme-color("quaternaria");
+            }
+          }
+        }
+
+        &__texto {
+          font-family: $font-opensans-regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 16px;
+          color: theme-color("cinza-secundario");
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smooyhing: grayscale;
+        }
+      }
+
+      &__form {
+        width: 50%;
+        margin-top: 2rem;
+
+        &__col {
+          position: relative;
+          margin-bottom: 2rem;
+
+          &__link {
+            position: absolute;
+            right: 10px;
+            top: 0;
+
+            &__texto {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: theme-color("primaria");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+          }
+        }
+
+        &__btnEntrar {
+          @include flexbox;
+          @include justify-content(center);
+          margin-top: 2rem;
+
+          &__lead {
+            margin-bottom: 0;
+
+            &__link {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: theme-color("primaria");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+          }
+        }
+      }
+    }
+  }
+}

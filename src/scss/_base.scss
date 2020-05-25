@@ -86,6 +86,42 @@ img {
   font-family: $font-opensans-bold;
 }
 
+.iBring-btnSubmit {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  button {
+    width: 183px;
+    height: 44px;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 1px solid theme-color("cinza-botao");
+    background-color: theme-color("cinza-botao");
+    font-family: $font-opensans-bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    color: theme-color("cinza-campoForm");
+    text-transform: uppercase;
+
+    &:hover,
+    &:not(:disabled):not(.disabled):active {
+      border: 1px solid theme-color("primaria");
+      background-color: theme-color("primaria");
+      color: theme-color("branca");
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
 .iBring-btnOutline {
   @include flexbox;
   @include align-items(center);

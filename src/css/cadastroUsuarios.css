@@ -7275,6 +7275,46 @@ img {
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
 
+.iBring-btnSubmit {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .iBring-btnSubmit button {
+    width: 183px;
+    height: 44px;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 1px solid #DADADA;
+    background-color: #DADADA;
+    font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    color: #979797;
+    text-transform: uppercase; }
+    .iBring-btnSubmit button:hover, .iBring-btnSubmit button:not(:disabled):not(.disabled):active {
+      border: 1px solid #63D673;
+      background-color: #63D673;
+      color: #FFFFFF; }
+    .iBring-btnSubmit button:focus {
+      box-shadow: none; }
+
 .iBring-btnOutline {
   display: -webkit-box;
   display: -moz-box;

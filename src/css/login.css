@@ -7437,193 +7437,377 @@ img {
     width: 19px;
     height: 19px; }
 
-/* Folha de Estilo: Contato */
-.ibring-background-image {
-  display: none; }
+.form-control:focus {
+  border-color: #A0A0A0;
+  box-shadow: none; }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: #63D673; }
+.was-validated .form-control:valid {
+  border-color: #A0A0A0;
+  background-image: none; }
 
-.ibring-contact-form {
-  background-color: #F9F9F9; }
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #A0A0A0;
+  box-shadow: none; }
 
-.ibring-contact-form-content {
-  padding: 15% 0 15% 0;
-  height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden; }
+.was-validated .form-control:invalid {
+  background-image: none; }
 
-.ibring-contact-form-content .display-4 {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 37px;
-  letter-spacing: 0.185em;
-  color: #A0A0A0;
-  text-transform: uppercase; }
+.custom-select {
+  background: #ffffff url(../img/img-arrow-down.svg) no-repeat right 0.75rem center/14px 8px; }
 
-.ibring-contact-form-content-form {
-  margin-top: 10%; }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
 
-.ibring-contact-form-content-form form {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.form__group {
-  padding: 3% 0 3% 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 10px; }
-
-.form__field {
-  padding: 7px 0 7px 3%;
-  height: 100%;
-  font-family: inherit;
-  width: 100%;
-  border: none;
-  outline: 0;
-  font-size: 16px;
-  color: #393939;
-  background: #FFFFFF;
-  transition: border-color 0.2s; }
-
-.form__field::placeholder {
-  color: transparent; }
-
-.form__field:placeholder-shown ~ .form__label {
+.iBring-form input {
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  cursor: text;
-  top: 20px;
-  padding-left: 3%; }
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  height: 45px; }
 
-label,
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: -10px;
-  display: block;
-  transition: 0.2s;
+.iBring-form label {
   font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
-  color: #A0A0A0; }
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale; }
+  .iBring-form label span {
+    color: #A0A0A0; }
 
-.form__field:focus ~ .form__label {
-  color: #63D673; }
+.iBring-form__alertaImg {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px; }
 
-.ibring-contact-form-footer {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  color: #A0A0A0; }
-
-.ibring-contact-form-footer a {
-  font-weight: 700;
-  color: #A0A0A0; }
-
-.ibring-contact-form-content .btn {
-  background: #63D673;
-  color: #FFFFFF;
-  border-radius: 12px;
-  width: 180px;
-  height: 46px;
-  margin-top: 5%;
-  font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase; }
-
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-  .form__field:placeholder-shown ~ .form__label {
-    top: 29px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0; } }
-
-@media (min-width: 768px) {
-  .form__field:placeholder-shown ~ .form__label {
-    top: 30px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0px; } }
-
-@media (min-width: 992px) {
-  .ibring-contact-form {
-    width: 1024px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%; }
-  .ibring-contact-form .row {
-    margin-right: 0;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center; }
-  .ibring-background-image {
+.iBring-form__iconEye {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 38px;
+  right: 25px;
+  width: 30px;
+  height: 30px; }
+  .iBring-form__iconEye--hide {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    width: 24px;
+    height: 10px;
+    background: url(../img/img-eye-closed.svg) center no-repeat; }
+  .iBring-form__iconEye--show {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 25px;
+    height: 16px;
+    background: url(../img/img-eye-opened.svg) center no-repeat; }
+
+.iBring-form__checkboxContainer {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #393939 !important; }
+  .iBring-form__checkboxContainer input {
     position: absolute;
-    bottom: 0;
-    right: 0; }
-  .form__field:placeholder-shown ~ .form__label {
-    top: 20px; }
-  label,
-  .form__field:focus ~ .form__label {
-    top: 0; } }
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox {
+    background: #63D673;
+    border-color: #DADADA; }
+  .iBring-form__checkboxContainer__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 2px; }
+    .iBring-form__checkboxContainer__checkbox:after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #FFFFFF;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox:after {
+    display: block; }
+  .iBring-form__checkboxContainer__termos {
+    color: #63D673; }
+    .iBring-form__checkboxContainer__termos:hover {
+      color: #63D673;
+      text-decoration: none; }
+
+.iBring-form-noLabel .form__group {
+  margin-bottom: 20px; }
+
+.iBring-form-noLabel .form-control {
+  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #696969;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooyhing: grayscale;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: initial;
+  padding-left: 0;
+  border-color: #393939;
+  color: #979797; }
+
+.iBring-form-noLabel .form-control-fullBorder {
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+  height: 45px; }
+
+.iBring-form-noLabel .form-control.is-valid {
+  border-color: #63D673;
+  background-image: none;
+  color: #393939; }
+
+.iBring-form-noLabel__imgAlert {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px; }
+
+.iBring-form-noLabel__checkboxContainer {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #393939 !important; }
+  .iBring-form-noLabel__checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox {
+    background: #63D673;
+    border-color: #DADADA; }
+  .iBring-form-noLabel__checkboxContainer__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 2px; }
+    .iBring-form-noLabel__checkboxContainer__checkbox:after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #FFFFFF;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
+    display: block; }
+
+.iBring-login {
+  background-color: #F9F9F9;
+  overflow: hidden; }
+  .iBring-login__bg {
+    display: none; }
+  @media (min-width: 992px) {
+    .iBring-login {
+      width: 1024px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%; }
+      .iBring-login__bg {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .iBring-login__conteudoPrincipal {
+        padding: 4.5rem 4.5rem 4.5rem 4.5rem;
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative; }
+        .iBring-login__conteudoPrincipal__logo {
+          width: 160px;
+          height: 40px; }
+        .iBring-login__conteudoPrincipal__h3 {
+          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          letter-spacing: 0.185em;
+          margin-top: 4rem;
+          text-transform: uppercase; }
+        .iBring-login__conteudoPrincipal__subtitulo {
+          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #696969;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smooyhing: grayscale;
+          margin-top: 1rem; }
+        .iBring-login__conteudoPrincipal__lead {
+          margin-top: 1rem;
+          margin-bottom: 3rem; }
+          .iBring-login__conteudoPrincipal__lead__link {
+            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #61B46C;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale; }
+        .iBring-login__conteudoPrincipal__btnCadastro {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between;
+          -ms-justify-content: space-between;
+          justify-content: space-between;
+          -ms-flex-pack: space-between; }
+          .iBring-login__conteudoPrincipal__btnCadastro__btnOutline {
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-right: 2rem; }
+            .iBring-login__conteudoPrincipal__btnCadastro__btnOutline:last-child {
+              margin-right: 0; }
+            .iBring-login__conteudoPrincipal__btnCadastro__btnOutline button {
+              width: 255px;
+              border-radius: 50px;
+              border-color: #63D673;
+              color: #63D673;
+              margin: 1rem 0; }
+              .iBring-login__conteudoPrincipal__btnCadastro__btnOutline button:hover, .iBring-login__conteudoPrincipal__btnCadastro__btnOutline button:not(:disabled):not(.disabled):active {
+                background-color: #eaf9ea; }
+          .iBring-login__conteudoPrincipal__btnCadastro__texto {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #696969;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale; }
+        .iBring-login__conteudoPrincipal__form {
+          width: 50%;
+          margin-top: 2rem; }
+          .iBring-login__conteudoPrincipal__form__col {
+            position: relative;
+            margin-bottom: 2rem; }
+            .iBring-login__conteudoPrincipal__form__col__link {
+              position: absolute;
+              right: 10px;
+              top: 0; }
+              .iBring-login__conteudoPrincipal__form__col__link__texto {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #63D673;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale; }
+          .iBring-login__conteudoPrincipal__form__btnEntrar {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            margin-top: 2rem; }
+            .iBring-login__conteudoPrincipal__form__btnEntrar__lead {
+              margin-bottom: 0; }
+              .iBring-login__conteudoPrincipal__form__btnEntrar__lead__link {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #63D673;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale; } }

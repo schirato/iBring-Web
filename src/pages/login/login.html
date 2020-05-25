@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../../favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>iBring - Login</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../manifest.json" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/login.css" />
+</head>
+
+<body>
+  <section id="iBring-login" class="iBring-login">
+    <div id="iBring-login-Bg" class="iBring-login__bg">
+      <img src="../../../img/bg-cadastro.svg" alt="background">
+    </div>
+    <div class="iBring-login__conteudoPrincipal">
+      <img src="../../img/logo-ibring-rgb-menu.svg" alt="Logo" class="iBring-login__conteudoPrincipal__logo">
+      <h3 class="iBring-login__conteudoPrincipal__h3">OI, TUDO BEM?</h3>
+      <p class="iBring-login__conteudoPrincipal__subtitulo">Acesse a sua conta e faça já seus pedidos!</p>
+      <form class="needs-validation iBring-login__conteudoPrincipal__form" novalidate action="">
+        <div class="form-row align-items-center">
+          <div class="col iBring-login__conteudoPrincipal__form__col">
+            <div class="form__group">
+              <label for="validationCustom01">E-mail</label>
+              <input type="email" class="form-control" id="validationCustom01"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Seu e-mail cadastrado é seu login!"
+                required>
+              <div class="invalid-feedback">
+                <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
+                Campo inválido.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <div class="col iBring-login__conteudoPrincipal__form__col">
+            <div class="form__group">
+              <label for="show_hide_password">Senha</label>
+              <input type="password" class="form-control" id="show_hide_password" placeholder="Senha" required>
+              <div class="iBring-form__iconEye">
+                <a href="">
+                  <i class="iBring-form__iconEye--hide" aria-hidden="true"></i>
+                </a>
+              </div>
+              <p class="iBring-login__conteudoPrincipal__form__col__link"><a href=""
+                  class="iBring-login__conteudoPrincipal__form__col__link__texto">Esqueceu sua senha?</a></p>
+              <div class="invalid-feedback">
+                <img src="../../../img/img-form-alert.svg" alt="Alerta" class="iBring-form__alertaImg">
+                Campo inválido.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row align-items-center iBring-login__conteudoPrincipal__form__btnEntrar">
+          <p class="iBring-login__conteudoPrincipal__form__btnEntrar__lead">Ainda não tem cadastro?&nbsp;<a
+              href="cadastrar.html" class="iBring-login__conteudoPrincipal__form__btnEntrar__lead__link">Faça sua
+              conta</a></p>
+          <div class="col iBring-btnSubmit">
+            <button id="iBring-login-entrar" type="button" class="btn btn-outline-secondary" submit
+              onclick="">Entrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/popper.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+  // Show Hide Password
+  $(document).ready(function () {
+    $("#show_hide_password a").on('click', function (event) {
+      event.preventDefault();
+      if ($('#show_hide_password input').attr("type") == "text") {
+        $('#show_hide_password input').attr('type', 'password');
+        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--show");
+        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--hide");
+      } else if ($('#show_hide_password input').attr("type") == "password") {
+        $('#show_hide_password input').attr('type', 'text');
+        $('#show_hide_password i').removeClass("iBring-cadastro__conteudo__form__iconEye--show");
+        $('#show_hide_password i').addClass("iBring-cadastro__conteudo__form__iconEye--hide");
+      }
+    });
+  });
+</script>
+
+
+</html>
