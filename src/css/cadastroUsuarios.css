@@ -7353,6 +7353,14 @@ img {
       color: #63D673; }
     .iBring-btnOutline button:focus {
       box-shadow: none; }
+  .iBring-btnOutline--green button {
+    border: 1px solid #63D673;
+    background-color: transparent;
+    color: #63D673; }
+    .iBring-btnOutline--green button:hover, .iBring-btnOutline--green button:not(:disabled):not(.disabled):active {
+      border: 1px solid #63D673;
+      background-color: #eaf9ea;
+      color: #63D673; }
 
 .iBring-btnVoltar {
   margin-bottom: 0.5rem; }

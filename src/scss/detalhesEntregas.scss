@@ -1,0 +1,338 @@
+@import "./base";
+@import "./menuPrincipal";
+
+.iBring-detalhesEntregas {
+  @include flexbox;
+
+  &__menu {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__menu {
+      @include flexbox;
+      height: 100%;
+      z-index: 9;
+    }
+
+    &__conteudoPrincipal {
+      position: relative;
+
+      &__row {
+        @include flexbox;
+        height: 100%;
+      }
+
+      &__rowConteudo {
+        @include flexbox;
+        @include flex-direction(column);
+      }
+
+      &__conteudo {
+        @include mainContentRulers(40px, 40px, 40px, 40px, auto);
+        box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+        width: 523px;
+
+        &__cabecalho {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(space-between);
+          border-bottom: 0.5px solid theme-color("cinza-inativo");
+          margin-bottom: 30px;
+
+          &__titulo {
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 34px;
+            color: theme-color("cinza-escuro");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+          }
+
+          &__btnVoltar {
+            display: flex;
+          }
+        }
+
+        &__infoGrupo {
+          height: auto;
+
+          &__item {
+            border-bottom: 1px solid theme-color("cinza-botao");
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &__titulo {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-secundario");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem;
+            }
+
+            &__dados {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem;
+
+              &--status {
+                font-family: $font-opensans-bold;
+                color: theme-color("secundaria");
+              }
+
+              &--small {
+                font-family: $font-opensans-regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: theme-color("cinza-campoForm");
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: 0;
+              }
+            }
+
+            &__entregador {
+              @include flexbox;
+              @include align-items(center);
+
+              &__foto {
+                width: 46px;
+                height: 45px;
+                margin-right: 1rem;
+              }
+
+              &__dados {
+                margin-bottom: .5rem;
+
+                &__nome {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            &__blocoSolicitado {
+              margin-top: 1rem;
+            }
+
+            &__link {
+              font-family: $font-opensans-bold;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("secundaria");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+
+          }
+        }
+      }
+
+      &__rastreamento {
+        @include mainContentRulers(40px, 40px, 40px, 40px, 100%);
+        background-color: theme-color("cinza-bg");
+
+        &__info {
+
+          &__processo {
+            @include flexbox;
+            @include justify-content(center);
+            position: relative;
+            padding: 0 .5rem;
+
+            &__letra {
+              @include flexbox;
+              @include align-items(center);
+              @include justify-content(center);
+              width: 20px;
+              height: 12px;
+              border-radius: 4px;
+              background-color: theme-color("primaria");
+              font-family: $font-opensans-bold;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              line-height: 11px;
+              color: theme-color("branca");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-right: .5rem;
+            }
+
+            &__texto {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("primaria");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+
+            &__linha {
+              width: 1px;
+              height: 176px;
+              border: .5px solid theme-color("cinza-campoForm");
+              position: absolute;
+              top: 12px;
+              left: 16px;
+            }
+          }
+
+          &__percurso {
+            @include flexbox;
+            @include flex-direction(column);
+
+            &__endereco {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem;
+
+              span {
+                display: block;
+              }
+            }
+
+            &__retirar,
+            &__observacao {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-campoForm");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0;
+            }
+
+            &__observacao {
+              margin-bottom: .5rem;
+            }
+
+            &__fone {
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem;
+            }
+
+            &__btnOutline {
+              display: block;
+
+              button {
+                width: 140px;
+                height: 2rem;
+                font-family: $font-opensans-regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                letter-spacing: 0.03em;
+                margin-top: 0;
+              }
+            }
+          }
+
+        }
+      }
+
+      // Mapa
+
+      &__bgMapa {
+        &__local {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+          position: absolute;
+          width: 78px;
+          height: 78px;
+          background: url(../img/img-bg-posicao.svg) center no-repeat;
+          //display: none; // remover quando for usar
+
+          &__texto {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: theme-color("secundaria");
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: theme-color("branca");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+          }
+
+          &--posA {
+            top: 21%;
+            right: 7%;
+          }
+
+          &--posB {
+            top: 37%;
+            right: 23%;
+          }
+
+          &--posC {
+            top: 67%;
+            right: 16%;
+          }
+
+          &--posD {
+            top: 55%;
+            right: 2%;
+          }
+        }
+
+        &__img {
+          width: 327px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

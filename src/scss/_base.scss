@@ -154,6 +154,23 @@ img {
     &:focus {
       box-shadow: none;
     }
+
+  }
+
+  &--green {
+
+    button {
+      border: 1px solid theme-color("primaria");
+      background-color: transparent;
+      color: theme-color("primaria");
+
+      &:hover,
+      &:not(:disabled):not(.disabled):active {
+        border: 1px solid theme-color("primaria");
+        background-color: theme-color("quaternaria");
+        color: theme-color("primaria");
+      }
+    }
   }
 }
 

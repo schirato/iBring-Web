@@ -7558,382 +7558,273 @@ img {
         .iBring-menuPrincipal__menu__item__icone--sair {
           background: url("../img/img-ico-sair.svg") no-repeat center; }
 
-.iBring-menuSecundario {
-  padding: 90px 0 90px 17px;
-  height: auto;
-  width: 46.2%;
-  background-color: #F4F3F4; }
-  .iBring-menuSecundario__menuSecao {
-    padding: 0 0 0 17px;
-    height: auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .iBring-menuSecundario__menuSecao__icone {
-      width: 15px;
-      height: 15px;
-      margin-right: 10px; }
-    .iBring-menuSecundario__menuSecao__titulo {
-      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      color: #696969;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smooyhing: grayscale;
-      margin-bottom: 0; }
-    .iBring-menuSecundario__menuSecao--empresa {
-      margin-top: 20px; }
-  .iBring-menuSecundario__menu {
-    padding: 10px 0 0 43px;
-    height: auto; }
-    .iBring-menuSecundario__menu:hover {
-      padding-left: 0; }
-      .iBring-menuSecundario__menu:hover .iBring-menuSecundario__menu__item:hover {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        background-color: rgba(99, 214, 115, 0.12);
-        text-decoration: none;
-        padding-left: 43px; }
-    .iBring-menuSecundario__menu--ativo {
-      padding-left: 0; }
-    .iBring-menuSecundario__menu__item {
-      padding: 15px 15px 15px 0;
-      height: auto;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 11px;
-      line-height: 15px;
-      color: #696969;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smooyhing: grayscale;
-      cursor: pointer;
-      text-decoration: none; }
-      .iBring-menuSecundario__menu__item:hover {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        text-decoration: none; }
-      .iBring-menuSecundario__menu__item--ativo {
-        font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 15px;
-        color: #61B46C;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        background-color: rgba(99, 214, 115, 0.12);
-        text-decoration: none;
-        padding-left: 43px; }
-
-.form-control:focus {
-  border-color: #A0A0A0;
-  box-shadow: none; }
-
-.was-validated .form-control:valid {
-  border-color: #A0A0A0;
-  background-image: none; }
-
-.was-validated .form-control:valid:focus,
-.was-validated .form-control:invalid:focus {
-  border-color: #A0A0A0;
-  box-shadow: none; }
-
-.was-validated .form-control:invalid {
-  background-image: none; }
-
-.custom-select {
-  background: #ffffff url(../img/img-arrow-down.svg) no-repeat right 0.75rem center/14px 8px; }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: ''; }
-
-.iBring-form input {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #696969;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smooyhing: grayscale;
-  border: 1px solid #E5E5E5;
-  border-radius: 8px;
-  height: 45px; }
-
-.iBring-form label {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #696969;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smooyhing: grayscale; }
-  .iBring-form label span {
-    color: #A0A0A0; }
-
-.iBring-form__alertaImg {
-  width: 13px;
-  height: 13px;
-  margin-right: 8px; }
-
-.iBring-form__iconEye {
+.iBring-detalhesEntregas {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: absolute;
-  top: 38px;
-  right: 25px;
-  width: 30px;
-  height: 30px; }
-  .iBring-form__iconEye--hide {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    width: 24px;
-    height: 10px;
-    background: url(../img/img-eye-closed.svg) center no-repeat; }
-  .iBring-form__iconEye--show {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    width: 25px;
-    height: 16px;
-    background: url(../img/img-eye-opened.svg) center no-repeat; }
-
-.iBring-form__checkboxContainer {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  margin-top: 35px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #393939 !important; }
-  .iBring-form__checkboxContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0; }
-  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox {
-    background: #63D673;
-    border-color: #DADADA; }
-  .iBring-form__checkboxContainer__checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 19px;
-    width: 19px;
-    background: #FFFFFF;
-    border: 1px solid #696969;
-    box-sizing: border-box;
-    border-radius: 2px; }
-    .iBring-form__checkboxContainer__checkbox:after {
-      content: "";
-      position: absolute;
-      left: 6px;
-      top: 2px;
-      width: 5px;
-      height: 10px;
-      border: solid #FFFFFF;
-      border-width: 0 1px 1px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
-  .iBring-form__checkboxContainer input:checked ~ .iBring-form__checkboxContainer__checkbox:after {
-    display: block; }
-  .iBring-form__checkboxContainer__termos {
-    color: #63D673; }
-    .iBring-form__checkboxContainer__termos:hover {
-      color: #63D673;
-      text-decoration: none; }
-
-.iBring-form-noLabel .form__group {
-  margin-bottom: 20px; }
-
-.iBring-form-noLabel .form-control {
-  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #696969;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smooyhing: grayscale;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-radius: initial;
-  padding-left: 0;
-  border-color: #393939;
-  color: #979797; }
-
-.iBring-form-noLabel .form-control-fullBorder {
-  border: 1px solid #E5E5E5;
-  border-radius: 8px;
-  padding: 0.375rem 0.75rem;
-  height: 45px; }
-
-.iBring-form-noLabel .form-control.is-valid {
-  border-color: #63D673;
-  background-image: none;
-  color: #393939; }
-
-.iBring-form-noLabel__imgAlert {
-  width: 13px;
-  height: 13px;
-  margin-right: 8px; }
-
-.iBring-form-noLabel__checkboxContainer {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #393939 !important; }
-  .iBring-form-noLabel__checkboxContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0; }
-  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox {
-    background: #63D673;
-    border-color: #DADADA; }
-  .iBring-form-noLabel__checkboxContainer__checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 19px;
-    width: 19px;
-    background: #FFFFFF;
-    border: 1px solid #696969;
-    box-sizing: border-box;
-    border-radius: 2px; }
-    .iBring-form-noLabel__checkboxContainer__checkbox:after {
-      content: "";
-      position: absolute;
-      left: 6px;
-      top: 2px;
-      width: 5px;
-      height: 10px;
-      border: solid #FFFFFF;
-      border-width: 0 1px 1px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg); }
-  .iBring-form-noLabel__checkboxContainer input:checked ~ .iBring-form-noLabel__checkboxContainer__checkbox:after {
-    display: block; }
-
-.iBring-meiosPagamentosNovo__menu {
-  display: none; }
-
-@media (min-width: 992px) {
-  .iBring-meiosPagamentosNovo {
-    width: 1024px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative; }
-    .iBring-meiosPagamentosNovo__menu {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      height: 100%; }
-    .iBring-meiosPagamentosNovo__conteudoPrincipal {
-      padding: 40px 55px 40px 55px;
-      height: auto;
-      width: 100%; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__titulo {
-        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
-        color: #393939;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smooyhing: grayscale;
-        margin-top: 40px; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm {
+  display: flex; }
+  .iBring-detalhesEntregas__menu {
+    display: none; }
+  @media (min-width: 992px) {
+    .iBring-detalhesEntregas {
+      width: 1024px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .iBring-detalhesEntregas__menu {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
-        -ms-flex-pack: space-between;
-        border-bottom: 0.5px solid #A0A0A0; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__titulo {
-          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 25px;
-          color: #393939;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smooyhing: grayscale; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar img {
-          margin-right: 10px; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar__hyperlink {
+        height: 100%;
+        z-index: 9; }
+      .iBring-detalhesEntregas__conteudoPrincipal {
+        position: relative; }
+        .iBring-detalhesEntregas__conteudoPrincipal__row {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          height: 100%; }
+        .iBring-detalhesEntregas__conteudoPrincipal__rowConteudo {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+        .iBring-detalhesEntregas__conteudoPrincipal__conteudo {
+          padding: 40px 40px 40px 40px;
+          height: auto;
+          box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+          width: 523px; }
+          .iBring-detalhesEntregas__conteudoPrincipal__conteudo__cabecalho {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-justify-content: space-between;
+            justify-content: space-between;
+            -ms-flex-pack: space-between;
+            border-bottom: 0.5px solid #E5E5E5;
+            margin-bottom: 30px; }
+            .iBring-detalhesEntregas__conteudoPrincipal__conteudo__cabecalho__titulo {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 25px;
+              line-height: 34px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+            .iBring-detalhesEntregas__conteudoPrincipal__conteudo__cabecalho__btnVoltar {
+              display: flex; }
+          .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo {
+            height: auto; }
+            .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item {
+              border-bottom: 1px solid #DADADA;
+              margin-bottom: 1rem;
+              padding-bottom: .5rem; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item:last-child {
+                border-bottom: none; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__titulo {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: #696969;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: .5rem; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__dados {
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #393939;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: .5rem; }
+                .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__dados--status {
+                  font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                  color: #61B46C; }
+                .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__dados--small {
+                  font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 11px;
+                  line-height: 15px;
+                  color: #979797;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smooyhing: grayscale;
+                  margin-bottom: 0; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__entregador {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                -ms-align-items: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__entregador__foto {
+                  width: 46px;
+                  height: 45px;
+                  margin-right: 1rem; }
+                .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__entregador__dados {
+                  margin-bottom: .5rem; }
+                  .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__entregador__dados__nome {
+                    margin-bottom: 0; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__blocoSolicitado {
+                margin-top: 1rem; }
+              .iBring-detalhesEntregas__conteudoPrincipal__conteudo__infoGrupo__item__link {
+                font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: #61B46C;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale; }
+        .iBring-detalhesEntregas__conteudoPrincipal__rastreamento {
+          padding: 40px 40px 40px 40px;
+          height: 100%;
+          background-color: #F9F9F9; }
+          .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__processo {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            position: relative;
+            padding: 0 .5rem; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__processo__letra {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              -ms-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-justify-content: center;
+              -moz-justify-content: center;
+              -ms-justify-content: center;
+              justify-content: center;
+              -ms-flex-pack: center;
+              width: 20px;
+              height: 12px;
+              border-radius: 4px;
+              background-color: #63D673;
+              font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              line-height: 11px;
+              color: #FFFFFF;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-right: .5rem; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__processo__texto {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: #63D673;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__processo__linha {
+              width: 1px;
+              height: 176px;
+              border: 0.5px solid #979797;
+              position: absolute;
+              top: 12px;
+              left: 16px; }
+          .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__endereco {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem; }
+              .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__endereco span {
+                display: block; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__retirar, .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__observacao {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: #979797;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: 0; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__observacao {
+              margin-bottom: .5rem; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__fone {
+              font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 15px;
+              color: #393939;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              margin-bottom: .5rem; }
+            .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__btnOutline {
+              display: block; }
+              .iBring-detalhesEntregas__conteudoPrincipal__rastreamento__info__percurso__btnOutline button {
+                width: 140px;
+                height: 2rem;
+                font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                letter-spacing: 0.03em;
+                margin-top: 0; }
+        .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
@@ -7949,70 +7840,51 @@ select {
           -ms-justify-content: center;
           justify-content: center;
           -ms-flex-pack: center;
-          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 123.1%;
-          letter-spacing: 0.12em;
-          color: #696969;
-          text-transform: uppercase;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smooyhing: grayscale;
-          font-size: 12px;
-          line-height: 123.1%; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__grupoForm__btnVoltar__hyperlink:hover {
-            color: #696969;
-            text-decoration: none; }
-      .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow {
-        margin-top: 30px; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete {
-          padding: 14px 20px 12px 20px;
-          height: auto;
-          border: 1px solid #61B46C;
-          border-bottom-left-radius: 6px;
-          border-bottom-right-radius: 6px;
-          margin-top: 3px; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete--ativo {
-            background-color: #eaf9ea; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__autocomplete__texto {
+          position: absolute;
+          width: 78px;
+          height: 78px;
+          background: url(../img/img-bg-posicao.svg) center no-repeat; }
+          .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local__texto {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #61B46C;
             font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
             font-style: normal;
             font-weight: normal;
-            font-size: 11px;
-            line-height: 15px;
-            color: #61B46C;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smooyhing: grayscale;
             margin-bottom: 0; }
-        .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__formGroup__btnOutline {
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center;
-          margin-top: 30px; }
-          .iBring-meiosPagamentosNovo__conteudoPrincipal__formRow__formGroup__btnOutline button {
-            width: 199px;
-            height: 44px;
-            margin: 0 auto;
-            border-radius: 12px;
-            font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            letter-spacing: 0.03em;
-            color: #696969;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smooyhing: grayscale; } }
+          .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local--posA {
+            top: 21%;
+            right: 7%; }
+          .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local--posB {
+            top: 37%;
+            right: 23%; }
+          .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local--posC {
+            top: 67%;
+            right: 16%; }
+          .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__local--posD {
+            top: 55%;
+            right: 2%; }
+        .iBring-detalhesEntregas__conteudoPrincipal__bgMapa__img {
+          width: 327px;
+          height: 100%; } }
