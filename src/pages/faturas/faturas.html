@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../../favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>iBring - Faturas</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../manifest.json" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/faturas.css" />
+</head>
+
+<body>
+  <section id="iBring-faturas" class="iBring-faturas">
+    <div id="iBring-faturas-Menu" class="iBring-faturas__menu">
+      <!-- Menu Principal -->
+      <section id="iBring-MenuPrincipal" class="iBring-menuPrincipal">
+        <div class="iBring-menuPrincipal__marca">
+          <img src="../../../img/logo-ibring-rgb-menu.svg" alt="Logo iBring"
+            class="iBring-menuPrincipal__marca__logo" />
+        </div>
+        <div class="iBring-menuPrincipal__saudacao">
+          Bem vindo, <span class="iBring-strong">Sergio Dutra</span>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Novo Pedido" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--novoPedido">&nbsp;</span>
+            Novo pedido
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Acompanhar" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--acompanhar">&nbsp;</span>
+            Acompanhar
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--historico">&nbsp;</span>
+            Entregas realizadas
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--ativo">
+          <a href="" title="Histórico financeiro" target="_self"
+            class="iBring-menuPrincipal__menu__item iBring-menuPrincipal__menu__item--ativo">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--financeiro">&nbsp;</span>
+            Faturas
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Configuração" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--configuracao">&nbsp;</span>
+            Configuração
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--footer">
+          <a href="" title="Fale conosco" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sac">&nbsp;</span>
+            Fale conosco
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Sair" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sair">&nbsp;</span>
+            Sair
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Conteúdo Principal -->
+    <section class="iBring-faturas__conteudoPrincipal">
+      <div class="iBring-faturas__conteudoPrincipal__row">
+        <div class="iBring-faturas__conteudoPrincipal__rowConteudo">
+          <div class="iBring-faturas__conteudoPrincipal__conteudo">
+            <div class="iBring-faturas__conteudoPrincipal__conteudo__cabecalho">
+              <p class="iBring-faturas__conteudoPrincipal__conteudo__cabecalho__titulo">
+                Faturas
+              </p>
+              <!-- Botao Voltar -->
+              <div id="iBring-faturas-BtnVoltar"
+                class="iBring-btnVoltar iBring-faturas__conteudoPrincipal__conteudo__cabecalho__btnVoltar">
+                <a href="" title="Voltar" class="iBring-btnVoltar__hyperlink">
+                  <img src="../../../img/img-arrow-left.svg" alt="Botão Voltar" />
+                  Voltar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="iBring-faturas__conteudoPrincipal__relatorio">
+            <div class="iBring-faturas__conteudoPrincipal__relatorio__lista">
+              <div class="row">
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Mês</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Valor total</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Valor Pago</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Valor a pagar</p>
+                </div>
+                <div
+                  class="col-lg-3 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Status de pagamento
+                  </p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">Extrato</p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__cabecalho__titulo">NFE</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">Maio /
+                    2020</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 3.234,87</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 00,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 3.234,87</p>
+                </div>
+                <div
+                  class="col-lg-3 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p
+                    class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto--indisponivel">
+                    Boleto ainda indisponível
+                  </p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      Extrato</a></p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      NFE</a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">Abril /
+                    2020</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 00,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-3 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados iBring-faturas__conteudoPrincipal__relatorio__lista__dados__btnOutline">
+                  <div class="iBring-btnOutline iBring-btnOutline--green">
+                    <button class="btn btn-outline-secondary">Baixar boleto</button>
+                  </div>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      Extrato</a></p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      NFE</a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">Março /
+                    2020</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 00,00</p>
+                </div>
+                <div
+                  class="col-lg-3 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <img src="../../img/img-bullet-check.svg" alt="Bullet Check">
+                    Boleto Pago
+                  </p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      Extrato</a></p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      NFE</a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">Fevereiro /
+                    2020</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 2.056,00</p>
+                </div>
+                <div
+                  class="col-lg-2 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">R$ 00,00</p>
+                </div>
+                <div
+                  class="col-lg-3 iBring-justify-content-center iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <img src="../../img/img-bullet-check.svg" alt="Bullet Check">
+                    Boleto Pago
+                  </p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      Extrato</a></p>
+                </div>
+                <div class="col-lg-1 iBring-faturas__conteudoPrincipal__relatorio__lista__dados">
+                  <p class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto">
+                    <a href="" class="iBring-faturas__conteudoPrincipal__relatorio__lista__dados__texto__link">Baixar
+                      NFE</a></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/popper.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
+
+</html>

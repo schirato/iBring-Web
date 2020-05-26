@@ -86,6 +86,10 @@ img {
   font-family: $font-opensans-bold;
 }
 
+.iBring-justify-content-center {
+  @include justify-content(center);
+}
+
 .iBring-btnSubmit {
   @include flexbox;
   @include align-items(center);

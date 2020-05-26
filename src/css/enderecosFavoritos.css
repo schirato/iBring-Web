@@ -7275,6 +7275,13 @@ img {
 .iBring-strong {
   font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont; }
 
+.iBring-justify-content-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
 .iBring-btnSubmit {
   display: -webkit-box;
   display: -moz-box;
