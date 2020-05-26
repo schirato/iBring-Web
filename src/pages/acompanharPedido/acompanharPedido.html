@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../../favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>iBring - Acompanhar Pedido</title>
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../manifest.json" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="../../../css/acompanharPedido.css" />
+</head>
+
+<body>
+  <section id="iBring-acompanharPedido" class="iBring-acompanharPedido">
+    <div id="iBring-acompanharPedido-Menu" class="iBring-acompanharPedido__menu">
+      <!-- Menu Principal -->
+      <section id="iBring-MenuPrincipal" class="iBring-menuPrincipal">
+        <div class="iBring-menuPrincipal__marca">
+          <img src="../../../img/logo-ibring-rgb-menu.svg" alt="Logo iBring"
+            class="iBring-menuPrincipal__marca__logo" />
+        </div>
+        <div class="iBring-menuPrincipal__saudacao">
+          Bem vindo, <span class="iBring-strong">Sergio Dutra</span>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Novo Pedido" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--novoPedido">&nbsp;</span>
+            Novo pedido
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--ativo">
+          <a href="" title="Acompanhar" target="_self"
+            class="iBring-menuPrincipal__menu__item iBring-menuPrincipal__menu__item--ativo">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--acompanhar">&nbsp;</span>
+            Acompanhar
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--historico">&nbsp;</span>
+            Entregas realizadas
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Histórico financeiro" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--financeiro">&nbsp;</span>
+            Faturas
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Configuração" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--configuracao">&nbsp;</span>
+            Configuração
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu iBring-menuPrincipal__menu--footer">
+          <a href="" title="Fale conosco" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sac">&nbsp;</span>
+            Fale conosco
+          </a>
+        </div>
+        <div class="iBring-menuPrincipal__menu">
+          <a href="" title="Sair" target="_self" class="iBring-menuPrincipal__menu__item">
+            <span
+              class="iBring-menuPrincipal__menu__item__icone iBring-menuPrincipal__menu__item__icone--sair">&nbsp;</span>
+            Sair
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Conteúdo Principal -->
+    <section class="iBring-acompanharPedido__conteudoPrincipal">
+      <div class="iBring-acompanharPedido__conteudoPrincipal__row">
+        <div class="iBring-acompanharPedido__conteudoPrincipal__rowConteudo">
+          <div class="iBring-acompanharPedido__conteudoPrincipal__conteudo">
+            <div id="iBring-Tabs" class="iBring-tabs">
+              <nav>
+                <div class="nav nav-tabs iBring-tabs__nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active iBring-tabs__nav-link" id="nav-home-tab" data-toggle="tab"
+                    href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Em andamento</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Concluídos hoje</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="tab-content iBring-tabs__tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active iBring-tabs__tab-pane" id="nav-home" role="tabpanel"
+              aria-labelledby="nav-home-tab">
+              <div class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__busca">
+                <img src="../../img/img-ico-search.svg" alt="Busca">
+                <label for="buscar" class="">Buscar</label>
+                <input type="text"
+                  class="form-control iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__busca__input"
+                  id="buscar" placeholder="Número do pedido, data, entregador">
+              </div>
+              <div class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo">
+                <h3 class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__semResultado">Você não
+                  possui nenhum pedido em andamento.</h3>
+                <div id="accordion"
+                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__header">
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Pedido</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Método de entrega</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Status</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                34565</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Diária do entregador</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--statusAndamento">
+                                Em andamento</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__chevron">
+                          <img src="../../img/img-ico-chevron.svg" alt="Chevron"></p>
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                transporte</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Entregador
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Moto</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <div
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador">
+                                <img src="../../img/img-avatar-entregador.svg" alt="Entregador"
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__foto">
+                                <div
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados">
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados__nome">
+                                    Roberto da
+                                    Silva Pereira</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    código G453</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    (21) 12345 - 6789</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Data</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Distância
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Início
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Fim
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                12/05/2020
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                78 km
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                16:34
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                17:45
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="row iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__blocoSolicitado">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Solicitado
+                                por</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Valor
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                pagamento
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Sergio Dutra
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                R$ 89,98
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Boleto -
+                                comercial
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                <a href=""
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__link">Imprimir
+                                  comprovante</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__header">
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Pedido</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Método de entrega</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Status</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                34565</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Diária do entregador</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--statusAndamento">
+                                Em andamento</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__chevron">
+                          <img src="../../img/img-ico-chevron.svg" alt="Chevron"></p>
+                      </button>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                transporte</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Entregador
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Moto</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <div
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador">
+                                <img src="../../img/img-avatar-entregador.svg" alt="Entregador"
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__foto">
+                                <div
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados">
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados__nome">
+                                    Roberto da
+                                    Silva Pereira</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    código G453</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    (21) 12345 - 6789</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Data</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Distância
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Início
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Fim
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                12/05/2020
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                78 km
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                16:34
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                17:45
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="row iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__blocoSolicitado">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Solicitado
+                                por</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Valor
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                pagamento
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Sergio Dutra
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                R$ 89,98
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Boleto -
+                                comercial
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                <a href=""
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__link">Imprimir
+                                  comprovante</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__busca">
+                <img src="../../img/img-ico-search.svg" alt="Busca">
+                <label for="buscar" class="">Buscar</label>
+                <input type="text"
+                  class="form-control iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__busca__input"
+                  id="buscar" placeholder="Número do pedido, data, entregador">
+              </div>
+              <div class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo">
+                <h3 class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__semResultado">Você não
+                  tem nenhum pedido concluído hoje.</h3>
+                <div id="accordion"
+                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__header">
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Pedido</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Método de entrega</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Status</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                34565</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Diária do entregador</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--statusConcluido">
+                                Concluído</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__chevron">
+                          <img src="../../img/img-ico-chevron.svg" alt="Chevron"></p>
+                      </button>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                transporte</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Entregador
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Moto</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <div
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador">
+                                <img src="../../img/img-avatar-entregador.svg" alt="Entregador"
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__foto">
+                                <div
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados">
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados__nome">
+                                    Roberto da
+                                    Silva Pereira</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    código G453</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    (21) 12345 - 6789</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Data</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Distância
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Início
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Fim
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                12/05/2020
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                78 km
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                16:34
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                17:45
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="row iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__blocoSolicitado">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Solicitado
+                                por</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Valor
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                pagamento
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Sergio Dutra
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                R$ 89,98
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Boleto -
+                                comercial
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                <a href=""
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__link">Imprimir
+                                  comprovante</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__header">
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Pedido</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Método de entrega</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Status</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                34565</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Diária do entregador</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--statusConcluido">
+                                Concluído</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__chevron">
+                          <img src="../../img/img-ico-chevron.svg" alt="Chevron"></p>
+                      </button>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                transporte</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Entregador
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Moto</p>
+                            </div>
+                            <div class="col-lg-8">
+                              <div
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador">
+                                <img src="../../img/img-avatar-entregador.svg" alt="Entregador"
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__foto">
+                                <div
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados">
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__entregador__dados__nome">
+                                    Roberto da
+                                    Silva Pereira</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    código G453</p>
+                                  <p
+                                    class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados--small">
+                                    (21) 12345 - 6789</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__item">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Data</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Distância
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Início
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Fim
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                12/05/2020
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                78 km
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                16:34
+                              </p>
+                            </div>
+                            <div class="col-lg-2">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                17:45
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="row iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__blocoSolicitado">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Solicitado
+                                por</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Valor
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__titulo">
+                                Meio de
+                                pagamento
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Sergio Dutra
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                R$ 89,98
+                              </p>
+                            </div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                Boleto -
+                                comercial
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">&nbsp;</div>
+                            <div class="col-lg-4">
+                              <p
+                                class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__dados">
+                                <a href=""
+                                  class="iBring-acompanharPedido__conteudoPrincipal__conteudo__tab__conteudo__accordion__link">Imprimir
+                                  comprovante</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="iBring-acompanharPedido__conteudoPrincipal__bgMapa">
+          <!-- Posicao A -->
+          <div
+            class="iBring-acompanharPedido__conteudoPrincipal__bgMapa__local iBring-acompanharPedido__conteudoPrincipal__bgMapa__local--posA">
+            <p class="iBring-acompanharPedido__conteudoPrincipal__bgMapa__local__texto">
+              A
+            </p>
+          </div>
+          <!-- Posicao B -->
+          <div
+            class="iBring-acompanharPedido__conteudoPrincipal__bgMapa__local iBring-acompanharPedido__conteudoPrincipal__bgMapa__local--posB">
+            <p class="iBring-acompanharPedido__conteudoPrincipal__bgMapa__local__texto">
+              B
+            </p>
+          </div>
+          <img src="../../../img/bg-map.png" alt="Mapa"
+            class="iBring-acompanharPedido__conteudoPrincipal__bgMapa__img" />
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/popper.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
+
+</html>

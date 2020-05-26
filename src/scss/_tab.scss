@@ -1,0 +1,31 @@
+@import './mixin';
+@import './theme';
+
+.iBring-tabs {
+
+  .nav-link {
+    @include flexbox;
+    @include justify-content(center);
+    font-family: $font-opensans-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: theme-color("cinza-intermediario");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smooyhing: grayscale;
+    border: none;
+    border-bottom: 2px solid theme-color("cinza-inativo");
+    width: 50%;
+  }
+
+  .nav-link.active {
+    color: theme-color("primaria");
+    border-bottom-color: theme-color("primaria");
+  }
+
+  &__tabcontent {
+    height: 100%;
+    background-color: theme-color("branca");
+  }
+}

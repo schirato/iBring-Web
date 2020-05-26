@@ -1,0 +1,328 @@
+@import "./base";
+@import "./menuPrincipal";
+@import "./tab";
+
+.iBring-acompanharPedido {
+  @include flexbox;
+
+  &__menu {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__menu {
+      @include flexbox;
+      height: 100%;
+      z-index: 9;
+    }
+
+    &__conteudoPrincipal {
+      position: relative;
+
+      &__row {
+        @include flexbox;
+        height: 100%;
+      }
+
+      &__rowConteudo {
+        @include flexbox;
+        @include flex-direction(column);
+        box-shadow: 4px 0px 21px rgba(82, 82, 82, 0.15);
+        height: 100%;
+      }
+
+      &__conteudo {
+        @include mainContentRulers(40px, 20px, 40px, 20px, auto);
+        width: 523px;
+
+        &__tab {
+          &__busca {
+            @include flexbox;
+            @include justify-content(center);
+            margin-bottom: 3rem;
+
+            img {
+              width: 15px;
+              height: 15px;
+              margin-right: .5rem;
+            }
+
+            &__input {
+              width: 70%;
+              height: 20px;
+              margin-left: .5rem;
+              border: none;
+              border-bottom: 1px solid theme-color("cinza-escuro");
+              border-radius: 0;
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              color: theme-color("cinza-escuro");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+            }
+
+          }
+
+          &__conteudo {
+
+            &__semResultado {
+              @include flexbox;
+              @include align-items(center);
+              font-family: $font-opensans-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              color: theme-color("cinza-campoForm");
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smooyhing: grayscale;
+              text-align: center;
+              margin-bottom: .5rem;
+              width: 300px;
+              margin: 0 auto;
+              display: none;
+            }
+
+            &__accordion {
+
+              .card {
+                @include mainContentRulers(20px, 20px, 20px, 20px, auto);
+                border: none;
+                border-radius: 0;
+                background-color: transparent;
+                border-top: .5px solid theme-color("cinza-botao");
+                border-bottom: .5px solid theme-color("cinza-botao");
+
+                &:hover {
+                  background-color: theme-color("quaternaria");
+                }
+
+                &:last-child {
+                  border-top: none;
+                }
+              }
+
+              .card-header {
+                background-color: transparent;
+                border: none;
+
+                button {
+                  @include flexbox;
+                  @include align-items(center);
+                  width: 100%;
+                  text-align: left;
+                  padding: 0;
+
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+
+                button.collapsed {
+                  .iBring-acompanharPedido {
+                    &__conteudoPrincipal {
+                      &__conteudo {
+                        &__tab {
+                          &__conteudo {
+                            &__accordion {
+                              &__chevron {
+                                transform: rotate(180deg);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &__header {
+                width: 100%;
+              }
+
+              &__item {
+                border-bottom: 1px solid theme-color("cinza-botao");
+                margin-bottom: 1rem;
+                padding-bottom: .5rem;
+
+                &:last-child {
+                  border-bottom: none;
+                }
+              }
+
+              &__titulo {
+                font-family: $font-opensans-regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: theme-color("cinza-secundario");
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: .5rem;
+              }
+
+              &__chevron {
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(center);
+                width: 30px;
+                height: 21px;
+                margin-bottom: 0;
+                border-radius: 8px;
+                border: 1px solid theme-color("secundaria");
+
+                img {
+                  width: 16px;
+                  height: 12px;
+                }
+              }
+
+              &__dados {
+                font-family: $font-opensans-regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 19px;
+                color: theme-color("cinza-escuro");
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+                margin-bottom: .5rem;
+
+                &--statusAndamento {
+                  font-family: $font-opensans-bold;
+                  color: theme-color("terciaria");
+                }
+
+                &--statusConcluido {
+                  font-family: $font-opensans-bold;
+                  color: theme-color("secundaria");
+                }
+
+                &--small {
+                  font-family: $font-opensans-regular;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 11px;
+                  line-height: 15px;
+                  color: theme-color("cinza-campoForm");
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smooyhing: grayscale;
+                  margin-bottom: 0;
+                }
+              }
+
+              &__entregador {
+                @include flexbox;
+                @include align-items(center);
+
+                &__foto {
+                  width: 46px;
+                  height: 45px;
+                  margin-right: 1rem;
+                }
+
+                &__dados {
+                  margin-bottom: .5rem;
+
+                  &__nome {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              &__blocoSolicitado {
+                margin-top: 1rem;
+              }
+
+              &__link {
+                font-family: $font-opensans-bold;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 15px;
+                color: theme-color("secundaria");
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smooyhing: grayscale;
+              }
+
+              .collapse {
+                border-top: 1px solid theme-color("cinza-botao");
+              }
+            }
+          }
+        }
+
+
+      }
+
+      // Mapa
+
+      &__bgMapa {
+        &__local {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+          position: absolute;
+          width: 78px;
+          height: 78px;
+          background: url(../img/img-bg-posicao.svg) center no-repeat;
+          //display: none; // remover quando for usar
+
+          &__texto {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: theme-color("secundaria");
+            font-family: $font-opensans-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: theme-color("branca");
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smooyhing: grayscale;
+            margin-bottom: 0;
+          }
+
+          &--posA {
+            top: 21%;
+            right: 7%;
+          }
+
+          &--posB {
+            top: 37%;
+            right: 23%;
+          }
+
+          &--posC {
+            top: 67%;
+            right: 16%;
+          }
+
+          &--posD {
+            top: 55%;
+            right: 2%;
+          }
+        }
+
+        &__img {
+          width: 327px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
