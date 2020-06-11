@@ -7180,7 +7180,52 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   color: #393939; }
 
+.ibring-navbar-btn-login button {
+  background-color: #61B46C; }
+  .ibring-navbar-btn-login button:focus, .ibring-navbar-btn-login button:active, .ibring-navbar-btn-login button:hover {
+    background-color: #61B46C !important;
+    border-color: #61B46C !important;
+    box-shadow: none !important; }
+
+.navbar-light .navbar-toggler {
+  border: none; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/img-ico-menu.svg); }
+
+#navbarNav-desk {
+  display: none; }
+
+.navbar-mobile {
+  padding: 33px 45px 33px 45px;
+  height: 100vh;
+  width: 60%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 11px 16px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  top: 73px;
+  z-index: 99; }
+
+.navbar-mobile .nav-link {
+  color: #393939;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.navbar-mobile .nav-link.active {
+  color: #61B46C; }
+
+.navbar-mobile .nav-item {
+  margin: 8px 0; }
+
+.navbar-mobile .ibring-navbar-divider {
+  border-bottom: 1px solid #C4C4C4;
+  border-right: none;
+  height: 1px; }
+
 @media (min-width: 992px) {
+  #navbarNav-desk {
+    display: block; }
   .navbar-brand {
     margin-left: 60px; }
   .navbar-expand-lg .navbar-nav {
@@ -7457,197 +7502,177 @@ img {
   height: auto; }
   .iBring-home-mainWrapper__iBring-panel {
     background-color: #F9F9F9;
-    position: relative; }
+    position: relative;
+    padding-bottom: 60px; }
   .iBring-home-mainWrapper__ibring-background-image {
-    display: none; }
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background: url(../img/bg-home-mob.svg) 0 0 no-repeat;
+    width: 100%;
+    height: 1762px;
+    position: absolute;
+    top: 220px;
+    left: 0; }
   .iBring-home-mainWrapper__iBring-comoFunciona-content {
-    padding: 24px 24px 24px 24px;
-    height: 100%; }
+    padding: 47px 35px 47px 35px;
+    height: 100%;
+    position: relative;
+    z-index: 9; }
     .iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-logo {
-      margin-bottom: 28px; }
+      width: 95px;
+      height: 35px;
+      margin-bottom: 16px;
+      margin-left: -10px; }
+    .iBring-home-mainWrapper__iBring-comoFunciona-content h1 {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px; }
   .iBring-home-mainWrapper__iBring-comoFunciona-content-app {
-    padding: 0 17% 0 17%;
-    height: 100%; }
+    padding: 0 8.5% 0 8.5%;
+    height: 100%;
+    position: relative; }
     .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-lead {
       font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
       font-style: normal;
       font-weight: normal;
-      font-size: 23px;
-      line-height: 31px;
+      font-size: 1em;
+      line-height: .5em;
       letter-spacing: 0.035em;
       text-transform: uppercase;
       position: relative; }
-  .iBring-home-mainWrapper__iBring-cards-group__card {
-    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: none;
-    margin-bottom: 55px; }
-  .iBring-home-mainWrapper__iBring-cards-group__card-title {
-    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.4em;
-    line-height: 27px; }
-  .iBring-home-mainWrapper__iBring-servicos {
-    padding: 84px 17% 84px 17%;
-    height: 100%; }
-    .iBring-home-mainWrapper__iBring-servicos h3 {
-      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      text-align: center;
-      margin-bottom: 45px; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador__block {
-    padding: 70px 17% 70px 17%;
+    .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-button {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between; }
+    .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-android, .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS {
+      width: 138px; }
+  .iBring-home-mainWrapper__iBring-cards-group {
+    padding: 0 8.5% 0 8.5%;
     height: 100%;
-    background: linear-gradient(289.48deg, #63d673 -9.54%, #005abc 102.28%);
-    overflow: hidden;
-    position: relative; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador h2 {
-    color: #FFFFFF;
-    width: 80%;
-    margin-bottom: 45px; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque {
-    padding: 69px 17% 69px 17%;
-    height: 100%;
-    text-align: center; }
-    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__subtitle {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    margin-right: 0; }
+    .iBring-home-mainWrapper__iBring-cards-group--first {
+      margin-top: 20%; }
+    .iBring-home-mainWrapper__iBring-cards-group__card {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      height: 170px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      border: none;
+      margin-bottom: 1.2em; }
+    .iBring-home-mainWrapper__iBring-cards-group__card-body {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%; }
+    .iBring-home-mainWrapper__iBring-cards-group__card-image {
+      margin-top: 16px;
+      text-align: left; }
+      .iBring-home-mainWrapper__iBring-cards-group__card-image img {
+        width: 90px;
+        height: 72px; }
+    .iBring-home-mainWrapper__iBring-cards-group__card-content {
+      padding: 3% 3% 3% 3%;
+      height: 100%;
+      width: 100px; }
+    .iBring-home-mainWrapper__iBring-cards-group__card-title {
       font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
       font-style: normal;
       font-weight: normal;
-      font-size: 21px;
-      line-height: 29px;
-      text-align: center;
-      color: #A0A0A0; }
-  .iBring-home-mainWrapper__iBring-footer {
-    padding: 60px 17% 60px 17%;
-    height: 100%; }
-    .iBring-home-mainWrapper__iBring-footer__title {
-      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 27px;
-      text-align: justify; }
-    .iBring-home-mainWrapper__iBring-footer__text {
-      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 19px;
-      text-align: justify; }
-  @media (min-width: 992px) {
-    .iBring-home-mainWrapper {
-      width: 1024px;
-      margin: 0 auto; }
-      .iBring-home-mainWrapper__ibring-background-image {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      .iBring-home-mainWrapper__iBring-comoFunciona {
-        padding-bottom: 91px; }
-      .iBring-home-mainWrapper__iBring-comoFunciona-content {
-        padding: 84px 7% 0 17%;
-        height: 100%;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
-        -ms-flex-pack: space-between;
-        position: relative; }
-        .iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-logo {
-          width: 147px;
-          height: 73px; }
-        .iBring-home-mainWrapper__iBring-comoFunciona-content h1 {
-          width: 360px; }
-        .iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-right img {
-          width: auto; }
-      .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-button {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative; }
-      .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS {
-        margin-right: 29px; }
-      .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS, .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-android {
-        width: 216px;
-        height: 65px; }
-      .iBring-home-mainWrapper__iBring-cards-group {
-        padding: 0 17% 0 17%;
-        height: 100%;
-        margin-right: 0; }
-        .iBring-home-mainWrapper__iBring-cards-group__card {
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          height: 183px;
-          background-color: #FFFFFF; }
-        .iBring-home-mainWrapper__iBring-cards-group__card-body {
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-justify-content: space-between;
-          -moz-justify-content: space-between;
-          -ms-justify-content: space-between;
-          justify-content: space-between;
-          -ms-flex-pack: space-between; }
-        .iBring-home-mainWrapper__iBring-cards-group__card-image {
-          text-align: left;
-          margin-left: 12px; }
-        .iBring-home-mainWrapper__iBring-cards-group__card-content {
-          margin-left: 22px;
-          margin-top: 0;
-          width: 200px; }
-      .iBring-home-mainWrapper__iBring-cards-group-first {
-        padding-top: 118px; } }
+      font-size: .8em;
+      line-height: 1.4em;
+      text-align: center; }
   .iBring-home-mainWrapper__iBring-comoFunciona-dica {
-    padding: 0 17% 0 17%;
-    height: 100%;
+    padding: 0 24% 0 8.5%;
+    height: auto;
     position: relative;
-    margin-top: 110px;
-    margin-bottom: 130px; }
+    margin-top: 70px;
+    margin-bottom: 30px; }
     .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left {
-      padding: 43px 38px 43px 38px;
+      padding: 2.5em 1.4em 2.5em 1.4em;
       height: 100%;
       background-color: #FFFFFF;
       border-radius: 18px; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left h2 {
+        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 1.4em;
         color: #005ABC; }
     .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-right {
       position: absolute;
-      top: -200px;
+      top: 160px;
       right: 20px; }
+      .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-right img {
+        width: 120px; }
     .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       margin-top: 45px; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-content {
         display: -webkit-box;
@@ -7664,7 +7689,8 @@ img {
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        margin-right: 29px; }
+        margin-right: 29px;
+        margin-bottom: 20px; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-bullet {
         display: -webkit-box;
         display: -moz-box;
@@ -7684,111 +7710,166 @@ img {
         background: #005ABC;
         box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 41px;
-        line-height: 48px;
+        font-size: 23px;
+        line-height: 27px;
         color: #FFFFFF; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text {
-        margin-top: 31px;
-        width: 120px;
+        margin-top: 10px;
+        width: 130px;
+        font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
         text-align: center; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-second__iBring-step-text {
-        width: 130px; }
+        width: 140px; }
       .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-third__iBring-step-text {
-        width: 160px; }
+        width: 150px; }
   .iBring-home-mainWrapper__iBring-entregamosParaVoce {
-    padding: 0 17% 0 17%;
+    padding: 0 15% 0 15%;
     height: 100%;
     color: #FFFFFF;
+    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
     text-align: center;
     position: relative; }
-  .iBring-home-mainWrapper__iBring-servicos__card-text {
-    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 23px;
-    text-align: center;
-    margin-top: 10px; }
-  .iBring-home-mainWrapper__iBring-servicos__iBring-card-last {
-    margin-top: 50px; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador__bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: auto; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-callToAction {
-    width: 75%; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text {
-    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0 auto; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button {
-    padding: 17px 33px 17px 33px;
-    height: 100%;
-    font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    background: #63D673;
-    border-color: #63D673;
-    border-radius: 12px;
-    margin: 45px auto; }
-    .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:hover, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:focus, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:not(:disabled):not(.disabled):active {
-      background-color: #63D673;
-      border-color: #63D673;
-      box-shadow: none; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card {
-    padding: 34px 0 34px 0;
-    height: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    background-color: #FFFFFF;
-    border-radius: 18px;
-    margin-top: 29px; }
-    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card img {
-      width: auto; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item {
-    border-right: 2px solid #DADADA;
-    width: 150px;
-    margin-right: 12px;
-    padding-right: 12px; }
-    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item:last-child {
-      border: none;
+  .iBring-home-mainWrapper__iBring-servicos {
+    padding: 40px 8.5% 40px 8.5%;
+    height: 100%; }
+    .iBring-home-mainWrapper__iBring-servicos h3 {
+      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 45px; }
+    .iBring-home-mainWrapper__iBring-servicos__card-text {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      margin-top: 10px; }
+    .iBring-home-mainWrapper__iBring-servicos__iBring-card-last {
+      margin-top: 50px; }
+  .iBring-home-mainWrapper__iBring-sejaUmEntregador {
+    padding-bottom: 0; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__bg {
+      width: 244px;
+      height: 280px;
+      margin-left: 50px; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__block {
+      padding: 36px 8.5% 0 8.5%;
+      height: auto;
+      background: linear-gradient(289.48deg, #63d673 -9.54%, #005abc 102.28%);
+      overflow: hidden;
+      position: relative; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador h2 {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      color: #FFFFFF;
+      width: 80%;
+      margin-bottom: 45px; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-callToAction {
+      width: 100%;
       margin-right: 0;
-      padding-right: 0; }
-  .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text {
-    margin-top: 10px;
-    font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 25px;
+      margin-left: 0; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0 auto; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button {
+      padding: 15px 30px 15px 30px;
+      height: 100%;
+      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      background: #63D673;
+      border-color: #63D673;
+      border-radius: 12px;
+      margin: 45px auto; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:hover, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:focus, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button:not(:disabled):not(.disabled):active {
+        background-color: #63D673;
+        border-color: #63D673;
+        box-shadow: none; }
+  .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque {
+    padding: 69px 8.5% 69px 8.5%;
+    height: 100%;
     text-align: center; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque h3 {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__subtitle {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #A0A0A0; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card {
+      padding: 34px 0 34px 0;
+      height: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      background-color: #FFFFFF;
+      border-radius: 18px;
+      margin-top: 29px; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card img {
+        width: auto; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item {
+      border-right: 2px solid #DADADA;
+      padding-right: 12px; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item:nth-child(2) {
+        border: none; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item:last-child {
+        border: none;
+        margin-right: 0;
+        padding-right: 0; }
+    .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text {
+      margin-top: 10px;
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center; }
   .iBring-home-mainWrapper__iBring-contato {
-    padding: 80px 17% 80px 17%;
+    padding: 80px 8.5% 80px 8.5%;
     height: 100%;
     background-color: #FFFFFF; }
     .iBring-home-mainWrapper__iBring-contato__card {
-      padding: 41px 20px 41px 20px;
+      padding: 37px 45px 37px 45px;
       height: 100%;
       background: #FFFFFF;
       box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
@@ -7823,7 +7904,7 @@ img {
     .iBring-home-mainWrapper__iBring-contato__btn {
       background-color: #61B46C;
       margin-top: 35px;
-      width: 40%; }
+      width: 90%; }
       .iBring-home-mainWrapper__iBring-contato__btn:hover, .iBring-home-mainWrapper__iBring-contato__btn:focus, .iBring-home-mainWrapper__iBring-contato__btn:not(:disabled):not(.disabled):active {
         background-color: #61B46C;
         border-color: #61B46C;
@@ -7846,4 +7927,288 @@ img {
       -ms-flex-pack: center;
       margin-top: 45px; }
       .iBring-home-mainWrapper__iBring-contato__logo img {
+        margin-left: -30px;
         width: auto; }
+  .iBring-home-mainWrapper__iBring-footer {
+    padding: 60px 8.5% 60px 8.5%;
+    height: 100%; }
+    .iBring-home-mainWrapper__iBring-footer__title {
+      font-family: "OpenSans-Bold", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: justify; }
+    .iBring-home-mainWrapper__iBring-footer__text {
+      font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: justify; }
+  @media (min-width: 992px) {
+    .iBring-home-mainWrapper {
+      width: 1024px;
+      margin: 0 auto; }
+      .iBring-home-mainWrapper__ibring-background-image {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        background: url(../img/bg-home.svg) 0 0 no-repeat;
+        width: 100%;
+        height: 2070px;
+        position: absolute;
+        top: 130px;
+        left: 0; }
+      .iBring-home-mainWrapper__iBring-comoFunciona {
+        padding-bottom: 160px; }
+      .iBring-home-mainWrapper__iBring-comoFunciona-content {
+        padding: 84px 7% 0 17%;
+        height: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: space-between;
+        position: relative; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-logo {
+          width: 147px;
+          height: 73px; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content h1 {
+          width: 260px; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-right img {
+          width: auto; }
+      .iBring-home-mainWrapper__iBring-comoFunciona-content-app {
+        padding: 0 17% 0 17%;
+        height: 100%; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-lead {
+          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 23px;
+          line-height: 31px;
+          letter-spacing: 0.035em;
+          text-transform: uppercase;
+          position: relative; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-button {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: initial;
+          -moz-justify-content: initial;
+          -ms-justify-content: initial;
+          justify-content: initial;
+          -ms-flex-pack: initial;
+          position: relative; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS {
+          margin-right: 29px; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-iOS, .iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-android {
+          width: 216px;
+          height: 65px; }
+      .iBring-home-mainWrapper__iBring-cards-group {
+        padding: 0 17% 0 17%;
+        height: 100%;
+        margin-right: 0; }
+        .iBring-home-mainWrapper__iBring-cards-group--first {
+          margin-top: 10%; }
+        .iBring-home-mainWrapper__iBring-cards-group__card {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          height: 183px;
+          background-color: #FFFFFF; }
+        .iBring-home-mainWrapper__iBring-cards-group__card-body {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between;
+          -ms-justify-content: space-between;
+          justify-content: space-between;
+          -ms-flex-pack: space-between;
+          -webkit-flex-direction: initial;
+          -moz-flex-direction: initial;
+          -ms-flex-direction: initial;
+          flex-direction: initial; }
+        .iBring-home-mainWrapper__iBring-cards-group__card-image {
+          text-align: left;
+          margin-left: 12px; }
+          .iBring-home-mainWrapper__iBring-cards-group__card-image img {
+            width: 100px; }
+        .iBring-home-mainWrapper__iBring-cards-group__card-content {
+          margin-left: 22px;
+          margin-top: 0;
+          width: 200px; }
+        .iBring-home-mainWrapper__iBring-cards-group__card-title {
+          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.4em;
+          line-height: 27px;
+          text-align: left; }
+      .iBring-home-mainWrapper__iBring-comoFunciona-dica {
+        padding: 0 17% 0 17%;
+        height: 100%;
+        margin-top: 110px;
+        margin-bottom: 200px; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left {
+          padding: 43px 38px 43px 38px;
+          height: 100%; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-left h2 {
+            font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 33px;
+            line-height: 45px;
+            color: #005ABC; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-right {
+          position: absolute;
+          top: -100px;
+          right: 90px; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-right img {
+            width: 100%; }
+        .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-flex-direction: initial;
+          -moz-flex-direction: initial;
+          -ms-flex-direction: initial;
+          flex-direction: initial; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-content {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-bottom: 0; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-bullet {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            background: #005ABC;
+            box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 41px;
+            line-height: 48px;
+            color: #FFFFFF; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-text {
+            margin-top: 31px;
+            width: 100px;
+            text-align: center; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-second__iBring-step-text {
+            width: 110px; }
+          .iBring-home-mainWrapper__iBring-comoFunciona-dica__iBring-step__iBring-step-third__iBring-step-text {
+            width: 150px; }
+      .iBring-home-mainWrapper__iBring-entregamosParaVoce {
+        padding: 0 25% 0 25%;
+        height: 100%; }
+      .iBring-home-mainWrapper__iBring-servicos {
+        padding: 84px 17% 84px 17%;
+        height: 100%; }
+        .iBring-home-mainWrapper__iBring-servicos h3 {
+          font-size: 29px;
+          line-height: 39px; }
+        .iBring-home-mainWrapper__iBring-servicos .col-lg-4:nth-child(4), .iBring-home-mainWrapper__iBring-servicos .col-lg-4:nth-child(5), .iBring-home-mainWrapper__iBring-servicos .col-lg-4:nth-child(6) {
+          margin-top: 45px; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador__block {
+        padding: 70px 17% 70px 17%;
+        height: 100%; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador h2 {
+        font-size: 33px;
+        line-height: 45px; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 359px;
+        height: 418px;
+        margin-left: 0; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets, .iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-callToAction {
+        width: 75%; }
+      .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque {
+        padding: 69px 17% 69px 17%;
+        height: 100%;
+        text-align: center; }
+        .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__subtitle {
+          font-family: "OpenSans-Regular", "Roboto", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 21px;
+          line-height: 29px;
+          text-align: center;
+          color: #A0A0A0; }
+        .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item:nth-child(2) {
+          border-right: 2px solid #DADADA; }
+        .iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text {
+          font-size: 17px;
+          line-height: 25px; }
+      .iBring-home-mainWrapper__iBring-contato {
+        padding: 80px 17% 80px 17%;
+        height: 100%; }
+        .iBring-home-mainWrapper__iBring-contato__card {
+          padding: 41px 20px 41px 20px;
+          height: 100%; }
+        .iBring-home-mainWrapper__iBring-contato__btn {
+          width: 40%; } }

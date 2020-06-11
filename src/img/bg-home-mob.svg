@@ -1,13 +1,13 @@
-<svg width="1024" height="2000" viewBox="0 0 1024 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="378" height="1763" viewBox="0 0 378 1763" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<path d="M392.972 294.72C611.968 272.843 888.89 220.833 1021.93 152.313V365.717L125.419 502.757C128.408 469.735 127.168 321.273 392.972 294.72Z" fill="#61B46C"/>
+<path d="M144.062 108.793C224.902 100.717 327.125 81.5186 376.237 56.225V135.001L45.2971 185.588C46.4007 173.398 45.943 118.595 144.062 108.793Z" fill="#61B46C"/>
 </g>
 <g filter="url(#filter1_d)">
-<path d="M395.962 332.282C606.437 292.656 922.35 274.081 1024 0V2034H1.32062C0.324053 1977.86 -1.07115 554.354 1.32061 527.936C4.31032 494.914 132.868 381.815 395.962 332.282Z" fill="#63D673"/>
+<path d="M145.166 122.659C222.861 108.031 339.477 101.174 377 0V1762.5H-0.512505C-0.880379 1741.78 -1.39541 204.634 -0.512507 194.883C0.591115 182.693 48.0469 140.943 145.166 122.659Z" fill="#63D673"/>
 </g>
-<path d="M504.747 1938.81C345.37 1969.98 99.5504 2000.31 -4 1922V2637H1024V1976.35C918.324 1957.99 664.125 1907.63 504.747 1938.81Z" fill="#F9F9F9"/>
+<path d="M185.058 1702.21C126.145 1713.72 35.2774 1724.91 -3 1696V2507.5H377V1716.07C337.937 1709.29 243.972 1690.69 185.058 1702.21Z" fill="#F9F9F9"/>
 <defs>
-<filter id="filter0_d" x="113.419" y="138.313" width="932.513" height="386.444" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="33.2971" y="42.225" width="366.939" height="165.363" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dx="6" dy="4"/>
@@ -16,7 +16,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_d" x="-12" y="-14" width="1060" height="2070" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d" x="-13" y="-14" width="414" height="1798.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dx="6" dy="4"/>

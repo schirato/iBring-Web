@@ -7,94 +7,432 @@
   &__iBring-panel {
     background-color: theme-color("cinza-bg");
     position: relative;
+    padding-bottom: 60px;
   }
 
   &__ibring-background-image {
-    display: none;
+    @include flexbox;
+    background: url(../img/bg-home-mob.svg) 0 0 no-repeat;
+    width: 100%;
+    height: 1762px;
+    position: absolute;
+    top: 220px;
+    left: 0;
   }
 
   &__iBring-comoFunciona-content {
-    @include mainContentRulers(24px, 24px);
+    @include mainContentRulers(47px, 35px);
+    position: relative;
+    z-index: 9;
 
     &__iBring-logo {
-      margin-bottom: 28px;
+      width: 95px;
+      height: 35px;
+      margin-bottom: 16px;
+      margin-left: -10px;
+    }
+
+    h1 {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
     }
   }
 
   &__iBring-comoFunciona-content-app {
-    @include mainContentRulers(0, 17%);
+    @include mainContentRulers(0, 8.5%);
+    position: relative;
 
     &__iBring-lead {
       font-family: $font-opensans-regular;
       font-style: normal;
       font-weight: normal;
-      font-size: 23px;
-      line-height: 31px;
+      font-size: 1em;
+      line-height: .5em;
       letter-spacing: 0.035em;
       text-transform: uppercase;
       position: relative;
     }
+
+    &__iBring-app-button {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(space-between);
+    }
+
+    &__iBring-app-android,
+    &__iBring-app-iOS {
+      width: 138px;
+    }
   }
 
   &__iBring-cards-group {
+    @include mainContentRulers(0, 8.5%);
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    margin-right: 0;
+
+    &--first {
+      margin-top: 20%;
+    }
+
     &__card {
+      @include flexbox;
+      height: 170px;
+      background-color: theme-color("branca");
       box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
       border-radius: 15px;
       border: none;
-      margin-bottom: 55px;
+      margin-bottom: 1.2em;
+    }
+
+    &__card-body {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(space-between);
+      @include flex-direction(column);
+      width: 100%;
+    }
+
+    &__card-image {
+      margin-top: 16px;
+      text-align: left;
+
+      img {
+        width: 90px;
+        height: 72px;
+      }
+    }
+
+    &__card-content {
+      @include mainContentRulers(3%, 3%);
+      width: 100px;
     }
 
     &__card-title {
       font-family: $font-opensans-regular;
       font-style: normal;
       font-weight: normal;
-      font-size: 1.4em;
-      line-height: 27px;
+      font-size: .8em;
+      line-height: 1.4em;
+      text-align: center;
     }
   }
 
+  &__iBring-comoFunciona-dica {
+    @include mainContentRulers(0, 24%, 0, 8.5%, auto);
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    &__iBring-left {
+      @include mainContentRulers(2.5em, 1.4em);
+      background-color: theme-color("branca");
+      border-radius: 18px;
+
+      h2 {
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 1.4em;
+        color: theme-color("terciaria");
+      }
+    }
+
+    &__iBring-right {
+      position: absolute;
+      top: 160px;
+      right: 20px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    &__iBring-step {
+      @include flexbox;
+      @include align-items(center);
+      @include flex-direction(column);
+      margin-top: 45px;
+
+      &__iBring-step-content {
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        margin-right: 29px;
+        margin-bottom: 20px;
+      }
+
+      &__iBring-step-bullet {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        background: theme-color("terciaria");
+        box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 27px;
+        color: theme-color("branca");
+      }
+
+      &__iBring-step-text {
+        margin-top: 10px;
+        width: 130px;
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+      }
+
+      &__iBring-step-second {
+
+        &__iBring-step-text {
+          width: 140px;
+        }
+      }
+
+      &__iBring-step-third {
+
+        &__iBring-step-text {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  &__iBring-entregamosParaVoce {
+    @include mainContentRulers(0, 15%);
+    color: theme-color("branca");
+    font-family: $font-opensans-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    position: relative;
+  }
+
   &__iBring-servicos {
-    @include mainContentRulers(84px, 17%);
+    @include mainContentRulers(40px, 8.5%);
 
     h3 {
       font-family: $font-opensans-bold;
+      font-size: 20px;
+      line-height: 27px;
       text-align: center;
       margin-bottom: 45px;
+    }
+
+    &__card-text {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__iBring-card-last {
+      margin-top: 50px;
     }
   }
 
   &__iBring-sejaUmEntregador {
+    padding-bottom: 0;
+
+    &__bg {
+      width: 244px;
+      height: 280px;
+      margin-left: 50px;
+    }
+
     &__block {
-      @include mainContentRulers(70px, 17%);
+      @include mainContentRulers(36px, 8.5%, 0, 8.5%, auto);
       background: linear-gradient(289.48deg, #63d673 -9.54%, #005abc 102.28%);
       overflow: hidden;
       position: relative;
     }
 
     h2 {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
       color: theme-color("branca");
       width: 80%;
       margin-bottom: 45px;
     }
+
+    &__iBring-bullets,
+    &__iBring-callToAction {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &__iBring-bullets-text {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: theme-color("branca");
+      margin: 0 auto;
+    }
+
+    &__iBring-button {
+      @include mainContentRulers(15px, 30px);
+      font-family: $font-opensans-bold;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      background: theme-color("primaria");
+      border-color: theme-color("primaria");
+      border-radius: 12px;
+      margin: 45px auto;
+
+      &:hover,
+      &:focus,
+      &:not(:disabled):not(.disabled):active {
+        background-color: theme-color("primaria");
+        border-color: theme-color("primaria");
+        box-shadow: none;
+      }
+    }
   }
 
   &__iBring-sejaUmEntregador-porque {
-    @include mainContentRulers(69px, 17%);
+    @include mainContentRulers(69px, 8.5%);
     text-align: center;
 
+    h3 {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
     &__subtitle {
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: theme-color("cinza-intermediario");
+    }
+
+    &__card {
+      @include mainContentRulers(34px, 0);
+      @include flexbox;
+      @include justify-content(center);
+      background-color: theme-color("branca");
+      border-radius: 18px;
+      margin-top: 29px;
+
+      img {
+        width: auto;
+      }
+    }
+
+    &__item {
+      border-right: 2px solid theme-color("cinza-botao");
+      padding-right: 12px;
+
+      &:nth-child(2) {
+        border: none;
+      }
+
+      &:last-child {
+        border: none;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__item-text {
+      margin-top: 10px;
+      font-family: $font-opensans-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+    }
+  }
+
+  &__iBring-contato {
+    @include mainContentRulers(80px, 8.5%);
+    background-color: theme-color("branca");
+
+    &__card {
+      @include mainContentRulers(37px, 45px);
+      background: theme-color("branca");
+      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+    }
+
+    &__card-body {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+    }
+
+    &__card-title {
       font-family: $font-opensans-regular;
       font-style: normal;
       font-weight: normal;
       font-size: 21px;
       line-height: 29px;
       text-align: center;
-      color: theme-color("cinza-intermediario");
+    }
+
+    &__btn {
+      background-color: theme-color("secundaria");
+      margin-top: 35px;
+      width: 90%;
+
+      &:hover,
+      &:focus,
+      &:not(:disabled):not(.disabled):active {
+        background-color: theme-color("secundaria");
+        border-color: theme-color("secundaria");
+        box-shadow: none;
+      }
+    }
+
+    &__logo {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      margin-top: 45px;
+
+      img {
+        margin-left: -30px;
+        width: auto;
+      }
     }
   }
 
   &__iBring-footer {
-    @include mainContentRulers(60px, 17%);
+    @include mainContentRulers(60px, 8.5%);
 
     &__title {
       font-family: $font-opensans-bold;
@@ -121,14 +459,16 @@
 
     &__ibring-background-image {
       @include flexbox;
+      background: url(../img/bg-home.svg) 0 0 no-repeat;
       width: 100%;
+      height: 2070px;
       position: absolute;
-      top: 0;
+      top: 130px;
       left: 0;
     }
 
     &__iBring-comoFunciona {
-      padding-bottom: 91px;
+      padding-bottom: 160px;
     }
 
     &__iBring-comoFunciona-content {
@@ -143,7 +483,7 @@
       }
 
       h1 {
-        width: 360px;
+        width: 260px;
       }
 
       &__iBring-right {
@@ -154,9 +494,23 @@
     }
 
     &__iBring-comoFunciona-content-app {
+      @include mainContentRulers(0, 17%);
+
+      &__iBring-lead {
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 31px;
+        letter-spacing: 0.035em;
+        text-transform: uppercase;
+        position: relative;
+      }
+
       &__iBring-app-button {
         @include flexbox;
         @include align-items(center);
+        @include justify-content(initial);
         position: relative;
       }
 
@@ -175,8 +529,13 @@
       @include mainContentRulers(0, 17%);
       margin-right: 0;
 
+      &--first {
+        margin-top: 10%;
+      }
+
       &__card {
         @include flexbox;
+        @include align-items(center);
         height: 183px;
         background-color: theme-color("branca");
       }
@@ -185,11 +544,16 @@
         @include flexbox;
         @include align-items(center);
         @include justify-content(space-between);
+        @include flex-direction(initial);
       }
 
       &__card-image {
         text-align: left;
         margin-left: 12px;
+
+        img {
+          width: 100px;
+        }
       }
 
       &__card-content {
@@ -197,246 +561,180 @@
         margin-top: 0;
         width: 200px;
       }
+
+      &__card-title {
+        font-family: $font-opensans-regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4em;
+        line-height: 27px;
+        text-align: left;
+      }
     }
 
-    &__iBring-cards-group-first {
-      padding-top: 118px;
+    &__iBring-comoFunciona-dica {
+      @include mainContentRulers(0, 17%);
+      margin-top: 110px;
+      margin-bottom: 200px;
+
+      &__iBring-left {
+        @include mainContentRulers(43px, 38px);
+
+        h2 {
+          font-family: $font-opensans-regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 33px;
+          line-height: 45px;
+          color: theme-color("terciaria");
+        }
+      }
+
+      &__iBring-right {
+        position: absolute;
+        top: -100px;
+        right: 90px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__iBring-step {
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(initial);
+
+        &__iBring-step-content {
+          @include flexbox;
+          @include align-items(center);
+          @include flex-direction(column);
+          margin-bottom: 0;
+        }
+
+        &__iBring-step-bullet {
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+          background: theme-color("terciaria");
+          box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 41px;
+          line-height: 48px;
+          color: theme-color("branca");
+        }
+
+        &__iBring-step-text {
+          margin-top: 31px;
+          width: 100px;
+          text-align: center;
+        }
+
+        &__iBring-step-second {
+
+          &__iBring-step-text {
+            width: 110px;
+          }
+        }
+
+        &__iBring-step-third {
+
+          &__iBring-step-text {
+            width: 150px;
+          }
+        }
+      }
     }
-  }
 
-  &__iBring-comoFunciona-dica {
-    @include mainContentRulers(0, 17%);
-    position: relative;
-    margin-top: 110px;
-    margin-bottom: 130px;
+    &__iBring-entregamosParaVoce {
+      @include mainContentRulers(0, 25%);
+    }
 
-    &__iBring-left {
-      @include mainContentRulers(43px, 38px);
-      background-color: theme-color("branca");
-      border-radius: 18px;
+    &__iBring-servicos {
+      @include mainContentRulers(84px, 17%);
+
+      h3 {
+        font-size: 29px;
+        line-height: 39px;
+      }
+
+      .col-lg-4 {
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          margin-top: 45px;
+        }
+      }
+    }
+
+    &__iBring-sejaUmEntregador {
+      &__block {
+        @include mainContentRulers(70px, 17%);
+      }
 
       h2 {
-        color: theme-color("terciaria");
+        font-size: 33px;
+        line-height: 45px;
+      }
+
+      &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 359px;
+        height: 418px;
+        margin-left: 0;
+      }
+
+      &__iBring-bullets,
+      &__iBring-callToAction {
+        width: 75%;
       }
     }
 
-    &__iBring-right {
-      position: absolute;
-      top: -200px;
-      right: 20px;
-    }
+    &__iBring-sejaUmEntregador-porque {
+      @include mainContentRulers(69px, 17%);
+      text-align: center;
 
-    &__iBring-step {
-      @include flexbox;
-      margin-top: 45px;
-
-      &__iBring-step-content {
-        @include flexbox;
-        @include align-items(center);
-        @include flex-direction(column);
-        margin-right: 29px;
-      }
-
-      &__iBring-step-bullet {
-        @include flexbox;
-        @include align-items(center);
-        @include justify-content(center);
-        background: theme-color("terciaria");
-        box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        font-family: Roboto;
+      &__subtitle {
+        font-family: $font-opensans-regular;
         font-style: normal;
-        font-weight: bold;
-        font-size: 41px;
-        line-height: 48px;
-        color: theme-color("branca");
-      }
-
-      &__iBring-step-text {
-        margin-top: 31px;
-        width: 120px;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 29px;
         text-align: center;
+        color: theme-color("cinza-intermediario");
       }
 
-      &__iBring-step-second {
-
-        &__iBring-step-text {
-          width: 130px;
+      &__item {
+        &:nth-child(2) {
+          border-right: 2px solid theme-color("cinza-botao");
         }
       }
 
-      &__iBring-step-third {
+      &__item-text {
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
 
-        &__iBring-step-text {
-          width: 160px;
-        }
+    &__iBring-contato {
+      @include mainContentRulers(80px, 17%);
+
+      &__card {
+        @include mainContentRulers(41px, 20px);
+      }
+
+      &__btn {
+        width: 40%;
       }
     }
 
   }
-
-  &__iBring-entregamosParaVoce {
-    @include mainContentRulers(0, 17%);
-    color: theme-color("branca");
-    text-align: center;
-    position: relative;
-  }
-
-  &__iBring-servicos {
-    &__card-text {
-      font-family: $font-opensans-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 23px;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    &__iBring-card-last {
-      margin-top: 50px;
-    }
-  }
-
-  &__iBring-sejaUmEntregador {
-
-    &__bg {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: auto;
-    }
-
-    &__iBring-bullets,
-    &__iBring-callToAction {
-      width: 75%;
-    }
-
-    &__iBring-bullets-text {
-      font-family: $font-opensans-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 20px;
-      text-align: center;
-      color: theme-color("branca");
-      margin: 0 auto;
-    }
-
-    &__iBring-button {
-      @include mainContentRulers(17px, 33px);
-      font-family: $font-opensans-bold;
-      font-size: 18px;
-      line-height: 25px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      background: theme-color("primaria");
-      border-color: theme-color("primaria");
-      border-radius: 12px;
-      margin: 45px auto;
-
-      &:hover,
-      &:focus,
-      &:not(:disabled):not(.disabled):active {
-        background-color: theme-color("primaria");
-        border-color: theme-color("primaria");
-        box-shadow: none;
-      }
-    }
-  }
-
-  &__iBring-sejaUmEntregador-porque {
-
-    &__card {
-      @include mainContentRulers(34px, 0);
-      @include flexbox;
-      @include justify-content(center);
-      background-color: theme-color("branca");
-      border-radius: 18px;
-      margin-top: 29px;
-
-      img {
-        width: auto;
-      }
-    }
-
-    &__item {
-      border-right: 2px solid theme-color("cinza-botao");
-      width: 150px;
-      margin-right: 12px;
-      padding-right: 12px;
-
-      &:last-child {
-        border: none;
-        margin-right: 0;
-        padding-right: 0;
-      }
-    }
-
-    &__item-text {
-      margin-top: 10px;
-      font-family: $font-opensans-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 25px;
-      text-align: center;
-    }
-  }
-
-  &__iBring-contato {
-    @include mainContentRulers(80px, 17%);
-    background-color: theme-color("branca");
-
-    &__card {
-      @include mainContentRulers(41px, 20px);
-      background: theme-color("branca");
-      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.2);
-      border-radius: 15px;
-    }
-
-    &__card-body {
-      @include flexbox;
-      @include align-items(center);
-      @include justify-content(center);
-      @include flex-direction(column);
-    }
-
-    &__card-title {
-      font-family: $font-opensans-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      line-height: 29px;
-      text-align: center;
-    }
-
-    &__btn {
-      background-color: theme-color("secundaria");
-      margin-top: 35px;
-      width: 40%;
-
-      &:hover,
-      &:focus,
-      &:not(:disabled):not(.disabled):active {
-        background-color: theme-color("secundaria");
-        border-color: theme-color("secundaria");
-        box-shadow: none;
-      }
-    }
-
-    &__logo {
-      @include flexbox;
-      @include align-items(center);
-      @include justify-content(center);
-      margin-top: 45px;
-
-      img {
-        width: auto;
-      }
-    }
-  }
-
 }

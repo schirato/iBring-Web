@@ -30,7 +30,6 @@
 </head>
 
 <body>
-  <!-- Menu -->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +38,7 @@
     <a class="navbar-brand" href="index.html" title="Home">
       <img id="iBring-Brand" src="./img/logo-ibring-bw.png" alt="Logo iBring" class="ibring-navbar-logo" />
     </a>
-    <div class="navbar-collapse" id="navbarNav-desk">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#iBring-comoFunciona">Como Funciona</a>
@@ -66,34 +65,11 @@
       <button type="button" class="btn btn-primary">Login</button>
     </div>
   </nav>
-  <div class="collapse navbar-mobile" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#iBring-comoFunciona">Como Funciona</a>
-      </li>
-      <li class="navbar-nav"><span class="ibring-navbar-divider">&nbsp;</span></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#iBring-servicos">Serviços</a>
-      </li>
-      <li class="navbar-nav"><span class="ibring-navbar-divider">&nbsp;</span></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#iBring-sejaUmEntregador">Seja um Entregador</a>
-      </li>
-      <li class="navbar-nav"><span class="ibring-navbar-divider">&nbsp;</span></li>
-      <li class="nav-item">
-        <a class="nav-link" href="contato.html">Contato</a>
-      </li>
-      <li class="navbar-nav"><span class="ibring-navbar-divider">&nbsp;</span></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Fazer um Pedido</a>
-      </li>
-    </ul>
-  </div>
   <!-- Conteúdo -->
   <section id="iBring-home-mainWrapper" class="iBring-home-mainWrapper">
     <article class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-comoFunciona">
       <div class="iBring-home-mainWrapper__ibring-background-image">
-        &nbsp;
+        <img src="./img/bg-home.svg" alt="background">
       </div>
       <div id="iBring-comoFunciona-content" class="iBring-home-mainWrapper__iBring-comoFunciona-content">
         <div class="iBring-home-mainWrapper__iBring-comoFunciona-content__iBring-left">
@@ -114,8 +90,8 @@
             class="iBring-home-mainWrapper__iBring-comoFunciona-content-app__iBring-app-android">
         </div>
       </div>
-      <div class="row iBring-home-mainWrapper__iBring-cards-group iBring-home-mainWrapper__iBring-cards-group--first">
-        <div class="col-6">
+      <div class="row iBring-home-mainWrapper__iBring-cards-group iBring-home-mainWrapper__iBring-cards-group-first">
+        <div class="col-sm-6">
           <div class="iBring-home-mainWrapper__iBring-cards-group__card">
             <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-client.svg"
@@ -127,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-6">
           <div class="iBring-home-mainWrapper__iBring-cards-group__card">
             <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-vespa.svg"
@@ -142,7 +118,7 @@
         </div>
       </div>
       <div class="row iBring-home-mainWrapper__iBring-cards-group">
-        <div class="col-6">
+        <div class="col-sm-6">
           <div class="iBring-home-mainWrapper__iBring-cards-group__card">
             <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-delivery.svg"
@@ -154,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-6">
           <div class="iBring-home-mainWrapper__iBring-cards-group__card">
             <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-term.svg"
@@ -168,20 +144,20 @@
         </div>
       </div>
       <div class="row iBring-home-mainWrapper__iBring-cards-group">
-        <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
           <div class="iBring-home-mainWrapper__iBring-cards-group__card">
             <div class="iBring-home-mainWrapper__iBring-cards-group__card-body">
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-image"><img src="./img/img-money.svg"
                   alt="Imagem Termo" /></div>
               <div class="iBring-home-mainWrapper__iBring-cards-group__card-content">
                 <h5 class="iBring-home-mainWrapper__iBring-cards-group__card-title">Transparência: o cliente sabe
-                  <span class="iBring-strong">quanto é pago ao entregador</span></h5>
+                  <span class="iBring-strong">quanto o entregador recebe</span></h5>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3"></div>
+        <div class="col-sm-3"></div>
       </div>
       <!-- Como Funciona -->
       <div id="iBring-comoFunciona">&nbsp;</div>
@@ -232,32 +208,34 @@
       class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-servicos">
       <h3>Nossos serviços</h3>
       <div class="row">
-        <div class="col-6 col-lg-4">
+        <div class="col-sm-4">
           <img src="./img/img-daybyday.png" alt="Entregas do dia a dia">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas do <span class="iBring-strong">dia a
               dia</span></p>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-sm-4">
           <img src="./img/img-ecommerce.png" alt="Entregas para e-commercer">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas para <span
               class="iBring-strong">e-commerce</span></p>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-sm-4">
           <img src="./img/img-calendar.png" alt="Entregas agendadas">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span
               class="iBring-strong">agendadas</span></p>
         </div>
-        <div class="col-6 col-lg-4">
+      </div>
+      <div class="row iBring-home-mainWrapper__iBring-servicos__iBring-card-last">
+        <div class="col-sm-4">
           <img src="./img/img-deliveryhard.png" alt="Entregas pesadas">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span
               class="iBring-strong">pesadas</span></p>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-sm-4">
           <img src="./img/img-quant.png" alt="Entregas em quantidade">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span class="iBring-strong">em
               quantidade</span></p>
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-sm-4">
           <img src="./img/img-security.png" alt="Entregas com seguro">
           <p class="iBring-home-mainWrapper__iBring-servicos__card-text">Entregas <span class="iBring-strong">com
               seguro</span></p>
@@ -268,25 +246,27 @@
     <article id="iBring-sejaUmEntregador"
       class="iBring-home-mainWrapper__iBring-panel iBring-home-mainWrapper__iBring-sejaUmEntregador">
       <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador__block">
+        <img id="iBring-bg-entregador" src="./img/img-entregador.png" alt="Imagem Entregador"
+          class="iBring-home-mainWrapper__iBring-sejaUmEntregador__bg">
         <h2>Seja um <span class="iBring-strong">entregador profissional</span> IBring e <span class="iBring-strong">seja
             valorizado.</span></h2>
         <div class="row iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets">
-          <div class="col-6 col-sm-3">
+          <div class="col-sm-3">
             <img src="./img/img-bullet-km.svg" alt="Mínino de R$ 2,00 por Km">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Mínino de R$ 2,00 por Km
             </p>
           </div>
-          <div class="col-6 col-sm-3">
+          <div class="col-sm-3">
             <img src="./img/img-bullet-sac.svg" alt="Central de Atendimento rápido">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Central de Atendimento
               rápido</p>
           </div>
-          <div class="col-6 col-sm-3">
+          <div class="col-sm-3">
             <img src="./img/img-bullet-value.svg" alt="Transparência nos valores e destinos">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Transparência nos valores e
               destinos</p>
           </div>
-          <div class="col-6 col-sm-3">
+          <div class="col-sm-3">
             <img src="./img/img-bullet-time.svg" alt="Receba no mesmo dia">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-bullets-text">Receba no mesmo dia</p>
           </div>
@@ -296,33 +276,31 @@
             class="btn btn-primary iBring-home-mainWrapper__iBring-sejaUmEntregador__iBring-button">Quero ser um
             entregador IBring</button>
         </div>
-        <img id="iBring-bg-entregador" src="./img/img-entregador.png" alt="Imagem Entregador"
-          class="iBring-home-mainWrapper__iBring-sejaUmEntregador__bg">
       </div>
       <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque">
         <h3><span class="iBring-strong">Por que confiar</span> nos nossos entregadores?</h3>
         <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__subtitle">Veja por
           que é seguro enviar pelo IBring:</p>
-        <div class="row iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card">
-          <div class="col-6 col-sm-3 iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
+        <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__card">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-entregador.svg" alt="imagem">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Entregadores <span
                 class="iBring-strong">regularizados e
                 valorizados</span></p>
           </div>
-          <div class="col-6 col-sm-3 iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-voz.svg" alt="imagem">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Profissionais <span
                 class="iBring-strong">com voz ativa</span>
             </p>
           </div>
-          <div class="col-6 col-sm-3 iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-processo.svg" alt="imagem">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Rígido processo <span
                 class="iBring-strong">de seleção</span>
             </p>
           </div>
-          <div class="col-6 col-sm-3 iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
+          <div class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item">
             <img src="./img/img-sejaumentregador-treinamento.svg" alt="imagem">
             <p class="iBring-home-mainWrapper__iBring-sejaUmEntregador-porque__item-text">Programas de <span
                 class="iBring-strong">treinamento e

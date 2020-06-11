@@ -21,7 +21,68 @@
   color: theme-color("cinza-escuro");
 }
 
+.ibring-navbar-btn-login {
+  button {
+    background-color: theme-color("secundaria");
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: theme-color("secundaria") !important;
+      border-color: theme-color("secundaria") !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/img-ico-menu.svg);
+}
+
+#navbarNav-desk {
+  display: none;
+}
+
+.navbar-mobile {
+  @include mainContentRulers(33px, 45px, 33px, 45px, 100vh);
+  width: 60%;
+  background-color: theme-color("branca");
+  box-shadow: 0px 11px 16px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  top: 73px;
+  z-index: 99;
+}
+
+.navbar-mobile .nav-link {
+  color: theme-color("cinza-escuro");
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.navbar-mobile .nav-link.active {
+  color: theme-color("secundaria");
+}
+
+.navbar-mobile .nav-item {
+  margin: 8px 0;
+}
+
+.navbar-mobile .ibring-navbar-divider {
+  border-bottom: 1px solid #C4C4C4;
+  border-right: none;
+  height: 1px;
+}
+
 @media (min-width: 992px) {
+  #navbarNav-desk {
+    display: block;
+  }
+
   .navbar-brand {
     margin-left: 60px;
   }
